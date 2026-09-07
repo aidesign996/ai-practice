@@ -1,0 +1,7 @@
+interface:
+  display_name: "Team Leader"
+  short_description: "Run a visible team with shared knowledge and AI acceptance"
+  default_prompt: "Use $team-leader for this project: understand my requested operation, recover existing roles and decisions, and coordinate authorized work through clear responsibilities, shared project knowledge, and independent AI acceptance."
+
+policy:
+  allow_implicit_invocation: true
