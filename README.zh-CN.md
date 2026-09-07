@@ -37,8 +37,8 @@
 ### 安装和开始使用
 
 1. 下载 ZIP 并解压，保留完整 team-leader 文件夹，包括方法参考和模板。
-2. 个人使用放到 ~/.agents/skills/；只供某个项目使用则放到该项目的 .agents/skills/。Windows 个人安装后应能找到 %USERPROFILE%\.agents\skills\team-leader\SKILL.md。完整包共 22 个文件，含 MIT 许可证，不要只复制 SKILL.md。
-3. 在 Codex 项目新对话中选择或点名 $team-leader，确认能够读取，然后说上面的接手语句。未发现技能时重启 Codex。升级前将旧安装及自定义修改备份到技能目录之外，再替换完整文件夹；保留现有项目资料和目标。
+2. 个人使用放到 `~/.agents/skills/`；只供某个项目使用则放到该项目的 `.agents/skills/`。Windows 个人安装后应能找到 `%USERPROFILE%\.agents\skills\team-leader\SKILL.md`。完整包共 22 个文件，含 MIT 许可证，不要只复制 SKILL.md。
+3. 在 Codex 项目新对话中选择或点名 `$team-leader`，确认能够读取，然后说上面的接手语句。未发现技能时重启 Codex。升级前将旧安装及自定义修改备份到技能目录之外，再替换完整文件夹；保留现有项目资料和目标。
 
 ### 适用范围与当前边界
 

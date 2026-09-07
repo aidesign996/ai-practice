@@ -37,8 +37,8 @@
 ### 安裝和開始使用
 
 1. 下載 ZIP 並解壓，保留完整 team-leader 文件夾，包括方法參考和模板。
-2. 個人使用放到 ~/.agents/skills/；只供某個項目使用則放到該項目的 .agents/skills/。Windows 個人安裝後應能找到 %USERPROFILE%\.agents\skills\team-leader\SKILL.md。完整包共 22 個文件，含 MIT 許可證，不要只複製 SKILL.md。
-3. 在 Codex 項目新對話中選擇或點名 $team-leader，確認能夠讀取，然後說上面的接手語句。未發現技能時重啟 Codex。升級前將舊安裝及自定義修改備份到技能目錄之外，再替換完整文件夾；保留現有項目資料和目標。
+2. 個人使用放到 `~/.agents/skills/`；只供某個項目使用則放到該項目的 `.agents/skills/`。Windows 個人安裝後應能找到 `%USERPROFILE%\.agents\skills\team-leader\SKILL.md`。完整包共 22 個文件，含 MIT 許可證，不要只複製 SKILL.md。
+3. 在 Codex 項目新對話中選擇或點名 `$team-leader`，確認能夠讀取，然後說上面的接手語句。未發現技能時重啟 Codex。升級前將舊安裝及自定義修改備份到技能目錄之外，再替換完整文件夾；保留現有項目資料和目標。
 
 ### 適用範圍與當前邊界
 

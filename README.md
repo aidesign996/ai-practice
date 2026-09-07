@@ -37,8 +37,8 @@ If you want team mode, ask the lead to establish the complete team and coordinat
 ### Install and start
 
 1. Download the ZIP and extract it. Keep the complete team-leader folder, including its references and templates.
-2. Place it in ~/.agents/skills/ for personal use, or .agents/skills/ within one project. On Windows, a personal installation should contain %USERPROFILE%\.agents\skills\team-leader\SKILL.md. The package contains 22 files including the MIT license; do not copy only SKILL.md.
-3. In a new Codex project conversation, select or name $team-leader, confirm it is readable, and use the sentence above. If the skill is not discovered, restart Codex. Back up an existing installation and local changes outside the skills directory before replacing the whole folder; preserve project records and goals.
+2. Place it in `~/.agents/skills/` for personal use, or `.agents/skills/` within one project. On Windows, a personal installation should contain `%USERPROFILE%\.agents\skills\team-leader\SKILL.md`. The package contains 22 files including the MIT license; do not copy only SKILL.md.
+3. In a new Codex project conversation, select or name `$team-leader`, confirm it is readable, and use the sentence above. If the skill is not discovered, restart Codex. Back up an existing installation and local changes outside the skills directory before replacing the whole folder; preserve project records and goals.
 
 ### Fit and current limits
 
