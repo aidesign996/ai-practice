@@ -116,13 +116,17 @@ This form of “memory” mainly uses searchable project records. Requirements a
 
 ## After installation, talk to it like a project lead
 
-**My everyday use is simple: ask it to take over, then explain what I have in mind.** In a tool where the skill is installed and recognized, open the project conversation and select Team Leader, or include `$team-leader` in your message. For an existing project, ask it to understand the current work first. For a new one, start with what you want to make.
+**Once installed, start with one sentence.** Select Team Leader in the project conversation, or name `$team-leader` first, and confirm that your tool can read the skill. Then talk to it as you would to a project lead.
 
 ### Start with: this project is yours to lead
 
-In several actual projects, my opening message was simply “I want you to take over this project” or “First understand the project, then tell me what you think.” Here is a version you can use directly:
+You do not need a long instruction listing every step: read the files, ask about requirements, and arrange the next task. With the skill selected, simply say:
 
-> $team-leader You are responsible for this project from now on. First understand its current state, then tell me what you think and how you would arrange the next steps.
+> You're in charge of this project now. Please take it forward.
+
+This asks the lead to take over. Under this method, it should first understand the available materials, agreed goals and unfinished work. When the goal and authority are clear, it should continue; when essential requirements are missing, it should ask you and explain its next steps. For a new project with no materials, it can begin by asking what you want to make and which problem you want to solve. Share your ideas without having to design its workflow first.
+
+This is a simple way to begin, not a fixed command or a guarantee that every tool will identify the skill from that sentence alone. Select or name Team Leader the first time; then continue the same project conversation naturally.
 
 To use team mode, add: “Please establish the complete team for this project and coordinate its work.” In 0.5.16, once team mode is chosen and creation is authorized, establish all six responsibilities, then activate only the relevant roles for each task. Reuse existing roles and responsibilities. Actual creation still depends on the tool's capabilities; small one-off tasks can remain solo.
 
