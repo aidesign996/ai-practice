@@ -1,6 +1,6 @@
 # AI Design 996 — AI practice
 
-[English](README.md) · [繁體中文](README.zh-Hant.md) · [简体中文](README.zh-CN.md)
+[English](https://aidesign996.github.io/ai-practice/index.html) · [繁體中文](https://aidesign996.github.io/ai-practice/index.zh-hant.html) · [简体中文](https://aidesign996.github.io/ai-practice/index.zh.html)
 
 这里分享我做的 AI 技能，以及工作中的思考与实践。你可以直接使用技能，也可以阅读背后的设计与过程。
 
