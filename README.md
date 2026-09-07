@@ -10,11 +10,11 @@ I share reusable AI skills and the thinking behind my work. Pick a skill to use,
 
 Installable skills you can use in your own projects.
 
-### Team Leader · 0.5.16
+### [Team Leader · 0.5.16](https://github.com/aidesign996/team-leader)
 
 Give your AI project a team lead. It coordinates specialist roles, compares results with your goal, and follows through on corrections.
 
-[Download Skill](https://github.com/aidesign996/ai-practice/releases/download/team-leader-v0.5.16/team-leader-0.5.16.zip) · [Installation & release notes](https://github.com/aidesign996/ai-practice/releases/tag/team-leader-v0.5.16) · [View source](https://github.com/aidesign996/ai-practice/tree/main/skills/team-leader)
+[Download Skill](https://github.com/aidesign996/team-leader/releases/download/team-leader-v0.5.16/team-leader-0.5.16.zip) · [Installation & release notes](https://github.com/aidesign996/team-leader/releases/tag/team-leader-v0.5.16) · [View source](https://github.com/aidesign996/team-leader/tree/main/team-leader)
 
 ## Practice & notes
 

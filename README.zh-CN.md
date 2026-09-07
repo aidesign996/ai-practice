@@ -10,11 +10,11 @@
 
 可以下载安装，在自己的项目中直接调用。
 
-### Team Leader · 0.5.16
+### [Team Leader · 0.5.16](https://github.com/aidesign996/team-leader/blob/main/README.zh-CN.md)
 
 给 AI 项目配一位负责人，协调专业岗位，持续对照用户目标检查实际成果，并组织必要修正。
 
-[下载 Skill](https://github.com/aidesign996/ai-practice/releases/download/team-leader-v0.5.16/team-leader-0.5.16.zip) · [安装与版本说明](https://github.com/aidesign996/ai-practice/releases/tag/team-leader-v0.5.16) · [查看源码](https://github.com/aidesign996/ai-practice/tree/main/skills/team-leader)
+[下载 Skill](https://github.com/aidesign996/team-leader/releases/download/team-leader-v0.5.16/team-leader-0.5.16.zip) · [安装与版本说明](https://github.com/aidesign996/team-leader/releases/tag/team-leader-v0.5.16) · [查看源码](https://github.com/aidesign996/team-leader/tree/main/team-leader)
 
 ## 实践记录
 
