@@ -1,35 +1,55 @@
-# AI Design 996 — AI 实践分享
+# AI Design 996 — AI practice
 
 [English](README.md) · [繁體中文](README.zh-Hant.md) · [简体中文](README.zh-CN.md)
 
-分享在实际项目中形成的技能和工作方法。欢迎试用，说说真实场景，一起改进下一版。
+这里分享我做的 AI 技能，以及工作中的思考与实践。你可以直接使用技能，也可以阅读背后的设计与过程。
 
-## Team Leader
+[分享首页](https://aidesign996.github.io/ai-practice/index.zh.html)
 
-**给 AI 项目配一位负责人，带领团队朝正确的方向前进。**
+## Skills · 可用技能
 
-负责人协调产品设计、技术设计、开发与独立 AI 验收，持续比较目标与实际成果，反馈差距并组织修正；项目文档保留有效决定与继续点。
+可以下载安装，在自己的项目中直接调用。
 
-[阅读完整图文介绍](https://aidesign996.github.io/ai-practice/team-leader/article-preview.zh.html) · [下载 0.5.16](https://github.com/aidesign996/ai-practice/releases/download/team-leader-v0.5.16/team-leader-0.5.16.zip) · [版本说明与校验文件](https://github.com/aidesign996/ai-practice/releases/tag/team-leader-v0.5.16) · [技能源码](skills/team-leader)
+### Team Leader · 0.5.16
+
+给 AI 项目配一位负责人，协调专业岗位，持续对照用户目标检查实际成果，并组织必要修正。
+
+[下载 Skill](https://github.com/aidesign996/ai-practice/releases/download/team-leader-v0.5.16/team-leader-0.5.16.zip) · [安装与版本说明](https://github.com/aidesign996/ai-practice/releases/tag/team-leader-v0.5.16) · [查看源码](https://github.com/aidesign996/ai-practice/tree/main/skills/team-leader)
+
+## 实践记录
+
+分享设计思路、工作过程和项目成果。
+
+**2026-09-07 · 设计手记**
+
+[为什么我给 AI 项目配了一位负责人](https://aidesign996.github.io/ai-practice/team-leader/article-preview.zh.html) — Team Leader 的设计思路：目标与反馈、专业分工、项目知识，以及这套方法目前的适用范围和局限。
+
+## 装好以后，一句话开始
+
+打开项目，选中 Team Leader，或先点名 `$team-leader`。然后说：
+
+> 接下来这个项目由你负责，你跟进一下。
+
+负责人应先了解现有资料、已确认的目标和未完成工作，再继续推进；缺少关键需求时主动问你。你只需要随着沟通，补充自己的想法。
+
+希望采用团队模式时，可以再让负责人建立完整团队并负责协调。实际创建取决于工具支持与用户授权；已有团队会复用原岗位，简单的一次性任务可以保持单人。
 
 ### 安装和开始使用
 
-1. 下载 ZIP 并解压。
-2. 将**完整的 `team-leader` 文件夹**放到 `~/.agents/skills/`。Windows 下应能找到 `%USERPROFILE%\.agents\skills\team-leader\SKILL.md`。完整目录共 22 个文件，包含 MIT 许可证；不要只复制 `SKILL.md`。
-3. 在 Codex 项目新对话中选择或点名 `$team-leader`，像向团队负责人交代工作一样说明目标：
-
-> 接下来这个项目由你负责。我想做[你的想法]，请先了解现状，明确目标，再带着项目往前推进。请为这个项目建立完整团队，由你负责协调。
-
-实际建队取决于工具支持与用户授权；已有团队会复用原岗位，简单任务可以保持单人。未发现技能时重启 Codex。升级前将旧安装及自定义修改备份到技能目录之外，再替换完整文件夹；保留现有项目文档和目标。
+1. 下载 ZIP 并解压，保留完整 team-leader 文件夹，包括方法参考和模板。
+2. 个人使用放到 ~/.agents/skills/；只供某个项目使用则放到该项目的 .agents/skills/。Windows 个人安装后应能找到 %USERPROFILE%\.agents\skills\team-leader\SKILL.md。完整包共 22 个文件，含 MIT 许可证，不要只复制 SKILL.md。
+3. 在 Codex 项目新对话中选择或点名 $team-leader，确认能够读取，然后说上面的接手语句。未发现技能时重启 Codex。升级前将旧安装及自定义修改备份到技能目录之外，再替换完整文件夹；保留现有项目资料和目标。
 
 ### 适用范围与当前边界
 
-主要面向 Codex 中的 Astra。Sol 已有部分专业岗位实践，但尚未证实全 Sol 团队具有同等效果。团队工作可能消耗较多额度；负责人通常默认 XHigh，按任务安排专业岗位推理级别，并在工具支持时管理上下文。这是工作方法，不能保证技能可以更改每一项运行设置。
+主要面向 Codex 中的 Astra。Sol 已有部分专业岗位实践，但尚未证实全 Sol 团队具有同等效果。团队工作可能消耗较多额度；负责人通常以 XHigh 为起点，尊重用户设置，在工具支持时按任务分配专业岗位投入并管理上下文。
 
 0.5.16 在决定采用团队模式且有授权后一次补齐六类职责，工作时按需调动。已检查包内文件完整性、干净目录解压和基础技能结构；新 Codex 配置中的完整首次运行、跨平台、长期纠偏与额度节省尚未系统验证。
 
-### 欢迎反馈
+## 你的使用反馈，会帮助我改进下一版。
 
-[在文章下方直接留言](https://aidesign996.github.io/ai-practice/team-leader/article-preview.zh.html#comments)，一个框里说明场景、遇到的问题，以及你希望怎样处理会更好。**英文、繁体中文和简体中文页面共用同一个公开讨论区**；留言保留原文，所有人都能看到。留言需要 GitHub 登录，阅读无需登录。我会根据反馈继续优化。
+[分享使用反馈](https://aidesign996.github.io/ai-practice/team-leader/article-preview.zh.html#comments). 一个留言框里说清场景、遇到的问题，以及你希望怎样处理会更好。英文、繁体和简体页面共用同一个公开讨论区，所有人都能看到原文留言。
 
-Team Leader 技能采用 [MIT 许可证](skills/team-leader/LICENSE)，Copyright (c) 2026 AI Design 996。[设计参考](SOURCES.md)。文章和配图与技能包分别提供。
+留言需要 GitHub 登录，阅读无需登录。我会根据反馈继续优化。
+
+Team Leader 技能采用 MIT 许可证，Copyright (c) 2026 AI Design 996。文章和配图与技能包分别提供。 [MIT](https://github.com/aidesign996/ai-practice/blob/main/skills/team-leader/LICENSE) · [设计参考](SOURCES.md)
