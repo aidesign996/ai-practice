@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>給 AI 項目配一位負責人，帶領團隊朝正確的方向前進
+</title><link rel="alternate" hreflang="en" href="article-preview.html"><link rel="alternate" hreflang="zh-Hant" href="article-preview.zh-hant.html"><link rel="alternate" hreflang="zh-Hans" href="article-preview.zh.html"><style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#fff;color:#222;font-family:SimSun,'Noto Serif CJK SC',serif}main{max-width:760px;margin:48px auto 90px;padding:0 22px}h1{font-size:30px;line-height:1.5;font-weight:600;margin:0 0 18px}h2{font-size:23px;line-height:1.5;margin:58px 0 20px;scroll-margin-top:24px}h3{font-size:20px;margin:34px 0 16px}p,li{font-size:17px;line-height:1.95}p{margin:18px 0}a{color:#31506e;text-underline-offset:4px;overflow-wrap:anywhere}strong{font-weight:700}blockquote{margin:25px 0;padding:0 0 0 22px;border-left:2px solid #999}code{font-family:Consolas,monospace;font-size:.9em;overflow-wrap:anywhere}img{display:block;width:100%;max-width:640px;height:auto;margin:30px auto 12px}p.figure-caption{font-size:14px;line-height:1.8;color:#555;margin:10px auto 28px;max-width:640px}p.figure-caption em{font-style:normal}nav{font-family:'Microsoft YaHei',sans-serif;font-size:13px;line-height:2.4;border-block:1px solid #ddd;padding:14px 0;margin:26px 0}nav a{display:inline-block;margin-right:18px;color:#555;text-decoration:none}header{font-family:'Microsoft YaHei',sans-serif;font-size:12px;color:#777;letter-spacing:.07em;margin-bottom:20px}li{margin:8px 0}ol{padding-left:24px}main>p:first-of-type{font-family:'Microsoft YaHei',sans-serif;font-size:13px;color:#666}@media(max-width:560px){main{margin-top:26px;padding:0 16px}h1{font-size:26px}h2{font-size:22px;margin-top:42px}p,li{font-size:16px}nav{font-size:13px}img{margin-top:24px}p.figure-caption{font-size:13px}}@media print{main{margin:0;max-width:none}nav{display:none}h2,h3{break-after:avoid}img{break-inside:avoid;max-height:80vh;width:auto;max-width:100%}}h1{font-size:28px;text-wrap:wrap}@media(max-width:560px){h1{font-size:24px}}img[data-figure]{width:auto;height:auto;max-width:min(100%,var(--figure-width));max-height:min(var(--figure-height),calc(100svh - 160px));margin:22px auto 8px}p.figure-caption{font-size:13px;line-height:1.75;margin:8px auto 22px;max-width:600px}html[lang="en"] body{font-family:Georgia,'Times New Roman',serif}html[lang="en"] p,html[lang="en"] li{line-height:1.8}main>p:nth-of-type(2){font:14px/1.8 'Microsoft YaHei',Arial,sans-serif}.feedback-link{display:inline-block;border:1px solid #31506e;border-radius:5px;padding:8px 14px;text-decoration:none;font:14px/1.5 'Microsoft YaHei',Arial,sans-serif}.feedback-end{margin-top:36px;border-top:1px solid #ddd;padding-top:22px}.comments{margin-top:44px;border-top:1px solid #ddd;padding-top:22px;scroll-margin-top:24px;font-family:'Microsoft YaHei',Arial,sans-serif}.comments h2{font-size:22px;margin:0 0 12px}.comments p{font-size:15px;line-height:1.8;margin:10px 0}.comments .comments-notice,.comments details{font-size:13px;line-height:1.7;color:#606a74}.comments .giscus{margin-top:22px;min-height:280px;width:100%}.comments iframe.giscus-frame{width:100%;border:0}.comments details{margin-top:18px}.comments summary{cursor:pointer}.comments-pending{border:1px solid #d3d9df;border-radius:6px;padding:20px;margin-top:22px}@media print{.comments{display:none}}</style></head><body><main><header>AI DESIGN 996 / TEAM LEADER</header><h1>給 AI 項目配一位負責人，帶領團隊朝正確的方向前進</h1>
+<p>AI Design 996 · 項目介紹 · 2026-09-07 · 首次公開發布 0.5.16</p><nav aria-label="文章目錄"><a href="#section-1">反饋迴路</a><a href="#section-2">探索與收斂</a><a href="#section-3">分工與帶隊</a><a href="#section-4">項目記憶</a><a href="#section-5">開始使用</a><a href="#model-fit">Astra 與 Sol</a><a href="#usage-cost">額度與優化</a><a href="#section-6">文件框架</a><a href="#section-7">跨項目協作</a><a href="#section-8">參與反饋</a><a href="#section-9">參考</a></nav>
+<p><a href="article-preview.html" data-language-link>English</a> · 繁體中文 · <a href="article-preview.zh.html" data-language-link>简体中文</a> · <a href="#comments">分享使用場景與建議</a></p>
+<p><strong>Team Leader：通過專業分工、成果檢查與及時糾偏，持續對照使用者的目標推進項目。</strong></p>
+<p>用 AI 做項目，交代任務之後，使用者往往還要記著目標、在不同任務之間傳遞信息、檢查結果，再提醒下一步。項目持續得越久，這些協調工作就越容易佔據注意力。我想把其中能交給 AI 的部分，交給一位職責明確的團隊負責人。</p>
+<p>因此，我設計了 <strong>Team Leader</strong>：一個面向持續項目開發的協作 Skill。這裡的負責人也是 AI 角色，Skill 用一套職責、協作方法與項目模板說明它怎樣帶隊。它依據用戶目標安排產品、技術、開發與驗收等專業工作，檢查實際成果，並在發現偏差後組織修正；已經確認的需求、決定、進度和經驗，則保存在可查找的項目文件中。</p>
+<p><strong>當前主要設計與驗證對象是 GPT-6 Astra。</strong> Sol 已有部分專業崗位的實踐記錄；模型選擇依據與尚未驗證的範圍見<a href="#model-fit">模型適用性</a>。</p>
+<p>用一句日常的話說，就是讓它“帶著團隊幹活，也盯著有沒有朝目標前進”。我希望藉此減少使用者反覆提醒、轉述上下文和協調任務的負擔。</p>
+<p>這套方法主要面向跨多個階段、需要持續迭代的項目，例如從產品方案、技術設計一路做到開發和驗證。職責拆分也會帶來溝通與檢查成本，簡單的一次性任務可以保持簡單。後文會分別介紹設計原理、具體分工、使用方法，以及我希望大家怎樣參與改進。</p>
+<p><strong>使用前也請留意額度投入：</strong> 多崗位推理、負責人檢查和返修可能帶來較大的消耗。我已經在方法中加入分配推理級別、整理上下文和減少重複工作的策略，具體見<a href="#usage-cost">額度消耗與優化</a>。</p>
+<h2 id="section-1">為什麼我從反饋迴路設計負責人</h2>
+<p>隨著上下文變長、方案反覆修改、工作交給不同角色，中間的假設和臨時選擇容易被沿用。內容一直在增加，但最初要解決的問題可能逐漸被放到一邊。我的設計重點，是讓“重新對照目標”成為有人持續負責的工作。</p>
+<p>閱讀 Donella Meadows 的《系統之美》（<em>Thinking in Systems: A Primer</em>）後，書中關於調節反饋的描述給了我啟發：一個調節迴路需要目標、對當前狀態與目標差距的反饋，以及響應差距的行動。[1][2] 我把這個思路用在 AI 團隊協作中，讓每輪工作的結果回到負責人的觀察與判斷，再推動下一輪行動。</p>
+<h3>核心理念：目標、反饋、行動</h3>
+<p>在 Team Leader 中，這三個功能分別落實為：</p>
+<ul>
+<li><strong>目標：</strong> 用戶說明希望交付什麼、解決什麼問題，以及需要遵守的約束。</li>
+<li><strong>反饋：</strong> 負責人查看實際成果和檢查證據，對照目標判斷還差在哪裡。</li>
+<li><strong>行動：</strong> 相關專業崗位依據這些差距，繼續製作、驗證或修正。</li>
+</ul>
+<p>圖中的“項目內容”是當前已經形成的成果，例如方案、代碼與驗證結果。負責人觀察這些成果，與目標比較後，把差距反饋到專業崗位，推動下一輪更新。</p>
+<p><a class="figure-image" href="figure-zh-hant-01.png" title="點擊查看大圖"><img id="figure-1" data-figure="1" style="--figure-width:460px;--figure-height:320px;scroll-margin-top:24px" src="figure-zh-hant-01.png" alt="圖1：專業崗位更新項目成果，成果反饋給負責人；負責人對照用戶目標判斷差距，再反饋到專業崗位。"></a></p>
+<p class="figure-caption"><em>圖1　負責人將實際成果與用戶目標進行比較，再推動專業崗位行動。B 表示調節迴路；矩形表示當前成果，帶閥門的雙線表示執行與修正，細箭頭表示信息關係，雲朵表示未展開的來源。[2][3]</em></p>
+<p>例如，用戶希望某個頁面讓人一眼看懂信息關係。專業角色做出頁面後，負責人需要回到實際畫面與操作，判斷它有沒有達到這個目標。如果信息仍然重複、層級不清楚，就把這些差距交回相關角色修訂，再查看修訂後的結果。</p>
+<p>目標是持續核對的參照。確實需要調整目標或作重要取捨時，負責人應把具體選擇和影響交給用戶，並記錄新的決定。調節反饋能否發揮作用，仍取決於觀察是否準確、反饋是否及時，以及修正能否落實；增加一個負責人角色本身並不能保證項目穩定。[2]</p>
+<p><a id="workflow-comparison"></a></p>
+<h3>對比：為什麼項目可能越做越大</h3>
+<p>平常使用 Agent 時，往往是先交代任務，再根據做出的內容繼續提出修改。如果後續主要沿著已有內容往下擴展，而缺少對原目標的複核，就可能出現這樣的循環：<strong>功能越多，衍生的配套需求與依賴越多；這些需求又被繼續納入任務，推動更多功能增加。</strong></p>
+<p><a class="figure-image" href="figure-zh-hant-02.png" title="點擊查看大圖"><img id="figure-2" data-figure="2" style="--figure-width:640px;--figure-height:430px;scroll-margin-top:24px" src="figure-zh-hant-02.png" alt="圖2：左側，目標最初交給 Agent，已有項目內容直接推動下一輪追加，形成可能的增強迴路；右側，目標持續輸入負責人，負責人對照成果判斷差距，再反饋到專業崗位。"></a></p>
+<p class="figure-caption"><em>圖2　左側只在最初交代目標，已有內容推動更多追加，R 表示這種自我放大的關係。右側把目標持續帶入差距判斷，再組織修正。左圖描述一種可能的範圍膨脹機制，並非所有普通工作流都會如此。[2]</em></p>
+<p>例如，原本只需要一個簡單的記錄頁面，卻逐步加上統計面板、篩選配置，再為它們補充更多設置。如果每項衍生需求都被默認接受，工作會越來越多，卻未必更接近最初要解決的問題。這是一個說明機制的假設例子。</p>
+<p>負責人在這裡需要作出判斷：這項新增是否服務目標，當前真正的差距是什麼，下一步應該補充、刪減，還是修正已有內容。<strong>每一輪工作都要能說明它與目標的關係。</strong> 單個 Agent 也可以進行這樣的檢查；Team Leader 將這件事明確為負責人的持續職責，並把修正交給有關專業崗位。</p>
+<h2 id="section-2">給創造留空間，在關鍵節點收斂</h2>
+<p>項目早期通常需要探索：產品可以怎樣組織，技術有哪幾條路線，界面是否有更好的表達。產品和技術角色應有空間提出不同方案、質疑假設、解釋取捨。</p>
+<p>負責人需要把握不同階段的工作方式：需要探索時，讓專業角色展開候選並說明差異；準備進入實現時，依據目標與約束組織比較，明確採用哪個方向、為什麼採用。涉及重要取捨時交由用戶決定，選定的方向成為後續實現與檢查的依據。</p>
+<p><a class="figure-image" href="figure-zh-hant-03.png" title="點擊查看大圖"><img id="figure-3" data-figure="3" style="--figure-width:480px;--figure-height:330px;scroll-margin-top:24px" src="figure-zh-hant-03.png" alt="圖3：從同一目標探索多個候選，再依據目標與約束選擇方向。"></a></p>
+<p class="figure-caption"><em>圖3　探索與收斂。它說明方案設計的工作方式，與圖1的調節迴路分開表達。</em></p>
+<p>例如，頁面結構尚未確定時，可以先比較不同的信息組織方式；方向確定後，再檢查實現是否兌現了這個選擇。新證據仍可以推動調整，但需要說明調整的依據。</p>
+<p>探索與收斂是這裡的工作方式。增強迴路則需要具體的自我放大因果關係，不能只憑方案變多或箭頭成環來判斷。兩者分開表達，才能看清負責人是在什麼時候鼓勵探索、什麼時候組織選擇。[2]</p>
+<h2 id="section-3">一個負責人，五類專業職責</h2>
+<p>產品方案、技術設計、開發和驗證各自需要處理大量信息。我借鑑團隊中的專業分工，為這些工作保留持續負責的角色，由負責人協調它們之間的目標、依賴和交付。模型能力提高之後，這種分工是否仍然值得採用，取決於項目複雜度和協作成本，需要在實際使用中判斷。</p>
+<p><a class="figure-image" href="figure-zh-hant-04.png" title="點擊查看大圖"><img id="figure-4" data-figure="4" style="--figure-width:360px;--figure-height:520px;scroll-margin-top:24px" src="figure-zh-hant-04.png" alt="圖4：角色0團隊負責人協調角色1環境搭建、角色2產品方案設計、角色3技術方案設計、角色4產品開發和角色5獨立AI驗收。"></a></p>
+<p class="figure-caption"><em>圖4　默認六類職責，包括負責人。各崗位按實際任務啟用；圖中的職責關係不表示所有崗位一直同時運行。</em></p>
+<p>圖中的編號是<strong>職責標識，不是執行順序</strong>。對應關係是：</p>
+<ul>
+<li><strong>角色0｜團隊負責人：</strong> 維護整體目標，安排分工與依賴，查看成果與驗收證據，推動糾偏和交付。</li>
+<li><strong>角色1｜環境搭建：</strong> 準備工具、依賴和運行環境，讓項目能夠正常運行和驗證。</li>
+<li><strong>角色2｜產品方案設計：</strong> 明確用戶需求、業務流程和界面體驗，說明要做什麼、怎樣用。</li>
+<li><strong>角色3｜技術方案設計：</strong> 明確實現路線、架構、數據與接口，說明怎樣做。</li>
+<li><strong>角色4｜產品開發：</strong> 完成實現、自檢與修復。</li>
+<li><strong>角色5｜獨立 AI 驗收：</strong> 檢查自己未主要實現的成果，判斷是否符合約定。</li>
+</ul>
+<p>每個角色都有提出更好方案和異議的空間。用戶保留目標、重要取捨和最終體驗驗收；獨立 AI 驗收為這些判斷提供證據。</p>
+<h3>一次頁面改版，負責人怎樣帶隊</h3>
+<p>下面是一個說明工作方式的假設場景：用戶希望頁面的主要任務更容易找到，同時保留原有業務規則。</p>
+<ol>
+<li><strong>把目標轉成可檢查的要求。</strong> 負責人記錄主要任務入口、信息層級和不能改動的業務規則；產品崗位據此形成方案。</li>
+<li><strong>安排有關崗位完成工作。</strong> 技術崗位核對實現影響，開發崗位落實方案；環境問題影響運行時，由環境搭建崗位處理。</li>
+<li><strong>查看實際結果，判斷差距。</strong> 獨立 AI 驗收檢查約定的行為，負責人結合頁面與證據判斷目標是否達到。若仍有重複入口或層級問題，就交回相關崗位修正。</li>
+<li><strong>修後複查，留下接續點。</strong> 查看最終修改是否解決原問題，記錄採用的決定、尚未解決的事項和下一步。</li>
+</ol>
+<p>這體現了我所說的“盯著幹活”：負責人要關心實際產出和它與目標的差距。能夠在現有授權內處理的工作繼續推進；確實需要用戶判斷時，帶回具體問題、推薦和影響，減少使用者在多個角色之間逐一追問。</p>
+<h2 id="section-4">讓目標、決定和經驗能接著用</h2>
+<p>負責人需要持續對照目標，就必須能找回已經確認的目標與決定。因此，我把項目知識的保存和讀取也納入了這套方法：需求為什麼這樣定，方案為什麼這樣選，上一輪做到哪裡，哪些問題還沒有解決，都應有可查找的位置。</p>
+<p>用戶反饋裡既可能有明確需求，也可能有局部偏好或可複用的經驗。負責人結合上下文核對來源、原因與適用範圍，再放入相應記錄。下一次相關工作開始時，先讀取有效決定，完成後再用實際結果修訂。</p>
+<p><a class="figure-image" href="figure-zh-hant-05.png" title="點擊查看大圖"><img id="figure-5" data-figure="5" style="--figure-width:350px;--figure-height:420px;scroll-margin-top:24px" src="figure-zh-hant-05.png" alt="圖5：用戶需求與反饋經過核對進入項目知識，後續任務主動讀取，應用結果再修訂記錄。"></a></p>
+<p class="figure-caption"><em>圖5　項目知識的沉澱與複用。記錄保存下來之後，還需要在下一次相關工作中主動讀取和應用。</em></p>
+<p>例如，“這個項目的進度卡需要就近顯示計數”可以成為項目內有效的體驗決定；它不會自動變成所有項目都採用同一種佈局的要求。後來的反饋如果改變了這個決定，也應保留變更原因，並明確哪一條現在有效。</p>
+<p>這套“記憶”主要依靠可檢索的項目記錄。需求和方案有自己的文檔，進度有當前入口，經驗從 <code>docs/METHODOLOGY.md</code> 查找。記錄的價值，要通過後續任務實際讀取、應用和修訂來體現；保存文件本身不保證自動記住，也不等於重新訓練模型。</p>
+<h2 id="section-5">安裝以後，像和負責人說話一樣使用</h2>
+<p><strong>我的日常用法很簡單：先讓它接手，再把想法交代給它。</strong> 在已經安裝並能識別這個 Skill 的工具中，打開項目對話，選擇 Team Leader，或在消息裡寫上 <code>$team-leader</code>。項目已經有資料時，讓它先了解現狀；新項目則先說你想做什麼。</p>
+<h3>第一句話：這個項目由你負責</h3>
+<p>我在幾個實際項目中，開場說的就是“我想讓你來接手這個項目”，或“你先了解下這個項目情況，然後說說你的看法”。下面是一種可以直接使用的說法：</p>
+<blockquote>
+<p>$team-leader 接下來這個項目由你負責。你先了解一下項目現在的情況，再跟我說說你的看法和下一步怎麼安排。</p>
+</blockquote>
+<p>如果希望採用團隊模式，可以再補一句：“請為這個項目建立完整團隊，由你負責協調。”在 0.5.16 中，決定採用團隊模式且有創建授權後，一次補齊六類崗位，之後每輪只調動需要的崗位；已有團隊則複用原來的角色和分工。實際創建仍需所用工具支持，簡單的一次性任務可以保持單人。</p>
+<p>這不是必須逐字照抄的口令。你不需要先準備完整的產品文檔，也不用自己寫出每個崗位的任務書；先說清想做的事，細節可以在溝通中逐步補充。例如：“我想做一個分享 AI 實踐的網站，中英文都能看，也方便讀者反饋。你來負責跟進，先幫我把這個想法理清楚。”</p>
+<p><a id="initial-setup"></a></p>
+<h3>首次使用與項目接手</h3>
+<p>首次使用不需要另填一個“初始化版本”。你主要做好安裝、確認項目位置和運行偏好，版本核對與資料接續由負責人處理。</p>
+<p><strong>先放好完整技能包。</strong> 拿到發佈包後，保留整個 <code>team-leader</code> 文件夾及內部相對路徑。希望在多個項目中使用，就放到個人技能目錄 <code>~/.agents/skills/team-leader/</code>；只供某個項目使用，則放到該項目的 <code>.agents/skills/team-leader/</code>。這兩種位置對應 Codex 的個人技能與項目技能範圍。[6]</p>
+<p>在 Windows 上，個人安裝後應能找到 <code>%USERPROFILE%\.agents\skills\team-leader\SKILL.md</code>，其中 <code>%USERPROFILE%</code> 表示你的用戶目錄。不要多套一層同名文件夾，也不要只複製 <code>SKILL.md</code>；首發 0.5.16 包含 21 個 Skill 文件和 1 個 MIT 許可證，共 22 個文件。安裝後在項目的新對話中選擇或點名 <code>$team-leader</code>，先確認它能讀取技能，再用前面的接手語句開始。</p>
+<p><a href="https://github.com/aidesign996/ai-practice/releases/download/team-leader-v0.5.16/team-leader-0.5.16.zip">下載 Team Leader 0.5.16</a> · <a href="https://github.com/aidesign996/ai-practice/releases/tag/team-leader-v0.5.16">安裝說明、校驗文件與版本記錄</a></p>
+<p>接手時，把下面三件事對齊即可：</p>
+<ul>
+<li><strong>選定項目。</strong> 在要工作的項目文件夾中開始對話，把現有資料或已有目標指給它；新項目就說明想做什麼。負責人先核對實際目錄、已有成果和有效約定，再整理需要的入口，避免重複建立已有文件或團隊。</li>
+<li><strong>選定負責人的模型與推理級別。</strong> 如果希望採用本文主要實踐的配置，可以在所用工具中選擇 Astra，並以 <code>xhigh</code> 作為負責人起點。安裝 Skill 本身不會替你切換模型或檔位。專業崗位需要自動分配投入時，再把允許使用的模型、檔位和預算範圍交代給負責人；具體策略見<a href="#usage-cost">額度與優化</a>。</li>
+<li><strong>讓負責人核對版本。</strong> 負責人讀取實際安裝版本，再核對這個項目已採用的版本，將本次實際接續情況記在項目總覽。你不需要手改版本號，也不需要提前手工搭好整套文檔框架；負責人會複用已有資料、補齊必要入口。</li>
+</ul>
+<p>這裡的“安裝版本”指工具讀取的技能包，“項目採用版本”指已經落實到這個項目的規則、資料入口和相關崗位。兩者可能暫時不同；是否接續完成，要看實際變化是否已經生效。</p>
+<p>以後安裝了更新包，也可以直接說：“請把這個項目接續到當前安裝的 Team Leader 版本，保留已有成果、分工和未完成工作，完成後繼續原目標。”負責人核對變化、處理受影響的部分，再接著推進工作。這些信息在首次接手或發生變化時對齊，不需要每輪重新設置。</p>
+<h3>後面就像平常交代工作一樣</h3>
+<p>在同一個項目對話裡，繼續對這位負責人說話即可，不必每輪重寫整套協作方法。下面這些都是圍繞實際使用方式整理的例句：</p>
+<ul>
+<li><strong>說想法：</strong> “我希望這個頁面更容易看懂。先給我幾個方案，我選一個後再細化。”</li>
+<li><strong>看進展：</strong> “現在做到哪裡了？接下來準備怎麼安排？”</li>
+<li><strong>給反饋：</strong> “這張圖太大了，信息很分散。我希望一眼能看完，文字也要清楚。”</li>
+<li><strong>繼續推進：</strong> “這個方向可以，按剛才確定的方案繼續完成。”</li>
+</ul>
+<p>你的主要工作是說目標、提出偏好、反饋實際感受，並決定重要取捨。負責人負責把這些話落實到需求、分工、成果檢查和修正中，減少你在產品、技術、開發等崗位之間反覆轉述。只想討論時可以直接說“先討論，暫時不要改”；決定推進時，再明確讓它繼續做。</p>
+<h3>負責人接下來會做什麼</h3>
+<p>接手後，它先理解你要交付什麼、現在已經做到哪裡，再整理有效資料的入口、接續或安排相關職責，推進工作與檢查，並留下下一輪可以繼續的位置。圖中的這些工作是負責人需要組織的內容，你可以從上面的一句日常交代開始。</p>
+<p><a class="figure-image" href="figure-zh-hant-06.png" title="點擊查看大圖"><img id="figure-6" data-figure="6" style="--figure-width:390px;--figure-height:520px;scroll-margin-top:24px" src="figure-zh-hant-06.png" alt="圖6：理解現狀、建立知識入口、安排角色、推進交付、檢查修正、留下接續點。"></a></p>
+<p class="figure-caption"><em>圖6　接入方法後需要形成的主要結果。實際順序按依賴安排；已有項目優先複用成果、記錄和角色。</em></p>
+<p>使用時，可以觀察負責人是否接上原目標、是否把偏差變成了修正行動，以及下一輪是否還需要你重複解釋已經確認的內容。如果它只回覆了計劃卻沒有繼續，或者仍讓你反覆提醒，這同樣是有價值的使用反饋。</p>
+<p><a id="model-fit"></a></p>
+<h3>主要面向 Astra：換成 Sol 需要注意什麼</h3>
+<p>Team Leader 面向需要處理長任務、多工具和專業協作的模型，目前主要圍繞 <strong>GPT-6 Astra</strong> 設計和驗證。我希望把目標、約束和驗收依據交代清楚，再給負責人組織判斷的空間，讓專業崗位自行選擇合適的方法並完成迭代。這是這套 Skill 的設計取向。</p>
+<p><strong>官方說明中的差異。</strong> OpenAI 指出 Astra 在長任務中比 Sol 更能保持連貫，同時也更容易澄清問題、更敏感地遵循 Skill 指令；委派可能偏少，檢查可能超出任務所需，因此應明確自主推進、分工和驗證的要求。[4]</p>
+<p>所以，我想減少的是不必要的流程束縛：把過時的局部要求當成永久規則、讓每個小步驟都等待確認，或為簡單修改套上完整流程。有效的目標、權限和質量要求仍需要保留。“給模型更多專業空間”是我們的組織方式，不能概括成“Astra 本身受到的限制更少”。</p>
+<p><strong>Sol 已有部分崗位的實際使用記錄。</strong> 官方將 GPT-5.6 Sol 定位為面向複雜專業工作的模型，並列出工具調用和 Skills 支持。[5] 技能維護負責人也提供了兩項實踐，我與相應項目記錄作了核對：</p>
+<ul>
+<li>一項界面原型任務使用 0.5.11。Sol/high 產品崗位梳理關係視圖的含義，Astra/high 開發崗位據此實現，另一個 Astra/high 崗位在瀏覽器檢查交互和窄屏表現。這次交付只覆蓋該原型。</li>
+<li>一項圖稿修訂使用 0.5.14。Sol/high 產品崗位接續用戶標註，交付三處修訂，再由負責人和獨立驗收核查。圖片來自單獨的生成工具，不能把成圖質量全部歸於 Sol。</li>
+</ul>
+<p>這些記錄支持 Sol 曾在混合團隊中承擔具體職責。目前沒有全 Astra 團隊與全 Sol 團隊在同一任務、輸入、質量標準和投入條件下的對照，不能斷言 Sol 一定效果差，也不能承諾兩者表現相同。</p>
+<p><strong>實踐給我的提醒，是把判斷落實到成果。</strong> 維護方還追查過一次視覺交付偏差：Astra/xhigh 的負責人和實施者都看過原圖，整體差異仍由用戶指出。因此，我更重視把完整問題交給專業崗位、讓負責人親看修後的實際成果，再由獨立驗收核對目標。這個方法判斷有具體事件支持，但還沒有模型間的效果對照；高檔位本身不能代替實際把關。</p>
+<p>如果希望儘量貼近本文的設計與已核對經驗，建議優先使用 Astra。若使用 Sol，可以從範圍可控的任務開始，觀察它能否持續接續目標、落實專業分工、依據證據糾偏，以及最終質量、返工和總消耗。反饋時附上模型名稱、推理級別和具體場景，會比單純評價“哪個更聰明”更有助於改進。Skill 的效果還取決於所用工具提供的能力、上下文和任務難度。</p>
+<p><a id="usage-cost"></a></p>
+<h3>額度消耗與優化：給判斷留餘度，減少重複投入</h3>
+<p>Team Leader 會增加負責人協調、專業崗位執行、獨立檢查以及必要返修等工作。相比一次簡單的單 Agent 請求，這種方式可能消耗更多額度，也可能需要更長時間。是否值得，要結合最終成果和包括返工在內的總投入判斷。目前還沒有同條件的整體消耗對照，不能給出固定節省比例。</p>
+<p><strong>負責人和專業崗位採用不同的推理投入。</strong> 目前這套自動分配方案主要面向 Astra，並在使用者已經同意的模型、推理級別與預算範圍內執行。負責人通常以 <code>xhigh</code> 作為默認起點，為全局判斷、依賴協調與糾偏保留餘度；專業崗位則由負責人按具體任務的複雜度和出錯影響安排：</p>
+<ul>
+<li>輸入明確的清單整理、成熟檢查或小改動，通常從 <code>medium</code> 開始。</li>
+<li>實質性的產品或技術設計、一般開發、獨立驗收判斷，按複雜度採用 <code>high</code>。</li>
+<li>困難設計、跨系統約束、複雜排錯或證據衝突，可以直接採用 <code>xhigh</code>，不必先用較低檔失敗一次。</li>
+</ul>
+<p>特定難題確實值得追加投入時，可在授權與工具支持範圍內考慮更高檔位，例如 <code>max</code>；不默認讓所有崗位使用最高檔。使用者明確選擇的模型與推理級別優先。這些是任務分配策略，實際設置需由所用工具支持並核實；不能把一段文字指令當成已經改變了運行設置，也不意味著負責人能自行修改當前正在運行這一輪的級別。</p>
+<p><strong>專業崗位開工前，先判斷哪些上下文真正需要攜帶。</strong> 派工時優先傳遞當前目標、有效約束、本輪變化和必要證據，其餘歷史保留可追溯入口。階段結束、交接、方向變化，或舊信息已經干擾判斷時，由負責人組織一份精簡的有效狀態說明，保留已完成成果、未完成工作、當前分工、重要經驗和下一步，圖片等關鍵原件仍可直接查看。</p>
+<p>這裡採用的是有條件的整理與壓縮，不是每次開工都清空歷史或重建任務。只有工具確實提供合適的上下文壓縮能力時，才在不打斷在途工作的邊界使用，並檢查目標和約束是否接續。寫了摘要本身並不會縮短活動會話；壓縮、重新讀取也有成本，不能預設一定更省。</p>
+<p>目前尚未驗證負責人能自動壓縮各崗位會話；已確認的優化重點是整理有效信息、複用記錄與減少重複輸入。</p>
+<p><strong>減少重複工作，並在擴大投入前看額度。</strong> 複用仍有效的調查和檢查結果，篩選必要的工具輸出，避免負責人重複執行開發自檢和獨立驗收的全部工作，也避免反覆詢問沒有變化的狀態。新任務或投入明顯擴大前，在工具支持時檢查共享賬戶的剩餘額度；明顯不足時說明現狀和可選安排。既有授權內的工作正常推進，不把成本意識變成每一步都等用戶確認。</p>
+<p>這些分配與上下文管理規則已寫入核對過的 0.5.13 協議，並在首發 0.5.16 源碼中保留。規則存在、運行設置實際生效、最終節省多少，是需要分別核實的三件事。我會保留足夠的判斷和驗證投入，也歡迎大家反饋哪些環節消耗較大、產生了什麼價值，以及哪裡可以減少重複。</p>
+<h2 id="section-6">文件框架：每類信息有可找到的位置</h2>
+<p>文件框架服務於團隊接續工作。新項目可以從隨包模板開始，已有項目則複用有效資料，補齊缺少的入口。不同職責找到自己的依據後，才能圍繞同一組目標與決定協作。</p>
+<p><a class="figure-image" href="figure-zh-hant-07.png" title="點擊查看大圖"><img id="figure-7" data-figure="7" style="--figure-width:640px;--figure-height:430px;scroll-margin-top:24px" src="figure-zh-hant-07.png" alt="圖7：項目默認文件框架及每類文檔的用途。"></a></p>
+<p class="figure-caption"><em>圖7　當前模板提供的項目知識框架。文件結構示意不代表文檔已經填完，也不代表項目已經完成。</em></p>
+<p>可以按日常工作中的問題來理解這些文件：</p>
+<ul>
+<li><strong>項目是什麼、接下來做什麼：</strong> <code>README.md</code> 提供總覽；<code>PROGRESS.md</code> 記錄當前進度與下一步；<code>BLOCKED.md</code> 記錄尚未解決的阻塞。</li>
+<li><strong>怎樣協作、由誰負責：</strong> <code>AGENTS.md</code> 說明項目約定與讀取路線；<code>docs/TEAM.md</code> 與 <code>roles/</code> 保存分工和角色相關資料。</li>
+<li><strong>做什麼、怎樣做、怎樣算完成：</strong> 分別從 <code>docs/PRODUCT.md</code>、<code>docs/TECHNICAL.md</code>、<code>docs/ACCEPTANCE.md</code> 查找產品、技術和驗收約定。</li>
+<li><strong>為什麼作這個決定、驗證到了什麼：</strong> <code>reports/</code> 保留過程與檢查依據，<code>docs/METHODOLOGY.md</code> 提供經驗的讀取入口。</li>
+</ul>
+<p>這些是項目工作資料。Skill 的安裝包則包含 <code>SKILL.md</code>、方法參考和模板，應保留完整包及相對路徑；其中的 <code>agents/openai.yaml</code> 是界面配置，與項目的 <code>AGENTS.md</code> 用途不同。</p>
+<p><a id="version-history"></a></p>
+<h3>後續迭代：給持續修改的成果保留版本</h3>
+<p>在 <strong>0.5.15</strong> 中，我補充了成果版本管理的規則：負責人在接手項目或工作發生實質變化時，判斷代碼、腳本、持續修訂的文檔和設計稿是否留有可比較、可恢復的版本。已有有效機制就繼續使用；確實需要卻缺失時，在授權內組織補齊，並核實重要文件已經進入實際版本記錄。這樣，後續修改才有可對照、可取回的依據。普通一次性任務不強制使用 Git。</p>
+<p>這項增量已通過結構檢查、獨立文本審閱和本機安裝一致性核對。<strong>僅靠技能更新，能否讓負責人在真實項目中自主發現並糾正這類遺漏，仍待驗證。</strong> 本地版本管理也不等於已經公開到 GitHub，或已經做好異地備份與線上回滾。</p>
+<h3>0.5.16：完整建隊，按需調動</h3>
+<p>首發版進一步區分“是否需要團隊”和“本輪需要哪些崗位”：採用團隊模式並具備授權後，一次補齊完整六崗架構，複用已有角色，之後按任務調動有關崗位。工作範圍變化時，負責人也需要重新判斷當前安排是否足夠。小任務仍可單人完成，用戶限制和實際工具能力優先。</p>
+<p>公開包已通過技能基礎結構、相對引用、22 文件的壓縮包與乾淨目錄解壓一致性檢查；另有四個合成情境的獨立規則審閱。這些檢查不等於新賬號完整實時團隊或長期效果驗證。</p>
+<h2 id="section-7">進一步的方向：負責人之間怎樣協作</h2>
+<p>當多個項目有關聯時，我希望把這種協作進一步延伸到負責人之間：一個負責人提出需要什麼資料、解決什麼問題，另一位負責人結合自己的項目作出回應，各自繼續維護本項目的團隊、成果和知識。</p>
+<p><a class="figure-image" href="figure-zh-hant-08.png" title="點擊查看大圖"><img id="figure-8" data-figure="8" style="--figure-width:520px;--figure-height:360px;scroll-margin-top:24px" src="figure-zh-hant-08.png" alt="圖8：多個項目負責人在授權範圍內交換請求與回執，各自維護自己的團隊和文檔。"></a></p>
+<p class="figure-caption"><em>圖8　跨項目協作的擴展方向。虛線表示溝通關係，不表示已經提供常駐自動調度服務。</em></p>
+<p>本次分享準備中，分享負責人向技能維護負責人和實際使用過的項目負責人收集資料，就是一次有具體範圍的跨項目溝通。目前它依賴宿主可用的通信工具和實際授權；未來可以進一步完善請求、回執、依賴與反饋的組織方式。</p>
+<p>這些交流應傳遞完成當前任務所需的信息。某個項目中的業務內容、局部偏好或修改權限，不會因為負責人之間可以溝通就自動變成其他項目的共同規則。</p>
+<h2 id="section-8">歡迎把真實工作中的問題帶回來</h2>
+<p>本文設計說明從已核對的 <strong>0.5.13</strong> 整理而來；首次公開包為 <strong>0.5.16</strong>，包含 21 個 Skill 文件及 1 個 MIT 許可證，後續增量在相應段落單獨說明。主要設計與驗證對象為 GPT-6 Astra，已有實踐主要來自 Windows 上的 Codex 桌面應用。Sol 已有混合團隊中的部分崗位實踐，尚無全 Sol 團隊的同條件效果對照；其他系統或 Agent 平臺也尚未完成同等範圍的兼容驗證。上述安裝路徑已與本機實踐和官方說明核對，但尚未完成乾淨機器或新賬號從安裝到完整團隊交付的全流程驗證。</p>
+<p><strong>Team Leader 0.5.16 以 MIT 許可證公開，歡迎試用。</strong> <a href="https://github.com/aidesign996/ai-practice/releases/tag/team-leader-v0.5.16">版本頁面</a>提供完整安裝包、說明與文件校驗清單。可以先從目標清楚、範圍可控的小項目試用，再判斷它是否適合更複雜的工作。</p>
+<p><strong>歡迎試用後帶著真實工作中的問題來交流，也歡迎現在就討論設計與適用場景。</strong> 我會結合大家的反饋繼續優化這套 Skill。網頁文章下方就是評論區，用英文、繁體中文或簡體中文直接寫就好，不用分欄填寫，也不用先分析技術原因。</p>
+<p>可以聊聊當時想做什麼、實際發生了什麼、怎樣會更好；知道多少就寫多少，有用的體驗同樣歡迎分享。後續的整理、場景核對和改進分析，由我和技能維護負責人跟進。</p>
+<p>例如：“我讓負責人繼續修改頁面，它只回覆了計劃，沒有繼續做。我還得追問一次。希望它能在已有授權內繼續完成；確實需要我決定時，再說明具體卡在哪裡。”這是反饋表達的示例，無需整理成技術報告。</p>
+<p><a href="#comments">到文章下方看留言、分享你的使用場景</a></p>
+<p>你可以在文章下方查看留言、發表評論和回覆，三種語言共用同一個討論區。首次留言需要登錄 GitHub 並授權評論組件 giscus，之後可以在文章內繼續交流。點擊發布後，留言會公開保存到分享倉庫的 GitHub Discussions，其他人也能閱讀和補充經歷。版本、使用工具和已去除私人信息的截圖有助於理解，但可以在需要時再補充。</p>
+<p>我會先理解場景與原目標，再判斷是當前項目的局部需要，還是值得納入 Skill 的通用改進。確定調整後，回到原場景檢查，並說明改了什麼、驗證到哪裡、還有哪些限制。你可以在同一條反饋中繼續補充結果；暫時沒有解決的問題也應保留，供後續跟進。</p>
+<p>我也在改進驗證方法：如果要判斷新版是否讓負責人更主動，後續會在完成修訂、必要檢查與安裝後，讓負責人讀取新版，不預先點明待觀察的具體遺漏，再觀察它是否自行發現適用的問題、組織修正並檢查結果。“明確指出問題後完成修復”和“自主發現並糾偏”會分別評價。這是後續維護的驗證方法；本輪版本管理增量的後一項效果尚未驗證。</p>
+<p>我最希望從這些反饋中瞭解的是：負責人在哪些時候幫你接住了工作，又在哪些時候仍需要你反覆提醒。讓它更好地帶領團隊圍繞目標推進，是我會持續實踐和改進的方向。</p>
+<h2 id="section-9">參考與圖示說明</h2>
+<ol>
+<li>Donella H. Meadows，<em>Thinking in Systems: A Primer</em>，Diana Wright 編輯，2008。<a href="https://chelseagreen.co.uk/book/thinking-in-systems/">出版社介紹</a>。</li>
+<li>Donella Meadows，<a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">Leverage Points: Places to Intervene in a System</a>，其中關於增強反饋、調節反饋、目標、監測與響應機制的論述。</li>
+<li>原書第36頁圖15的圖示形式參考：<a href="https://www.gc.soton.ac.uk/files/2015/01/Thinking-in-Systems35-72.pdf">英文節選，第35—72頁</a>。</li>
+<li>OpenAI，<a href="https://developers.openai.com/api/docs/guides/latest-model">GPT-6 Astra 使用與提示指南</a>，尤其長任務連貫性、指令敏感性、委派和驗證的說明，核對日期：2026-09-07。</li>
+<li>OpenAI，<a href="https://developers.openai.com/api/docs/models/gpt-5.6-sol">GPT-5.6 Sol 模型說明</a>，核對日期：2026-09-07。模型能力說明與本 Skill 的兼容驗證是不同依據。</li>
+<li>OpenAI，<a href="https://learn.chatgpt.com/zh-Hans/docs/customization/overview#%E6%8A%80%E8%83%BD">Codex 自定義：技能</a>，個人與項目技能目錄、技能組成及調用方式，核對日期：2026-09-07。</li>
+</ol>
+<p>本文八張配圖為結合 Team Leader 內容設計的概念示意，經 imagegen 製作或優化，並核對文字與關係。圖1和圖2借用原書的存量、流量與信息反饋符號，解釋用戶目標、負責人判斷和專業崗位行動之間的關係；流線概括內容的追加或更新，未建立可計算的存量與變化速率模型。其餘圖解釋本項目的設計。配圖是本文示意，不是原書原圖、運行截圖或效果證據。主體文件與行為說明以已核對的 0.5.13 源包為依據，後續增量及其驗證範圍另行標明，英文、繁體中文與簡體中文版本表達同一內容。</p>
+<section class="comments" id="comments" aria-label="留言與反饋"><h2>留言與反饋</h2><p>工作中遇到了什麼？怎樣會更好？直接說就好，我會和技能維護負責人整理與跟進。</p><p class="comments-notice">留言公開可見，三種語言共用這裡的討論。留言和回覆需要 GitHub 登入，首次使用需授權 giscus。</p><div class="giscus"></div><script src="https://giscus.app/client.js" data-repo="aidesign996/ai-practice" data-repo-id="R_kgDOUQQ8DA" data-category="Announcements" data-category-id="DIC_kwDOUQQ8DM4DFDos" data-mapping="specific" data-term="Team Leader" data-strict="1" data-reactions-enabled="0" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="zh-TW" data-loading="lazy" crossorigin="anonymous" async></script><noscript><p>啟用 JavaScript 後，可以直接在這裡查看和發表留言。</p></noscript><details><summary>留言沒有顯示？</summary><p><a href="https://github.com/aidesign996/ai-practice/discussions" target="_blank" rel="noopener noreferrer">到 GitHub 查看討論 ↗</a></p></details></section></main><script>for(const link of document.querySelectorAll('[data-language-link]')){link.addEventListener('click',()=>{link.hash=location.hash;});}</script></body></html>
