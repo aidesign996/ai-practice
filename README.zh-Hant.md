@@ -10,11 +10,11 @@
 
 可以下載安裝，在自己的項目中直接調用。
 
-### [Team Leader · 0.5.16](https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md)
+### [Team Leader · 0.5.17](https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md)
 
 給 AI 項目配一位負責人，協調專業崗位，持續對照用戶目標檢查實際成果，並組織必要修正。
 
-[下載 Skill](https://github.com/aidesign996/team-leader/releases/download/team-leader-v0.5.16/team-leader-0.5.16.zip) · [安裝與版本說明](https://github.com/aidesign996/team-leader/releases/tag/team-leader-v0.5.16) · [查看源碼](https://github.com/aidesign996/team-leader/tree/main/team-leader)
+[下載 Skill](https://github.com/aidesign996/team-leader/releases/download/team-leader-v0.5.17/team-leader-0.5.17.zip) · [安裝與版本說明](https://github.com/aidesign996/team-leader/releases/tag/team-leader-v0.5.17) · [查看源碼](https://github.com/aidesign996/team-leader/tree/main/team-leader)
 
 ## 實踐記錄
 
