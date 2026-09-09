@@ -10,11 +10,11 @@
 
 可以下载安装，在自己的项目中直接调用。
 
-### [Team Leader · 0.5.17](https://github.com/aidesign996/team-leader/blob/main/README.zh-CN.md)
+### [Team Leader · 0.5.18](https://github.com/aidesign996/team-leader/blob/main/README.zh-CN.md)
 
 给 AI 项目配一位负责人，协调专业岗位，持续对照用户目标检查实际成果，并组织必要修正。
 
-[下载 Skill](https://github.com/aidesign996/team-leader/releases/download/team-leader-v0.5.17/team-leader-0.5.17.zip) · [安装与版本说明](https://github.com/aidesign996/team-leader/releases/tag/team-leader-v0.5.17) · [查看源码](https://github.com/aidesign996/team-leader/tree/main/team-leader)
+[下载 Skill](https://github.com/aidesign996/team-leader/releases/latest) · [安装与版本说明](https://github.com/aidesign996/team-leader/releases/latest) · [查看源码](https://github.com/aidesign996/team-leader/tree/main/team-leader)
 
 ## 实践记录
 
@@ -34,17 +34,9 @@
 
 希望采用团队模式时，可以再让负责人建立完整团队并负责协调。实际创建取决于工具支持与用户授权；已有团队会复用原岗位，简单的一次性任务可以保持单人。
 
-### 安装和开始使用
+### 安装、更新与版本记录
 
-1. 下载 ZIP 并解压，保留完整 team-leader 文件夹，包括方法参考和模板。
-2. 个人使用放到 `~/.agents/skills/`；只供某个项目使用则放到该项目的 `.agents/skills/`。Windows 个人安装后应能找到 `%USERPROFILE%\.agents\skills\team-leader\SKILL.md`。完整包共 22 个文件，含 MIT 许可证，不要只复制 SKILL.md。
-3. 在 Codex 项目新对话中选择或点名 `$team-leader`，确认能够读取，然后说上面的接手语句。未发现技能时重启 Codex。升级前将旧安装及自定义修改备份到技能目录之外，再替换完整文件夹；保留现有项目资料和目标。
-
-### 适用范围与当前边界
-
-主要面向 Codex 中的 Astra。Sol 已有部分专业岗位实践，但尚未证实全 Sol 团队具有同等效果。团队工作可能消耗较多额度；负责人通常以 XHigh 为起点，尊重用户设置，在工具支持时按任务分配专业岗位投入并管理上下文。
-
-0.5.16 在决定采用团队模式且有授权后一次补齐六类职责，工作时按需调动。已检查包内文件完整性、干净目录解压和基础技能结构；新 Codex 配置中的完整首次运行、跨平台、长期纠偏与额度节省尚未系统验证。
+从[最新正式发行](https://github.com/aidesign996/team-leader/releases/latest)获取完整包，按[当前安装与更新说明](https://github.com/aidesign996/team-leader/blob/main/README.zh-CN.md#start)操作。发布新版不会自动更新已安装的 Skill；保留项目资料与自定义修改，核对本地版本，再让原负责人接续适用变化。[查看更新记录](https://github.com/aidesign996/team-leader/blob/main/CHANGELOG.md)。
 
 ## 你的使用反馈，会帮助我改进下一版。
 

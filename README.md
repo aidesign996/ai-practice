@@ -10,11 +10,11 @@ I share reusable AI skills and the thinking behind my work. Pick a skill to use,
 
 Installable skills you can use in your own projects.
 
-### [Team Leader · 0.5.17](https://github.com/aidesign996/team-leader)
+### [Team Leader · 0.5.18](https://github.com/aidesign996/team-leader)
 
 Give your AI project a team lead. It coordinates specialist roles, compares results with your goal, and follows through on corrections.
 
-[Download Skill](https://github.com/aidesign996/team-leader/releases/download/team-leader-v0.5.17/team-leader-0.5.17.zip) · [Installation & release notes](https://github.com/aidesign996/team-leader/releases/tag/team-leader-v0.5.17) · [View source](https://github.com/aidesign996/team-leader/tree/main/team-leader)
+[Download Skill](https://github.com/aidesign996/team-leader/releases/latest) · [Installation & release notes](https://github.com/aidesign996/team-leader/releases/latest) · [View source](https://github.com/aidesign996/team-leader/tree/main/team-leader)
 
 ## Practice & notes
 
@@ -34,17 +34,9 @@ The lead should read the available project context, recover agreed goals and unf
 
 If you want team mode, ask the lead to establish the complete team and coordinate it. Creation requires the host's tools and your authorization. Existing teams are reused; simple one-off tasks can remain solo.
 
-### Install and start
+### Install, update, and check changes
 
-1. Download the ZIP and extract it. Keep the complete team-leader folder, including its references and templates.
-2. Place it in `~/.agents/skills/` for personal use, or `.agents/skills/` within one project. On Windows, a personal installation should contain `%USERPROFILE%\.agents\skills\team-leader\SKILL.md`. The package contains 22 files including the MIT license; do not copy only SKILL.md.
-3. In a new Codex project conversation, select or name `$team-leader`, confirm it is readable, and use the sentence above. If the skill is not discovered, restart Codex. Back up an existing installation and local changes outside the skills directory before replacing the whole folder; preserve project records and goals.
-
-### Fit and current limits
-
-Primarily designed for Astra in Codex. Some specialist work has used Sol, but equivalent all-Sol results have not been established. Team work can consume substantial usage allowance. The lead normally starts at XHigh and allocates specialist effort to the task within your preferences and available tools. Context management and reasoning settings depend on the host.
-
-0.5.16 completes the six responsibilities when team mode is chosen and authorized, then activates the roles needed. Package integrity, clean-directory extraction and basic skill structure were checked. A complete first run in a new Codex profile, cross-platform behavior, long-term correction and usage savings have not been validated systematically.
+Use the [latest formal release](https://github.com/aidesign996/team-leader/releases/latest) and the [current installation and update guide](https://github.com/aidesign996/team-leader#start). A new release does not automatically update an installed Skill. Preserve project records and custom changes, verify the installed version, then let the existing lead adopt relevant changes. [Change history](https://github.com/aidesign996/team-leader/blob/main/CHANGELOG.md).
 
 ## Your experience helps shape the next version.
 
