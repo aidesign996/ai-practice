@@ -4,6 +4,8 @@ AI Design 996 · Project introduction · September 7, 2026 · First public relea
 
 English · [繁體中文](ARTICLE.zh-Hant.md) · [简体中文](ARTICLE.md) · [Share a use case or suggestion](FEEDBACK.en.md)
 
+**Reading update · 2026-09-09:** The cases below retain their original version and verification scope. For a new installation or upgrade, use the [latest formal release](https://github.com/aidesign996/team-leader/releases/latest) and [current guide](https://github.com/aidesign996/team-leader#start). A release does not automatically update an installed Skill. Version 0.5.18 clarifies reuse of existing professional owners, including other projects; the feedback and coordination ideas below remain applicable. [Changes](https://github.com/aidesign996/team-leader/blob/main/CHANGELOG.md).
+
 **Team Leader: Coordinate specialist roles, review results, and correct course to keep project work aligned with your goal.**
 
 When you use AI to develop a project, assigning a task is often followed by more work for you: keeping the goal in mind, relaying information between tasks, checking results and prompting the next step. Over a long project, that coordination can take considerable attention. I wanted to give the parts AI can handle to a team lead with clear responsibilities.
@@ -142,7 +144,7 @@ There is no separate “initialization version” to enter. You install the pack
 
 On Windows, a personal installation should contain `%USERPROFILE%\.agents\skills\team-leader\SKILL.md`, where `%USERPROFILE%` means your user directory. Avoid an extra nested `team-leader` folder, and do not copy only `SKILL.md`; the first public 0.5.16 package contains 21 skill files and an MIT license, 22 files in total. After installation, select or name `$team-leader` in a new project conversation, confirm it can read the skill, then use the takeover message above.
 
-[Download Team Leader 0.5.16](https://github.com/aidesign996/ai-practice/releases/download/team-leader-v0.5.16/team-leader-0.5.16.zip) · [Installation, checksums and release notes](https://github.com/aidesign996/ai-practice/releases/tag/team-leader-v0.5.16)
+[Download the latest formal release](https://github.com/aidesign996/team-leader/releases/latest) · [Installation, checksums and release notes](https://github.com/aidesign996/team-leader/releases/latest)
 
 Align three things when handing over the project:
 
@@ -267,7 +269,7 @@ Those exchanges should carry the information needed for the task. A project's bu
 
 The design explanation was developed from the examined **0.5.13** version. The first public package is **0.5.16**, with 21 skill files and an MIT license; later additions are explained in the relevant passages. GPT-6 Astra is the primary design and validation target, and existing practice mainly used the Codex desktop application on Windows. Sol has participated in some specialist roles in mixed-model teams, but there is no controlled comparison of an all-Sol team. Other operating systems or agent platforms have not completed compatibility checks of the same scope. The installation paths above were checked against local practice and official documentation, but the full journey from installation to complete team delivery has not been validated on a clean machine or new account.
 
-**Team Leader 0.5.16 is available under the MIT License. You are welcome to try it.** The [release page](https://github.com/aidesign996/ai-practice/releases/tag/team-leader-v0.5.16) provides the complete package, installation instructions and file checksums. Start with a small project that has a clear goal and manageable scope, then assess whether it suits more complex work.
+**Team Leader is available under the MIT License. You are welcome to try the latest formal release.** The [release page](https://github.com/aidesign996/team-leader/releases/latest) provides the complete package, installation instructions and file checksums. Start with a small project that has a clear goal and manageable scope, then assess whether it suits more complex work.
 
 **You are welcome to share problems after trying it, or discuss the design and possible use cases now.** I will use community feedback to keep improving the skill. The web article has a comment section below. Write freely in English, Traditional Chinese or Simplified Chinese; there are no separate fields to fill in and no technical diagnosis is required.
 

@@ -4,6 +4,8 @@ AI Design 996 · 項目介紹 · 2026-09-07 · 首次公開發布 0.5.16
 
 [English](ARTICLE.en.md) · 繁體中文 · [简体中文](ARTICLE.md) · [分享使用場景與建議](FEEDBACK.zh-Hant.md)
 
+**閱讀更新 · 2026-09-09：** 下文案例保留當時的版本與驗證範圍。現在安裝或升級，請從[最新正式發行](https://github.com/aidesign996/team-leader/releases/latest)獲取完整包，並按[當前說明](https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md#start)操作；新版不會自動更新已安裝的 Skill。0.5.18 更明確地要求優先複用已有專業負責人，包括跨項目；下文目標反饋與協作思路繼續適用。[更新記錄](https://github.com/aidesign996/team-leader/blob/main/CHANGELOG.md)。
+
 **Team Leader：通過專業分工、成果檢查與及時糾偏，持續對照使用者的目標推進項目。**
 
 用 AI 做項目，交代任務之後，使用者往往還要記著目標、在不同任務之間傳遞信息、檢查結果，再提醒下一步。項目持續得越久，這些協調工作就越容易佔據注意力。我想把其中能交給 AI 的部分，交給一位職責明確的團隊負責人。
@@ -142,7 +144,7 @@ AI Design 996 · 項目介紹 · 2026-09-07 · 首次公開發布 0.5.16
 
 在 Windows 上，個人安裝後應能找到 `%USERPROFILE%\.agents\skills\team-leader\SKILL.md`，其中 `%USERPROFILE%` 表示你的用戶目錄。不要多套一層同名文件夾，也不要只複製 `SKILL.md`；首發 0.5.16 包含 21 個 Skill 文件和 1 個 MIT 許可證，共 22 個文件。安裝後在項目的新對話中選擇或點名 `$team-leader`，先確認它能讀取技能，再用前面的接手語句開始。
 
-[下載 Team Leader 0.5.16](https://github.com/aidesign996/ai-practice/releases/download/team-leader-v0.5.16/team-leader-0.5.16.zip) · [安裝說明、校驗文件與版本記錄](https://github.com/aidesign996/ai-practice/releases/tag/team-leader-v0.5.16)
+[下載最新正式版](https://github.com/aidesign996/team-leader/releases/latest) · [安裝說明、校驗文件與版本記錄](https://github.com/aidesign996/team-leader/releases/latest)
 
 接手時，把下面三件事對齊即可：
 
@@ -267,7 +269,7 @@ Team Leader 會增加負責人協調、專業崗位執行、獨立檢查以及�
 
 本文設計說明從已核對的 **0.5.13** 整理而來；首次公開包為 **0.5.16**，包含 21 個 Skill 文件及 1 個 MIT 許可證，後續增量在相應段落單獨說明。主要設計與驗證對象為 GPT-6 Astra，已有實踐主要來自 Windows 上的 Codex 桌面應用。Sol 已有混合團隊中的部分崗位實踐，尚無全 Sol 團隊的同條件效果對照；其他系統或 Agent 平臺也尚未完成同等範圍的兼容驗證。上述安裝路徑已與本機實踐和官方說明核對，但尚未完成乾淨機器或新賬號從安裝到完整團隊交付的全流程驗證。
 
-**Team Leader 0.5.16 以 MIT 許可證公開，歡迎試用。** [版本頁面](https://github.com/aidesign996/ai-practice/releases/tag/team-leader-v0.5.16)提供完整安裝包、說明與文件校驗清單。可以先從目標清楚、範圍可控的小項目試用，再判斷它是否適合更複雜的工作。
+**Team Leader 以 MIT 許可證公開，歡迎從最新正式版開始試用。** [版本頁面](https://github.com/aidesign996/team-leader/releases/latest)提供完整安裝包、說明與文件校驗清單。可以先從目標清楚、範圍可控的小項目試用，再判斷它是否適合更複雜的工作。
 
 **歡迎試用後帶著真實工作中的問題來交流，也歡迎現在就討論設計與適用場景。** 我會結合大家的反饋繼續優化這套 Skill。網頁文章下方就是評論區，用英文、繁體中文或簡體中文直接寫就好，不用分欄填寫，也不用先分析技術原因。
 
