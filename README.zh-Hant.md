@@ -20,9 +20,9 @@
 
 分享設計思路、工作過程和項目成果。
 
-**2026-09-10 · 綜合文章更新**
+**2026-09-11 · 綜合文章更新**
 
-[為什麼我給 AI 項目配了一位負責人](https://aidesign996.github.io/ai-practice/team-leader/article-preview.zh-hant.html) — 結合三篇最新實踐分享，講清怎樣持續看目標、聯繫專業負責人，並借經驗作判斷。
+[Team Leader：AI 團隊如何協作、糾偏與積累經驗](https://aidesign996.github.io/ai-practice/article-team-leader.zh-hant.html) — 從產品目標與反饋理論出發，說明職責、跨專案協作和經驗積累的實作機制，配合真實實踐，討論成本、侷限與願景。
 
 ## 裝好以後，一句話開始
 

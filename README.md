@@ -20,9 +20,9 @@ Give your AI project a lead who checks the goal, works with appropriate speciali
 
 Design decisions, working methods and project reflections.
 
-**2026-09-10 · Updated design article**
+**2026-09-11 · Updated design article**
 
-[Why I built an AI team lead](https://aidesign996.github.io/ai-practice/team-leader/) — A combined account of three recent posts: keep direction, connect specialist owners, and use experience to make better judgments.
+[Team Leader: How AI teams collaborate, correct course, and learn from experience](https://aidesign996.github.io/ai-practice/article-team-leader.html) — Product goals and feedback theory, specialist roles, cross-project collaboration, and learning from experience—with a real example, costs, limitations, and future directions.
 
 ## Start with one sentence
 

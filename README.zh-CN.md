@@ -20,9 +20,9 @@
 
 分享设计思路、工作过程和项目成果。
 
-**2026-09-10 · 综合文章更新**
+**2026-09-11 · 综合文章更新**
 
-[为什么我给 AI 项目配了一位负责人](https://aidesign996.github.io/ai-practice/team-leader/article-preview.zh.html) — 结合三篇最新实践分享，讲清怎样持续看目标、联系专业负责人，并借经验作判断。
+[Team Leader：AI 团队如何协作、纠偏与积累经验](https://aidesign996.github.io/ai-practice/article-team-leader.zh.html) — 从产品目标与反馈理论出发，说明职责、跨项目协作和经验积累的实现机制，配合真实实践，讨论成本、局限与愿景。
 
 ## 装好以后，一句话开始
 
