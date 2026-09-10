@@ -10,9 +10,9 @@ I share reusable AI skills and the thinking behind my work. Pick a skill to use,
 
 Installable skills you can use in your own projects.
 
-### [Team Leader · 0.5.18](https://github.com/aidesign996/team-leader)
+### [Team Leader · 0.5.23](https://github.com/aidesign996/team-leader)
 
-Give your AI project a team lead. It coordinates specialist roles, compares results with your goal, and follows through on corrections.
+Give your AI project a lead who checks the goal, works with appropriate specialists, and uses experience in light of current conditions.
 
 [Download Skill](https://github.com/aidesign996/team-leader/releases/latest) · [Installation & release notes](https://github.com/aidesign996/team-leader/releases/latest) · [View source](https://github.com/aidesign996/team-leader/tree/main/team-leader)
 
@@ -20,15 +20,15 @@ Give your AI project a team lead. It coordinates specialist roles, compares resu
 
 Design decisions, working methods and project reflections.
 
-**2026-09-07 · Design notes**
+**2026-09-10 · Updated design article**
 
-[Why I built an AI team lead](https://aidesign996.github.io/ai-practice/team-leader/) — The ideas behind Team Leader: goals and feedback, specialist roles, project knowledge, and the current limits of the method.
+[Why I built an AI team lead](https://aidesign996.github.io/ai-practice/team-leader/) — A combined account of three recent posts: keep direction, connect specialist owners, and use experience to make better judgments.
 
 ## Start with one sentence
 
 After installation, open your project and select Team Leader, or name `$team-leader` first. Then say:
 
-> You're in charge of this project now. Please take it forward.
+> Please take responsibility for this and keep it moving. Retain useful experience as we go; when something similar comes up, look it up and consider how to use it.
 
 The lead should read the available project context, recover agreed goals and unfinished work, and take it forward. If essential requirements are missing, it should ask you. Share your ideas as the conversation develops.
 

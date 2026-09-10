@@ -10,9 +10,9 @@
 
 可以下載安裝，在自己的項目中直接調用。
 
-### [Team Leader · 0.5.18](https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md)
+### [Team Leader · 0.5.23](https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md)
 
-給 AI 項目配一位負責人，協調專業崗位，持續對照用戶目標檢查實際成果，並組織必要修正。
+給 AI 項目配一位負責人：持續看目標，聯繫合適的專業負責人，再按當前條件借用經驗、修正做法。
 
 [下載 Skill](https://github.com/aidesign996/team-leader/releases/latest) · [安裝與版本說明](https://github.com/aidesign996/team-leader/releases/latest) · [查看源碼](https://github.com/aidesign996/team-leader/tree/main/team-leader)
 
@@ -20,15 +20,15 @@
 
 分享設計思路、工作過程和項目成果。
 
-**2026-09-07 · 設計手記**
+**2026-09-10 · 綜合文章更新**
 
-[為什麼我給 AI 項目配了一位負責人](https://aidesign996.github.io/ai-practice/team-leader/article-preview.zh-hant.html) — Team Leader 的設計思路：目標與反饋、專業分工、項目知識，以及這套方法目前的適用範圍和侷限。
+[為什麼我給 AI 項目配了一位負責人](https://aidesign996.github.io/ai-practice/team-leader/article-preview.zh-hant.html) — 結合三篇最新實踐分享，講清怎樣持續看目標、聯繫專業負責人，並借經驗作判斷。
 
 ## 裝好以後，一句話開始
 
 打開項目，選中 Team Leader，或先點名 `$team-leader`。然後說：
 
-> 接下來這個項目由你負責，你跟進一下。
+> 這件事交給你負責，幫我持續跟進。過程中有用的經驗留下來，以後遇到類似事情，先找來看看怎麼用。
 
 負責人應先了解現有資料、已確認的目標和未完成工作，再繼續推進；缺少關鍵需求時主動問你。你只需要隨著溝通，補充自己的想法。
 

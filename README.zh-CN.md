@@ -10,9 +10,9 @@
 
 可以下载安装，在自己的项目中直接调用。
 
-### [Team Leader · 0.5.18](https://github.com/aidesign996/team-leader/blob/main/README.zh-CN.md)
+### [Team Leader · 0.5.23](https://github.com/aidesign996/team-leader/blob/main/README.zh-CN.md)
 
-给 AI 项目配一位负责人，协调专业岗位，持续对照用户目标检查实际成果，并组织必要修正。
+给 AI 项目配一位负责人：持续看目标，联系合适的专业负责人，再按当前条件借用经验、修正做法。
 
 [下载 Skill](https://github.com/aidesign996/team-leader/releases/latest) · [安装与版本说明](https://github.com/aidesign996/team-leader/releases/latest) · [查看源码](https://github.com/aidesign996/team-leader/tree/main/team-leader)
 
@@ -20,15 +20,15 @@
 
 分享设计思路、工作过程和项目成果。
 
-**2026-09-07 · 设计手记**
+**2026-09-10 · 综合文章更新**
 
-[为什么我给 AI 项目配了一位负责人](https://aidesign996.github.io/ai-practice/team-leader/article-preview.zh.html) — Team Leader 的设计思路：目标与反馈、专业分工、项目知识，以及这套方法目前的适用范围和局限。
+[为什么我给 AI 项目配了一位负责人](https://aidesign996.github.io/ai-practice/team-leader/article-preview.zh.html) — 结合三篇最新实践分享，讲清怎样持续看目标、联系专业负责人，并借经验作判断。
 
 ## 装好以后，一句话开始
 
 打开项目，选中 Team Leader，或先点名 `$team-leader`。然后说：
 
-> 接下来这个项目由你负责，你跟进一下。
+> 这件事交给你负责，帮我持续跟进。过程中有用的经验留下来，以后遇到类似事情，先找来看看怎么用。
 
 负责人应先了解现有资料、已确认的目标和未完成工作，再继续推进；缺少关键需求时主动问你。你只需要随着沟通，补充自己的想法。
 
