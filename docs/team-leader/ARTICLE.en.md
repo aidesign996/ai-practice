@@ -1,299 +1,194 @@
-# Give Your AI Project a Team Lead to Guide the Team in the Right Direction
+# Give your AI project a lead who keeps the team moving toward your goal
 
-AI Design 996 · Project introduction · September 7, 2026 · First public release 0.5.16
+AI Design 996 · Design & practice · Updated September 10, 2026 · First published September 7, 2026
 
 English · [繁體中文](ARTICLE.zh-Hant.md) · [简体中文](ARTICLE.md) · [Share a use case or suggestion](FEEDBACK.en.md)
 
-**Reading update · 2026-09-09:** The cases below retain their original version and verification scope. For a new installation or upgrade, use the [latest formal release](https://github.com/aidesign996/team-leader/releases/latest) and [current guide](https://github.com/aidesign996/team-leader#start). A release does not automatically update an installed Skill. Version 0.5.18 clarifies reuse of existing professional owners, including other projects; the feedback and coordination ideas below remain applicable. [Changes](https://github.com/aidesign996/team-leader/blob/main/CHANGELOG.md).
+Sometimes, when I use AI to run a project, I am still the busiest person in it.
 
-**Team Leader: Coordinate specialist roles, review results, and correct course to keep project work aligned with your goal.**
+A direction has been chosen, but I have to prompt the next step. Two projects need to cooperate, and I carry messages between them. An article reads well after revision, but next time I have to explain the same formatting requirements again.
 
-When you use AI to develop a project, assigning a task is often followed by more work for you: keeping the goal in mind, relaying information between tasks, checking results and prompting the next step. Over a long project, that coordination can take considerable attention. I wanted to give the parts AI can handle to a team lead with clear responsibilities.
+Writing three recent WeChat posts brought these experiences together: **I want to hand over the continuing work of keeping direction, coordinating people, and using what we have learned.**
 
-That led me to design **Team Leader**, a collaboration skill for ongoing project development. The lead is also an AI role. The skill defines how it guides the team through responsibilities, working methods and project templates. It organizes product design, technical design, development and review around the user's goal, examines actual output, and coordinates corrections when it finds gaps. Agreed requirements, decisions, progress and lessons are kept in accessible project files.
+That is why I built Team Leader around Astra in Codex. The Skill gives an AI project lead a defined responsibility and a way to think through its work: keep checking the goal, organize appropriate specialist work, and bring relevant experience into the next decision.
 
-**GPT-6 Astra is the current primary design and validation target.** There are also examples of Sol working in specialist roles. See [model fit](#model-fit) for the evidence, selection guidance and areas still untested.
+This article starts with those everyday problems. Actual interviews and editing records are distinguished from teaching examples. The current formal release is [0.5.23](https://github.com/aidesign996/team-leader/releases/latest); the [installation and update guide](https://github.com/aidesign996/team-leader#start) is maintained on the Skill's main page.
 
-In everyday terms, the lead gets the team working and checks whether that work is moving toward the goal. My aim is to reduce the user's burden of repeating reminders, relaying context and coordinating tasks.
+## Give every round of work a way back to the goal
 
-This approach is intended for projects that span several stages and repeated iterations, such as moving from product and technical design through implementation and validation. Dividing responsibilities also adds communication and review costs; a simple, one-off task can stay simple. The rest of this article explains the design, the roles, how to use the skill, and how I hope people will help improve it.
+Suppose I want a simple portfolio page where readers can immediately find articles and useful Skills. Categories are added, then filters, then settings for the filters. Every addition has a reason, yet the page becomes harder to understand.
 
-**Consider usage before you start:** Specialist reasoning, lead reviews and revisions can consume substantial capacity. The method includes strategies for allocating reasoning effort, managing context and avoiding repeated work. See [usage and optimization](#usage-cost).
+Reinforcing and balancing feedback in *Thinking in Systems* helped me think about this problem.[1][2] In this hypothetical case, existing content generates more requests, which lead to further additions. Temporary ideas, outdated explanations, and unused features also make later decisions harder if they are never removed.
 
-## Why I designed the lead around feedback loops
+Who keeps asking whether this work still serves the original goal?
 
-As context grows, designs change and work moves between roles, temporary assumptions can become accepted defaults. Output keeps growing while the original problem receives less attention. My focus is to make checking work against the goal someone's ongoing responsibility.
+**I set the goal. After each round, the lead looks at the actual result, identifies the gap, and organizes a correction.**
 
-Donella Meadows's *Thinking in Systems: A Primer* gave me a useful starting point. Balancing feedback involves a goal, information about the gap between the current state and that goal, and action in response. [1][2] I applied this idea to AI teamwork: bring the results of each round back to the lead for observation and assessment, then use that assessment to guide the next action.
+![Figure 1: The user's goal continues to inform the lead. Actual output returns as feedback and guides specialist corrections.](figure-en-01.png)
 
-### The core: goal, feedback and action
+*Figure 1. B denotes a balancing loop connecting the goal, feedback from results, and corrective action.*
 
-In Team Leader, these three functions become:
+For that portfolio page, the lead needs to open the page and examine both layout and interaction. If the main content is still hard to find, the relevant specialist receives a concrete problem to fix. The revised result then enters the next review.
 
-- **Goal:** The user describes the intended deliverable, the problem to solve and the constraints to respect.
-- **Feedback:** The lead examines actual output and review evidence, comparing them with the goal to identify gaps.
-- **Action:** The relevant specialist roles build, validate or revise in response to those gaps.
+![Figure 2: Existing work driving further additions, compared with checking the goal before deciding what to do next.](figure-en-02.png)
 
-“Project work” in the diagram means the output already produced, such as designs, code and validation results. The leader observes that output, compares it with the goal, and directs the next update through the relevant roles.
+*Figure 2. R on the left represents one possible mechanism of scope growth. The right keeps the goal involved in decisions. Ordinary agents do not inevitably drift.*
 
-![Figure 1: Specialists update project work. The leader observes the output, compares it with the user's goal and feeds corrections back to the specialists.](figure-en-01.png)
+An ordinary agent can also review its own work. Team Leader makes direction, gap assessment, and follow-through a continuing responsibility. Its value depends on identifying the right problems and actually correcting them.
 
-*Figure 1. The lead compares actual output with the user's goal and directs specialist action. B denotes a balancing loop. The rectangle represents current output; the double line and valve represent execution and revision; thin arrows show information relationships; the cloud represents a source outside the diagram's scope. [2][3]*
+## Give specialists room to judge, and carry decisions into implementation
 
-For example, a user wants a page whose information relationships are immediately clear. Once a specialist produces the page, the leader needs to inspect the actual screen and interaction. If information is still repetitive or the hierarchy is unclear, those gaps go back to the relevant roles for revision, followed by another inspection.
+A clear goal does not mean I prescribe every step.
 
-The goal remains a reference throughout the work. When it needs to change or an important tradeoff arises, the lead should bring the concrete choices and implications to the user, then record the decision. Balancing feedback still depends on accurate observation, timely feedback and effective corrective action. Adding a lead role alone does not guarantee a stable project. [2]
+When the product is still unclear, different approaches can be explored. When technical routes differ, their conditions and costs need explaining. Once a direction is chosen, implementation is checked against that decision.
 
-<a id="workflow-comparison"></a>
+![Figure 3: Explore options around a shared goal, then choose using the goal and constraints.](figure-en-03.png)
 
-### Why a project can keep growing
+*Figure 3. Exploration and convergence. An increase in the number of options is not, by itself, a reinforcing feedback loop.*
 
-A common pattern is to give an agent a task, then ask for changes based on what it produces. If later work mostly extends the existing output without revisiting the goal, a loop can emerge: **more features create more supporting requirements and dependencies; accepting those requirements as new tasks leads to still more features.**
+**The lead is responsible for organizing and delivering the work. The user retains authority over goals, core tradeoffs, and effective requirements.**
 
-![Figure 2: On the left, a goal is given initially and existing project work drives further additions. On the right, the goal continually informs the leader's comparison of actual output and intended results.](figure-en-02.png)
+Specialists can point out problems and propose better methods. Routine choices within authorization move forward. A material change to the goal or an important tradeoff comes back with a concrete proposal, reasons, and consequences. An old case cannot silently override an accepted requirement.
 
-*Figure 2. On the left, a goal is given initially and existing work prompts further additions; R denotes that reinforcing relationship. On the right, the goal continually informs the assessment of gaps and the resulting corrections. The left panel illustrates one possible mechanism of scope growth, not an inevitable property of ordinary workflows. [2]*
+## Find the right owner, and let owners connect the work directly
 
-As a hypothetical example, a simple logging page acquires a statistics dashboard, filters, and then additional settings for those features. If every derivative requirement is accepted by default, the workload can grow without getting closer to the original problem.
+Some project work asks what to make; some asks how to make it; other work involves implementation and checking. The complete team has six responsibilities: lead, environment setup, product design, technical design, development, and independent AI acceptance.
 
-The lead needs to judge whether an addition serves the goal, what the actual gap is, and whether the next step should add, remove or revise something. **Each round of work should have a clear relationship to the goal.** A single agent can also make these checks. Team Leader makes them an ongoing responsibility of the lead and assigns the corrections to the relevant specialists.
+![Figure 4: The lead coordinates environment, product, technical, development, and independent AI acceptance responsibilities.](figure-en-04.png)
 
-## Make room for exploration, then choose
+*Figure 4. Numbers identify responsibilities. In complete-team mode, establish the corresponding roles and activate those relevant to each task.*
 
-Early project work often needs exploration: different product structures, technical approaches and visual treatments. Product and technical roles should be able to propose alternatives, question assumptions and explain tradeoffs.
+**Use an appropriate existing professional owner first, including a lead in another project.** Suitable work can be delivered by one person. If a new team is necessary and authorized, establish its complete arrangement. The purpose of the division is to deliver useful work.
 
-The lead needs to recognize what the current stage calls for. During exploration, specialists develop alternatives and explain their differences. Before implementation, the lead organizes a comparison against the goal and constraints, makes the chosen direction and reasoning explicit, and brings important tradeoffs to the user. The agreed direction then guides implementation and review.
+Preparing this article involved exactly such a connection. The sharing lead needed to understand the Skill; the development lead knew its design, installation, and validation. If every question went through me, I became their messenger.
 
-![Figure 3: Explore three options from a shared goal, then choose a direction using goals and constraints.](figure-en-03.png)
+I changed the instruction:
 
-*Figure 3. Exploration and selection, shown separately from the balancing loop in Figure 1.*
+> You are responsible for this article. Get the source material directly from the Skill's development lead.
 
-For example, while a page's structure is still open, the team can compare different ways of organizing information. Once a direction is chosen, it can check whether the implementation delivers that choice. New evidence can justify a change, with an explanation of why the change is needed.
+In the actual exchange, the sharing lead asked whether readers could start with a single sentence. The development lead clarified the prerequisites: install and select the Skill, identify the relevant lead, and use an application that supports communication between tasks. The sharing lead then turned those answers into approachable instructions.
 
-Exploration and selection describe the working process here. A reinforcing loop requires a specific causal relationship that amplifies itself; more alternatives or arrows forming a circle are not enough to establish one. Keeping these ideas distinct helps explain when the lead encourages exploration and when it organizes a choice. [2]
+![Figure 5: Project leads exchange questions and source material as needed while maintaining their own work and knowledge.](figure-en-05.png)
 
-## One leader, five specialist responsibilities
+*Figure 5. Dashed lines represent communication as needed. Each project keeps its own responsibilities and access boundaries.*
 
-Product design, technical design, development and validation each require substantial context. Drawing on professional teamwork, I give these areas continuing responsibilities and have the lead coordinate their goals, dependencies and deliverables. As models improve, whether this division remains worthwhile depends on project complexity and coordination costs; it needs to be assessed in use.
+One lead asks how to make the explanation simple; the other checks whether a reader can actually follow it. Asking enough to understand, then continuing to deliver, is what makes the coordination useful.
 
-![Figure 4: Role 0, Team Leader, coordinates Role 1, environment setup; Role 2, product design; Role 3, technical design; Role 4, development; and Role 5, independent AI review.](figure-en-04.png)
+**This requires communication support in the host and permission to access the relevant material.** Pasting the Skill into an ordinary chat does not connect projects automatically. There is evidence of a specific research exchange here, not proof of an always-running orchestration service.
 
-*Figure 4. Six default responsibilities, including the leader. Roles are used as the task requires; the diagram does not mean every role runs all the time.*
+## Keep experience so the next decision can be better
 
-The numbers are **role identifiers, not a sequence of steps**:
+Another kind of repeated work is teaching the same thing again after it was already fixed.
 
-- **Role 0 | Team Leader:** Maintain the overall goal, assign responsibilities and dependencies, examine output and review evidence, and drive corrections and delivery.
-- **Role 1 | Environment setup:** Prepare tools, dependencies and the runtime environment so the project can run and be validated.
-- **Role 2 | Product design:** Define user needs, business workflows and the interface experience—what to build and how people will use it.
-- **Role 3 | Technical design:** Define the implementation approach, architecture, data and interfaces—how to build it.
-- **Role 4 | Development:** Implement, self-check and fix the work.
-- **Role 5 | Independent AI review:** Examine work the reviewer did not primarily implement and check it against the agreed criteria.
+While editing the WeChat posts, I repeatedly asked for important points to stand out and key conclusions to have their own paragraphs. A later draft still buried a key point in a long paragraph, and I had to point it out again. How could that experience actually help the next piece of work?
 
-Each role can suggest better approaches or raise disagreements. The user retains control of the goal, important tradeoffs and final experience acceptance. Independent AI review supplies evidence for those decisions.
+In my own work, I first establish whom I am helping, what I am responsible for, and the desired result. Then I recall similar situations and compare whether the earlier approach fits this one.
 
-### How the lead could guide a page redesign
+The arrangement for AI has two layers too: **the role establishes the basis for judgment; a case records why an approach was chosen and what happened.**
 
-Here is a hypothetical example of the working method: a user wants a page's main tasks to be easier to find while preserving its existing business rules.
+Consider the goal of making an article easy to understand. Two situations show why experience cannot consist only of remembering an action:
 
-1. **Turn the goal into requirements that can be checked.** The lead records the main task entry points, information hierarchy and business rules to preserve. Product design develops a proposal from those requirements.
-2. **Arrange the relevant work.** Technical design examines the implementation impact, and development builds the agreed design. Environment setup addresses any environment problems that prevent the project from running.
-3. **Examine the result and identify gaps.** Independent AI review checks the agreed behavior. The lead considers the actual page and evidence to assess the goal. Repeated entry points or hierarchy problems go back to the relevant roles for correction.
-4. **Recheck the changes and leave a continuation point.** Inspect whether the final revision resolves the original problem, and record the decisions, unresolved issues and next step.
+**A: A key point is buried in a long paragraph.** I say, “Make this sentence bold.” The lead needs to understand why: I want readers to notice the point. A suitable response may be to give it its own paragraph and then add limited emphasis.
 
-This is what I mean by keeping an eye on the work: paying attention to actual output and its distance from the goal. Work that can be handled within existing authorization continues. When the user really needs to decide, the lead brings back the concrete issue, recommendation and implications, reducing the need for the user to chase each role separately.
 
-## Carry goals, decisions and lessons into later work
+The useful lesson describes the conditions, why that approach made sense, and what the revised result was like.
 
-To keep comparing work with the goal, the lead needs to retrieve the goals and decisions already agreed. That is why recording and reading project knowledge are part of this method. Why a requirement was set, why a design was chosen, where the last round ended and what remains unresolved should all have a place people and agents can find.
+**B: In another article, nearly everything is bold.** Readers still cannot find the main point. Should the lead add even more emphasis? This time it may reduce bold text and combine repeated explanations. The goal is the same, but the action can be the opposite.
 
-User feedback may contain a requirement, a local preference or a reusable lesson. The lead checks its source, reasoning and scope in context, then places it in the appropriate record. Later related work starts by reading the valid decisions and uses its actual results to revise them.
+This is a teaching comparison based on editing problems, not an experiment comparing three methods. The actual record establishes an omission and a repair; it does not establish reliable autonomous reuse in every later task.
 
-![Figure 5: Check the source and scope of feedback, record applicable knowledge, retrieve it in later tasks, and revise it using actual results.](figure-en-05.png)
+![Figure 6: Recover the goal and role, compare earlier cases with current conditions, and use results to correct both current work and recorded experience.](figure-en-06.png)
 
-*Figure 5. Recording and reusing project knowledge. Saved information still needs to be actively retrieved and applied in later work.*
+*Figure 6. Two returns: correct the current work against the goal, and refine the original experience using new results.*
 
-For instance, “show the count beside this project's progress card” can become a valid decision for that project. It does not automatically become a layout rule for every project. If later feedback changes the decision, the record should explain why and identify the current choice.
+**Reuse the basis for an earlier decision, then decide what fits this situation.**
 
-This form of “memory” mainly uses searchable project records. Requirements and designs have their own documents, progress has a current entry point, and lessons are accessible through `docs/METHODOLOGY.md`. Their value depends on later tasks actually reading, applying and revising them. Saving a file does not guarantee automatic recall and is not model retraining.
+The revised output still needs checking. If the problem remains, keep fixing it. If the new result reveals that an old method only works under certain conditions, add those conditions to the original case. Failure can provide a useful lesson; repeated feedback with no new learning does not need another entry.
 
-## After installation, talk to it like a project lead
+This is what I mean by becoming more useful with experience: understanding my intention better, comparing changed conditions, and adapting the method. It is a work design to be tested in actual behavior, not model retraining or a promise of permanent memory and no omissions.
 
-**Once installed, start with one sentence.** Select Team Leader in the project conversation, or name `$team-leader` first, and confirm that your tool can read the skill. Then talk to it as you would to a project lead.
+## After installation, start with the work in front of you
 
-### Start with: this project is yours to lead
+You do not need to prepare an elaborate assignment. Give this instruction to an AI tool with web and project-file access:
 
-You do not need a long instruction listing every step: read the files, ask about requirements, and arrange the next task. With the skill selected, simply say:
+> Read https://github.com/aidesign996/team-leader, install the complete Team Leader Skill from its latest formal release, and tell me the version actually installed.
 
-> You're in charge of this project now. Please take it forward.
+Select Team Leader in the project, or mention `$team-leader`, then say:
 
-This asks the lead to take over. Under this method, it should first understand the available materials, agreed goals and unfinished work. When the goal and authority are clear, it should continue; when essential requirements are missing, it should ask you and explain its next steps. For a new project with no materials, it can begin by asking what you want to make and which problem you want to solve. Share your ideas without having to design its workflow first.
+> Take responsibility for this and keep it moving. Keep useful experience from the work, and look it up when a similar situation comes along.
 
-This is a simple way to begin, not a fixed command or a guarantee that every tool will identify the skill from that sentence alone. Select or name Team Leader the first time; then continue the same project conversation naturally.
+For an existing project, the lead should recover the goal, completed work, and unfinished tasks. If you only have an idea, explain what you want to do. Essential missing conditions can be clarified without having you plan every step.
 
-To use team mode, add: “Please establish the complete team for this project and coordinate its work.” In 0.5.16, once team mode is chosen and creation is authorized, establish all six responsibilities, then activate only the relevant roles for each task. Reuse existing roles and responsibilities. Actual creation still depends on the tool's capabilities; small one-off tasks can remain solo.
+![Figure 7: Recover current work and knowledge, arrange relevant responsibilities, inspect the result, and leave a continuation point.](figure-en-07.png)
 
-You do not have to copy a fixed formula. You can start without a complete product document or writing a task brief for every specialist. Explain the outcome you have in mind and work out details through conversation. For example: “I want a website for sharing my AI practice, with English and Chinese versions and a way for readers to give feedback. Please lead the project and help me clarify the idea first.”
+*Figure 7. Existing projects should continue from their actual work, records, and roles.*
 
-<a id="initial-setup"></a>
+**A new release does not automatically update your installed Skill.**
 
-### First use and project takeover
+If you have already installed it, you can say:
 
-There is no separate “initialization version” to enter. You install the package, confirm the project location and choose your runtime preferences. The lead handles version checks and continuity of the existing work.
+> Check the latest formal release. Preserve the old package and custom changes, then update the complete Skill. Keep project records, accepted requirements, and unfinished tasks. Have the existing lead read the applicable changes and continue toward the original goal.
 
-**Put the complete skill package in place first.** Once the release package is available, keep the entire `team-leader` folder and its relative paths intact. To use it across projects, place it in your personal skill directory at `~/.agents/skills/team-leader/`. For use within one project, place it in that project's `.agents/skills/team-leader/` instead. These locations correspond to Codex's personal and project skill scopes. [6]
+Use the [current Skill guide](https://github.com/aidesign996/team-leader#start) for the complete package and update instructions. Codex supports personal Skills under `~/.agents/skills/` and project Skills under `.agents/skills/`; retain the whole Skill folder and its relative references.[3]
 
-On Windows, a personal installation should contain `%USERPROFILE%\.agents\skills\team-leader\SKILL.md`, where `%USERPROFILE%` means your user directory. Avoid an extra nested `team-leader` folder, and do not copy only `SKILL.md`; the first public 0.5.16 package contains 21 skill files and an MIT license, 22 files in total. After installation, select or name `$team-leader` in a new project conversation, confirm it can read the skill, then use the takeover message above.
+## Give goals and experience a reliable place to be found
 
-[Download the latest formal release](https://github.com/aidesign996/team-leader/releases/latest) · [Installation, checksums and release notes](https://github.com/aidesign996/team-leader/releases/latest)
+Information buried in a long chat can still be hard to recover. Different kinds of content have a known home, along with rules for when to read and update them.
 
-Align three things when handing over the project:
+![Figure 8: Shared rules, role responsibilities, accepted agreements, experience, and current status have distinct connected homes.](figure-en-08.png)
 
-- **Choose the project.** Start the conversation in the project folder you want to work on and point to existing materials or goals. For a new project, explain what you want to make. The lead checks the actual location, existing output and effective agreements before organizing the needed entry points, avoiding duplicate files or teams.
-- **Choose the lead's model and reasoning effort.** To follow the main configuration used in this article's practice, select Astra in your tool and use `xhigh` as the lead's starting point. Installing the skill does not switch your model or effort setting. If you want the lead to allocate specialist effort, specify the permitted models, effort range and budget. See [usage and optimization](#usage-cost) for the allocation policy.
-- **Have the lead check the versions.** The lead reads the installed version, checks the version already adopted by the project, and records what has actually been carried forward in the project overview. You do not need to edit a version number or manually build the entire document structure first. The lead reuses existing materials and fills necessary gaps in access to them.
+*Figure 8. The knowledge responsibilities in the supplied templates. Existing projects can retain their own effective entry points.*
 
-The installed version is the skill package read by the tool. The project's adopted version describes the rules, knowledge entry points and relevant roles actually brought into use there. Those versions can temporarily differ; completed adoption depends on whether the relevant changes have taken effect.
+`AGENTS.md` sets shared rules and reading routes.<br>
+`roles/` describes each role's contribution to the project goal.<br>
+Product, technical, and acceptance agreements preserve accepted requirements.<br>
+`docs/METHODOLOGY.md` links situations to methods, cases, and results.<br>
+Existing entry points such as `README.md` and `PROGRESS.md` preserve current status and the next step.
 
-After installing an update, you can simply say: “Bring this project onto the currently installed Team Leader version. Preserve existing work, roles and unfinished tasks, then continue toward the original goal.” The lead checks the changes, updates the affected parts and resumes the work. These details are aligned at first use or when something changes; they do not need to be set again every round.
+**Effective requirements must be followed within their scope. Optional methods and cases are what we assess for reuse.**
 
-### Then give it work in everyday language
+“Use blue this time” and “Always make this understandable for beginners” have different scopes and may belong in different places. AI can help organize them, but cannot discard an effective requirement because it expects little future use.
 
-Continue speaking to the lead in the same project conversation; you do not need to repeat the entire collaboration method each round. These examples are adapted from how I use it:
-
-- **Share an idea:** “I want this page to be easier to understand. Show me a few options, then refine the one I choose.”
-- **Check progress:** “Where are we now, and how are you planning the next steps?”
-- **Give feedback:** “This diagram is too large and the information feels scattered. I want to see the whole thing at a glance, with readable text.”
-- **Continue the work:** “This direction works. Continue and finish the approach we just agreed on.”
-
-Your main responsibilities are to describe the goal, express preferences, respond to actual results and decide important tradeoffs. The lead turns those inputs into requirements, assignments, review and corrections, reducing how often you have to relay the same information between product, technical and development roles. If you only want a discussion, say “Let's discuss it first; don't change anything yet.” When you decide to proceed, tell it to continue.
-
-### What the lead organizes next
-
-It first understands the intended deliverable and the current state, then connects valid project materials, continues or assigns the relevant responsibilities, advances the work and review, and leaves a clear continuation point. The diagram shows work for the lead to organize. Your starting point can still be a simple request in everyday language.
-
-![Figure 6: Understand the current state, connect knowledge, arrange roles, deliver, correct gaps and leave a continuation point.](figure-en-06.png)
-
-*Figure 6. The main outcomes of adoption. The actual order follows dependencies. Existing projects should reuse valid work, records and roles.*
-
-Watch whether the lead carries the original goal forward, turns identified gaps into corrections, and saves you from repeating established decisions in the next round. If it only replies with a plan or still needs repeated reminders, that is valuable feedback too.
+A saved file is only a starting point. Actual retrieval, comparison, and use in a later result demonstrate whether the experience helped.
 
 <a id="model-fit"></a>
-
-### Designed primarily for Astra: what about Sol?
-
-Team Leader targets work involving long tasks, multiple tools and specialist collaboration. Its current primary design and validation target is **GPT-6 Astra**. My approach is to make goals, constraints and acceptance evidence clear, then give the lead room to organize the work and specialists room to choose methods and iterate. This is a design choice for the skill.
-
-**What the official guidance says.** OpenAI describes Astra as more coherent than Sol during long tasks, but also more prone to clarification and more sensitive to skill instructions. It may delegate less and test more than a workflow needs. The guide recommends making autonomy, delegation and verification expectations explicit. [4]
-
-The restrictions I want to reduce are unnecessary process constraints: treating an outdated local request as a permanent rule, waiting for approval at every small step, or imposing an entire workflow on a simple change. Valid goals, permissions and quality requirements remain in force. Giving the model more professional discretion describes our working method; it does not establish that Astra itself has fewer restrictions.
-
-**Sol has already participated in some specialist roles.** OpenAI positions GPT-5.6 Sol for complex professional work and lists support for function calling and Skills. [5] The skill's maintainer also supplied two practical examples, which I cross-checked against the project records:
-
-- An interface prototype used version 0.5.11. A Sol/high product role clarified the meaning of the relationship views, an Astra/high development role implemented them, and another Astra/high role checked interaction and narrow-screen behavior in the browser. This delivery covered that prototype only.
-- A diagram revision used version 0.5.14. A Sol/high product role followed the user's annotations and delivered three changes, which the lead and independent reviewer then checked. A separate tool generated the image, so its visual quality cannot be attributed entirely to Sol.
-
-These records show Sol carrying specific responsibilities in mixed-model teams. We do not have an all-Astra versus all-Sol team comparison with the same task, inputs, quality criteria and investment conditions. We cannot conclude that Sol will perform poorly or promise identical behavior.
-
-**The practical lesson is to judge the actual deliverable.** The maintainer also traced a visual delivery failure: both the Astra/xhigh lead and implementer had seen the reference images, yet the user still had to point out overall differences. This makes me place more weight on assigning complete problems to specialists, having the lead inspect revised output, and checking it independently against the goal. Specific events support that working-method judgment, but there is no cross-model effectiveness comparison. A high reasoning setting does not replace actual review.
-
-To stay close to the design and examined experience described here, start with Astra. If you use Sol, begin with a manageable task and observe whether it carries the goal forward, puts specialist responsibilities into practice, corrects gaps using evidence, and delivers acceptable quality with reasonable rework and total consumption. Include the model name, reasoning effort and situation in feedback. Those details are more useful for improvement than a general judgment about which model is smarter. Results also depend on the tools available, context and task difficulty.
-
 <a id="usage-cost"></a>
 
-### Usage and optimization: reserve capacity for judgment, reduce repeated work
+## Judge models and effort by the work they produce
 
-Team Leader adds coordination by the lead, specialist execution, independent review and necessary revisions. Compared with a simple request to a single agent, this can consume more usage allowance and take longer. Whether the investment is worthwhile depends on the final result and total effort, including rework. We do not yet have a controlled comparison of overall consumption and cannot give a fixed savings percentage.
+Team Leader is primarily designed and used with GPT-6 Astra in Codex on Windows. OpenAI's current guidance notes Astra's sensitivity to instructions, possible under-delegation, and tendency to over-test small tasks. This informs my choice to clarify responsibilities and outcomes while keeping the process proportionate.[4]
 
-**The lead and specialists use different levels of reasoning effort.** The current automatic allocation plan primarily targets Astra and operates within the model, effort and budget range already agreed by the user. The lead normally starts at `xhigh` to leave headroom for overall judgment, dependency coordination and course correction. It assigns specialist effort according to the actual task's complexity and the consequences of error:
+There is also experience with Sol in some specialist roles: Sol/high handled product work in a 0.5.11 prototype and a 0.5.14 visual revision, with Astra roles carrying subsequent work. Those records retain their original versions and scope. They are not a controlled comparison of all-Astra and all-Sol teams. Official model capabilities are also distinct from validation of this Skill.[5]
 
-- Clear inventories, established checks and small changes with well-defined inputs usually start at `medium`.
-- Substantive product or technical design, ordinary implementation and independent review use `high` as complexity warrants.
-- Difficult design, cross-system constraints, hard debugging or conflicting evidence can go directly to `xhigh`, without requiring a failed lower-effort attempt first.
+**Respect the user's chosen model and effort first. Allocate effort only within the authority already given.**
 
-For a specific difficult problem worth the added investment, a higher level such as `max` may be considered within authorization and tool support. The plan does not put every role at the highest level by default. Explicit user choices take precedence. These are allocation policies: the tool must support the settings, and their effect must be verified. A written instruction is not evidence of a runtime change, nor does it mean the lead can change the effort of its own current turn.
+Under the adopted automatic allocation in 0.5.23, the lead usually starts at `high`. Clear small changes may use `medium`; substantive design and acceptance use `high` as complexity warrants; clearly difficult work can start directly at `xhigh`. Higher investment needs a concrete reason, and available controls depend on the host.
 
-**Before specialist work, decide which context it needs.** Assignments prioritize the current goal, effective constraints, relevant changes and decisive evidence, with retrievable links to other history. At phase completion, handoff, a direction change, or when outdated information impairs judgment, the lead organizes a compact summary of the effective state. It preserves completed and remaining work, current assignments, important lessons and the next step. Essential originals, including images, remain available for direct inspection.
+The lead's usual starting point changed in 0.5.19. The earlier `xhigh` default should not be presented as current advice. Historical records still report the settings actually used.
 
-This is conditional context organization and compaction, not a requirement to erase history or recreate tasks before every assignment. Native compaction is used only when the tool actually supports it, at a boundary that protects ongoing work, followed by a check that goals and constraints carry forward. Writing a summary alone does not shorten the active conversation. Compaction and re-reading also cost effort, so net savings cannot be assumed.
+The lead should examine the complete result and critical issues. Supported sampling of similar low-risk items and reuse of unchanged evidence can reduce repetition. Independent AI acceptance remains separate from developer self-checks and is performed by a role that did not primarily implement the item. Higher effort, more checks, and longer output do not substitute for a useful result.
 
-We have not verified that the lead can automatically compact each specialist's conversation. The established focus is organizing relevant information, reusing records and reducing repeated input.
+Coordination, validation, and rework all cost time and quota. There is no reliable overall savings percentage yet. The useful questions are final quality, the amount of rework, and which repeated conversations were actually avoided.
 
-**Avoid duplicated work and check capacity before expanding the investment.** Reuse valid research and checks, filter tool output, avoid having the lead repeat every development self-test and independent review, and avoid repeatedly polling unchanged status. At new-work intake or before materially increasing investment, check the shared account's remaining allowance when supported. If it is clearly insufficient, explain the situation and practical options. Work within existing authorization continues without requiring approval for every step.
+## Bring real problems back so we can improve the method
 
-These allocation and context policies are present in the examined 0.5.13 protocol and retained in the public 0.5.16 source. A written policy, an effective runtime setting and measured savings are three separate things to verify. I want to preserve enough capacity for judgment and validation, and welcome feedback on which steps consume the most, what value they produce and where repeated work can be reduced.
 
-## A place for each kind of project information
+These recent projects include a documented exchange between leads, but also formatting omissions repaired after user reminders. Version 0.5.23 puts goal authority, effective requirements, experience retrieval, and result-based revision into the protocol and templates. It passed package-consistency checks and four file-based scenarios. Adoption by five project leads was checked; two required reminders to finish continuing the work.
 
-The file structure helps the team continue its work. New projects can use the included templates; existing projects reuse valid materials and fill gaps in access to them. When each role can find its working references, the team can act on the same goals and decisions.
+Those results establish particular accomplishments and leave questions worth observing. Passing a synthetic scenario, completing a prompted repair, and working reliably over time are different outcomes. Automatic completeness and fixed time or quota savings are not established.
 
-![Figure 7: The default project file structure and the purpose of each document.](figure-en-07.png)
+**I want less prompting, relaying, and reteaching, and more discussion of the goal and the result.**
 
-*Figure 7. The knowledge structure provided by the current templates. A file tree does not mean the documents are complete or the project is finished.*
+If something feels awkward, describe what you were doing, what the lead did, and where you still had to step in. You do not need to write a technical report. Useful experiences are welcome too.
 
-Think of the files through the everyday questions they answer:
+[Comment below the article](FEEDBACK.en.md) · [Join the public GitHub discussion](https://github.com/aidesign996/ai-practice/discussions/1)
 
-- **What is this project, and what comes next?** `README.md` provides the overview; `PROGRESS.md` records current progress and next steps; `BLOCKED.md` records unresolved blockers.
-- **How do we collaborate, and who is responsible?** `AGENTS.md` describes project rules and reading routes; `docs/TEAM.md` and `roles/` hold responsibilities and role materials.
-- **What are we building, how will we build it, and what counts as done?** `docs/PRODUCT.md`, `docs/TECHNICAL.md` and `docs/ACCEPTANCE.md` hold the respective product, technical and acceptance agreements.
-- **Why was a decision made, and what was verified?** `reports/` retains working records and review evidence; `docs/METHODOLOGY.md` provides an entry point to lessons.
+I will continue improving the Skill using these situations. Start with the [latest formal release](https://github.com/aidesign996/team-leader/releases/latest), and use the [change history](https://github.com/aidesign996/team-leader/blob/main/CHANGELOG.md) to see what changed and what it affects.
 
-These are project working materials. The skill's installation package contains `SKILL.md`, method references and templates; keep the complete package and relative paths intact. Its `agents/openai.yaml` configures how the skill appears in its host and has a different purpose from the project's `AGENTS.md`.
+## References
 
-<a id="version-history"></a>
-
-### A later iteration: keep versions of evolving work
-
-In **0.5.15**, I added a policy for versioning project output. When taking over a project or when the work materially changes, the lead should assess whether code, scripts, evolving documents and design assets have versions that can be compared and recovered. It should reuse an effective existing mechanism, arrange missing version history where needed and authorized, and check that important files are actually included in saved versions. This gives later changes something to compare against and recover. Ordinary one-off tasks do not require Git.
-
-This addition has passed structural checks, independent text review and local installation consistency checks. **Whether a skill update alone prompts a lead to independently discover and correct these omissions in a real project remains unverified.** Local version history also does not establish GitHub publication, an off-site backup or tested production rollback.
-
-### 0.5.16: establish the team, activate roles as needed
-
-The first public version distinguishes whether a team is needed from which roles should work on the current task. Once team mode is chosen and creation is authorized, establish all six responsibilities, reuse existing roles, and activate the relevant ones for each task. Reassess the arrangement when the scope changes. Small tasks can remain solo, and user constraints and available tools still apply.
-
-The public package passed basic skill validation, relative-reference checks and 22-file consistency checks across the ZIP and a clean extraction. Four synthetic scenarios also received independent review of the rules. These checks do not establish a complete live team run with a new account or long-term effectiveness.
-
-## A further direction: collaboration between leaders
-
-When projects are related, I want to extend this collaboration to their leads. One lead can describe the material it needs or the problem it needs help with, and another can respond from its own project. Each remains responsible for its own team, output and knowledge.
-
-![Figure 8: Three project leaders exchange scoped requests and responses while each maintains its own team and documents.](figure-en-08.png)
-
-*Figure 8. A direction for extending collaboration across projects. Dashed lines represent communication, not an already available background orchestration service.*
-
-Preparing this article involved a concrete example: the sharing lead collected information from the skill's maintainer and leaders who had used it. This currently relies on the host's available communication tools and the actual authorization. The organization of requests, responses, dependencies and feedback can be developed further.
-
-Those exchanges should carry the information needed for the task. A project's business details, local preferences or write permissions do not automatically become shared rules for other projects just because their leaders can communicate.
-
-## Bring back problems from real work
-
-The design explanation was developed from the examined **0.5.13** version. The first public package is **0.5.16**, with 21 skill files and an MIT license; later additions are explained in the relevant passages. GPT-6 Astra is the primary design and validation target, and existing practice mainly used the Codex desktop application on Windows. Sol has participated in some specialist roles in mixed-model teams, but there is no controlled comparison of an all-Sol team. Other operating systems or agent platforms have not completed compatibility checks of the same scope. The installation paths above were checked against local practice and official documentation, but the full journey from installation to complete team delivery has not been validated on a clean machine or new account.
-
-**Team Leader is available under the MIT License. You are welcome to try the latest formal release.** The [release page](https://github.com/aidesign996/team-leader/releases/latest) provides the complete package, installation instructions and file checksums. Start with a small project that has a clear goal and manageable scope, then assess whether it suits more complex work.
-
-**You are welcome to share problems after trying it, or discuss the design and possible use cases now.** I will use community feedback to keep improving the skill. The web article has a comment section below. Write freely in English, Traditional Chinese or Simplified Chinese; there are no separate fields to fill in and no technical diagnosis is required.
-
-You might describe what you wanted to do, what happened, and what would work better. Share whatever you know; experiences that worked well are welcome too. I will work with the skill maintainer to organize the feedback, check the situation and follow up on improvements.
-
-For example: “I asked the leader to continue revising a page, but it only replied with a plan. I had to ask again. I would prefer it to finish within the existing authorization, and explain the specific blocker when it really needs my decision.” This illustrates a way to describe feedback; a technical report is unnecessary.
-
-[Read comments and share your experience below](FEEDBACK.en.md)
-
-Read, comment and reply below the article; all three language editions share one discussion. The first time you post, sign in with GitHub and authorize the giscus comment component. You can then continue the conversation within the article. Published comments are stored publicly in the sharing repository's GitHub Discussions, where others can also read and contribute. The version, tools and screenshots with private information removed can help, but may be added later if needed.
-
-I will first understand the situation and original goal, then distinguish a local project need from a general improvement to the skill. After deciding on a change, I will return to the original scenario to check it and explain what changed, what was verified and what remains uncertain. You can continue adding results to the same discussion. Problems that are not yet resolved should remain recorded for follow-up.
-
-I am also refining how improvements are evaluated. To assess whether an update makes a lead more proactive, I will revise, check and install it, then ask the lead to read it without identifying the specific project omission in advance. I will observe whether it independently finds an applicable problem, arranges a correction and checks the result. Repair after a specific problem has been pointed out and independent discovery followed by correction will be evaluated separately. This is a method for future maintenance; the latter outcome remains unverified for this versioning update.
-
-What I most want to learn is when the lead helped carry the work forward and when you still had to remind it repeatedly. Helping it guide the team toward the goal more effectively is the direction I will keep exploring and improving.
-
-## References and notes on the diagrams
-
-1. Donella H. Meadows, *Thinking in Systems: A Primer*, edited by Diana Wright, 2008. [Publisher introduction](https://chelseagreen.co.uk/book/thinking-in-systems/).
-2. Donella Meadows, [Leverage Points: Places to Intervene in a System](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/), especially the discussion of reinforcing and balancing feedback, goals, monitoring and response.
-3. Diagram notation informed by Figure 15 on page 36 of the book: [English excerpt, pages 35–72](https://www.gc.soton.ac.uk/files/2015/01/Thinking-in-Systems35-72.pdf).
-4. OpenAI, [GPT-6 Astra guidance](https://developers.openai.com/api/docs/guides/latest-model), particularly long-task coherence, instruction sensitivity, delegation and verification. Checked September 7, 2026.
-5. OpenAI, [GPT-5.6 Sol model documentation](https://developers.openai.com/api/docs/models/gpt-5.6-sol). Checked September 7, 2026. Model capability documentation and compatibility validation for this skill provide different kinds of evidence.
-6. OpenAI, [Codex customization: Skills](https://learn.chatgpt.com/zh-Hans/docs/customization/overview#技能), covering personal and project skill directories, package structure and invocation. Checked September 7, 2026.
-
-The eight diagrams are conceptual illustrations designed for Team Leader, produced or refined with imagegen and checked for wording and relationships. Figures 1 and 2 borrow stock, flow and information-feedback symbols from the book to explain the relationships between the user's goal, the lead's assessment and specialist action. Flow lines summarize additions or updates; these are not quantitative stock-and-rate models. The remaining figures explain this project's design. The images are illustrations for this article, not original book diagrams, application screenshots or evidence of effectiveness. The main file and behavior descriptions are based on the examined 0.5.13 source package; later additions and their validation scope are labeled separately. The English, Traditional Chinese and Simplified Chinese editions cover the same content.
+1. Donella H. Meadows, *Thinking in Systems: A Primer*, edited by Diana Wright, 2008. [Publisher](https://chelseagreen.co.uk/book/thinking-in-systems/).
+2. Donella Meadows, [Leverage Points: Places to Intervene in a System](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/). Feedback loops inform the work design here; the illustrations are not a quantitative system model.
+3. OpenAI, [Codex customization: Skills](https://learn.chatgpt.com/zh-Hans/docs/customization/overview#技能), covering personal and project Skill locations and invocation. Checked September 10, 2026.
+4. OpenAI, [GPT-6 Astra guidance](https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6-astra), including instruction following, delegation, and proportionate validation. Checked September 10, 2026.
+5. OpenAI, [GPT-5.6 Sol model](https://developers.openai.com/api/docs/models/gpt-5.6-sol). Official capabilities and project-specific practice are separate evidence. Checked September 10, 2026.
