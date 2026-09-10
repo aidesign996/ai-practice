@@ -1,0 +1,26 @@
+/* Three-language technical article. Original diagrams stay reusable on light pages. */
+.article-title{font-size:30px;line-height:1.5;white-space:normal!important;max-width:840px;text-wrap:balance}
+.article-body{max-width:860px}
+.article-body>p,.article-body>ul,.article-body>ol,.article-body>blockquote{max-width:780px}
+.article-body p,.article-body li{font-size:16px;line-height:1.95}
+.article-body h2{margin:58px 0 22px;padding-top:22px;border-top:1px solid var(--line);font-size:24px}
+.article-body h3{font-size:19px;color:var(--accent);margin:30px 0 15px}
+.article-body strong{color:#f0f5fa}
+.article-body table{border-collapse:collapse;width:100%;margin:24px 0 30px;font-size:14px;line-height:1.85}
+.article-body th{text-align:left;color:var(--text);font-weight:600;background:var(--panel)}
+.article-body th,.article-body td{padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+.article-body td{color:#cbd8e3}
+.article-body td:first-child{color:var(--accent);width:23%}
+.figure-image{display:block;width:min(100%,var(--figure-width));max-width:100%;margin:18px auto 6px;border:0;border-radius:0;background:var(--bg);isolation:isolate;scroll-margin-top:36px}
+.figure-image img{width:100%;height:auto;max-width:100%;max-height:none;margin:0;filter:invert(1) hue-rotate(180deg);mix-blend-mode:screen}
+.figure-image:hover{outline:1px solid var(--line);outline-offset:7px}
+.article-body .figure-caption{max-width:620px;margin:6px auto 20px;font-size:13px;line-height:1.8;text-align:center}
+.toc{max-height:calc(100svh - 290px);overflow-y:auto;scrollbar-width:thin}
+.figure-viewer{width:min(1120px,94vw);max-height:94svh;padding:18px 24px 24px;border:1px solid var(--line);border-radius:10px;color:var(--text);background:var(--bg)}
+.figure-viewer::backdrop{background:rgba(3,12,20,.85)}
+.figure-viewer .viewer-close{display:block;margin:0 0 12px auto;padding:6px 14px;color:var(--accent);background:var(--panel);border:1px solid var(--line);border-radius:5px}
+.figure-viewer .viewer-image{background:var(--bg);isolation:isolate}
+.figure-viewer img{display:block;max-width:100%;max-height:78svh;width:auto;height:auto;margin:auto;filter:invert(1) hue-rotate(180deg);mix-blend-mode:screen}
+@media(min-width:1100px){html[lang=zh-Hans] .article-title{font-size:30px;white-space:normal}}
+@media(max-width:750px){.article-title{font-size:25px}.article-body h2{font-size:22px;margin-top:42px}.article-body table{font-size:13px}.article-body th,.article-body td{padding:10px 8px}.article-body td:first-child{width:24%}.figure-image{margin-top:18px}.article-body .figure-caption{text-align:left;font-size:12px}}
+@media print{.figure-image{background:#fff}.figure-image img{filter:none;mix-blend-mode:normal}}

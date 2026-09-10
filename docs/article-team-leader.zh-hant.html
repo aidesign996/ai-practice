@@ -1,109 +1,150 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>給 AI 項目配一位負責人，帶領團隊朝正確的方向前進 · AI Design 996</title><link rel="stylesheet" href="studio.css"><script src="studio.js" defer></script><link rel="icon" href="avatar.jpg"><link rel="canonical" href="https://aidesign996.github.io/ai-practice/article-team-leader.zh-hant.html"></head><body><div class="wrap"><header class="topbar"><a class="brand" href="index.zh-hant.html"><img src="avatar.jpg" alt="">AI DESIGN 996</a><nav aria-label="首頁"><a href="index.zh-hant.html" >Home</a><a href="articles.zh-hant.html" aria-current="page">Articles</a><a href="skills.zh-hant.html" >Skills</a></nav><div class="languages" aria-label="Language"><a data-language href="article-team-leader.html" lang="en" >EN</a><a data-language href="article-team-leader.zh-hant.html" lang="zh-Hant" aria-current="page">繁中</a><a data-language href="article-team-leader.zh.html" lang="zh-Hans" >简中</a></div></header><div class="shell"><aside class="identity"><span class="overline">AI DESIGN 996</span><h2>把 AI 實踐變成可用的作品。</h2><p>分享 AI 技能，也記錄設計與實踐。歡迎試用，把真實場景和問題帶回來，一起改進。</p><div class="identity-links"><a href="index.zh-hant.html">首頁</a><a href="https://github.com/aidesign996" target="_blank" rel="noopener">GitHub ↗</a></div><nav class="toc" aria-label="文章目錄"><strong>文章目錄</strong><a href="#section-1">01 · 目標反饋</a><a href="#section-2">02 · 探索與選擇</a><a href="#section-3">03 · 負責人協作</a><a href="#section-4">04 · 經驗與判斷</a><a href="#section-5">05 · 開始使用</a><a href="#section-6">06 · 知識入口</a><a href="#section-7">07 · 模型與投入</a><a href="#section-8">08 · 參與反饋</a><a href="#section-9">09 · 參考</a><a href="#comments">留言反饋</a></nav></aside><main><div class="crumbs"><a href="index.zh-hant.html">首頁</a><span>/</span><a href="articles.zh-hant.html">文章</a><span>/</span><span>設計手記</span></div><h1 class="article-title"><span>給 AI 項目配一位負責人，</span><span>帶領團隊朝正確的方向前進</span></h1><p class="article-meta">AI Design 996 · 設計與實踐 · 2026-09-10 更新 · 首次公開發布 2026-09-07</p><article class="article-body"><p>用 AI 做項目，最忙的那個人，有時還是我。</p>
-<p>方案選好了，要催它繼續；兩個項目需要配合，我來回搬資料；一篇文章改順了，下次又得提醒同樣的排版要求。</p>
-<p>這幾天寫三篇公眾號，我把這些感受串了起來：<strong>我想交出去的，是看方向、協調配合、用經驗這幾件持續的工作。</strong></p>
-<p>於是，我圍繞 Codex 中的 Astra 做了 Team Leader：用一套 Skill，給項目裡的 AI 負責人說清職責和思考方式。它持續對照目標，組織合適的專業工作，也把有用的經驗帶到下一次判斷裡。</p>
-<p>下面就從這些日常問題講起。文中的真實取材、改稿記錄與教學情境分別說明；當前可安裝的正式版為 <a href="https://github.com/aidesign996/team-leader/releases/latest">0.5.23</a>，<a href="https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md#start">安裝與更新說明</a>集中維護在技能主頁。</p>
-<h2 id="section-1">先讓每一輪工作，都能回頭看目標</h2>
-<p>比如，我想做一個作品分享頁面，讓人一眼找到文章和能用的技能。做著做著，加了分類，又補篩選，再為它們增加設置。每一步都有理由，頁面卻越來越難看懂。</p>
-<p>讀《系統之美》時，增強迴路和調節迴路給了我啟發。[1][2] 放到這個假設場景裡，已有內容不斷帶來新需求，新需求又推動繼續追加，形成自我放大的關係。臨時想法、過時說明和無用功能如果一直不清理，也會干擾後面的判斷。</p>
-<p>那麼，誰來持續判斷：這些工作是不是還服務最初的目標？</p>
-<p><strong>目標由我來定。負責人做完一輪，就把結果拿回來，看差距，再組織修正。</strong></p>
-<p><a class="figure-image" href="team-leader/figure-zh-hant-01.png" title="點擊查看大圖"><img src="team-leader/figure-zh-hant-01.png" alt="圖1：用戶目標持續輸入負責人，實際成果反饋回來，負責人據此組織專業崗位修正。" style="--figure-width:460px;--figure-height:320px"></a></p>
-<p class="figure-caption"><em>圖1　B 表示調節迴路：目標、成果反饋和修正行動相互連接。</em></p>
-<p>還是那個頁面。負責人要實際打開它，看佈局，也看操作。主要信息仍然難找，就把具體問題交給相關崗位改；修改後的結果，再進入下一輪判斷。</p>
-<p><a class="figure-image" href="team-leader/figure-zh-hant-02.png" title="點擊查看大圖"><img src="team-leader/figure-zh-hant-02.png" alt="圖2：已有內容推動繼續追加，與持續對照目標後再行動的兩種工作方式。" style="--figure-width:640px;--figure-height:430px"></a></p>
-<p class="figure-caption"><em>圖2　左邊的 R 表示一種可能的範圍膨脹關係；右邊讓目標持續參與判斷。並非所有普通 Agent 都會越做越偏。</em></p>
-<p>普通 Agent 也能自查。Team Leader 把看方向、找差距、推動修正設為負責人的持續職責。它能否有用，要看問題找得準不準、修正有沒有落實。</p>
-<h2 id="section-2">給專業判斷留空間，把選擇接到實現上</h2>
-<p>目標明確，並不意味著每一步都由我指定。</p>
-<p>產品還沒想清楚時，可以比較不同方案；技術路線有分歧時，應把條件和代價講透。方向選定後，再檢查實現是否兌現了這個選擇。</p>
-<p><a class="figure-image" href="team-leader/figure-zh-hant-03.png" title="點擊查看大圖"><img src="team-leader/figure-zh-hant-03.png" alt="圖3：圍繞同一目標探索候選，再依據目標與約束選擇方向。" style="--figure-width:480px;--figure-height:330px"></a></p>
-<p class="figure-caption"><em>圖3　探索與收斂。方案數量增加本身，不等於系統思考中的增強迴路。</em></p>
-<p><strong>負責人承擔組織和交付責任；目標、核心取捨和有效要求，仍由使用者決定。</strong></p>
-<p>專業角色可以指出問題、提出更好的辦法。普通且已授權的選擇自行推進；確實涉及目標或重要取捨時，帶著具體方案、理由和影響來討論。已經確認的要求，也不能被一箇舊案例悄悄改掉。</p>
-<h2 id="section-3">找對負責人，讓他們直接把事情接起來</h2>
-<p>項目裡有些工作在想“做什麼”，有些在想“怎麼做”，還有製作和檢查。我為完整團隊安排了六類職責：負責人、環境搭建、產品設計、技術設計、開發和獨立 AI 驗收。</p>
-<p><a class="figure-image" href="team-leader/figure-zh-hant-04.png" title="點擊查看大圖"><img src="team-leader/figure-zh-hant-04.png" alt="圖4：負責人協調環境、產品、技術、開發與獨立AI驗收等專業職責。" style="--figure-width:360px;--figure-height:520px"></a></p>
-<p class="figure-caption"><em>圖4　編號表示職責。採用完整團隊模式時建立對應崗位，每輪只調動有關角色。</em></p>
-<p><strong>已有合適的專業負責人，就先找他承接，包括其他項目的負責人。</strong> 簡單工作可以由一人完成；確實需要新團隊且獲得授權時，再補齊完整安排。分工的目的，是把事情做好。</p>
-<p>這次寫分享，我就遇到了跨項目配合：分享負責人需要弄懂 Skill，開發負責人掌握設計、安裝和驗證資料。如果每個問題都經我轉發，我又成了聯絡員。</p>
-<p>我換了一種交代方式：</p>
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Team Leader：AI 團隊如何協作、糾偏與積累經驗 · AI Design 996</title><link rel="stylesheet" href="studio.css"><script src="studio.js" defer></script><link rel="stylesheet" href="article-technical.css"><script src="article-technical.js" defer></script><link rel="icon" href="avatar.jpg"><link rel="canonical" href="https://aidesign996.github.io/ai-practice/article-team-leader.zh-hant.html"></head><body><div class="wrap"><header class="topbar"><a class="brand" href="index.zh-hant.html"><img src="avatar.jpg" alt="">AI DESIGN 996</a><nav aria-label="首頁"><a href="index.zh-hant.html" >Home</a><a href="articles.zh-hant.html" aria-current="page">Articles</a><a href="skills.zh-hant.html" >Skills</a></nav><div class="languages" aria-label="Language"><a data-language href="article-team-leader.html" lang="en" >EN</a><a data-language href="article-team-leader.zh-hant.html" lang="zh-Hant" aria-current="page">繁中</a><a data-language href="article-team-leader.zh.html" lang="zh-Hans" >简中</a></div></header><div class="shell"><aside class="identity"><span class="overline">AI DESIGN 996</span><h2>把 AI 實踐變成可用的作品。</h2><p>分享 AI 技能，也記錄設計與實踐。歡迎試用，把真實場景和問題帶回來，一起改進。</p><div class="identity-links"><a href="index.zh-hant.html">首頁</a><a href="https://github.com/aidesign996" target="_blank" rel="noopener">GitHub ↗</a></div><nav class="toc" aria-label="文章目錄"><strong>文章目錄</strong><a href="#section-1">01 · 產品目標</a><a href="#section-2">02 · 理論依據</a><a href="#section-3">03 · 職責與交付</a><a href="#section-4">04 · 跨專案協作</a><a href="#section-5">05 · 經驗與知識</a><a href="#section-6">06 · 實踐案例</a><a href="#section-7">07 · 安裝與使用</a><a href="#section-8">08 · 侷限與願景</a><a href="#section-9">09 · 參考與實作</a><a href="#comments">留言反饋</a></nav></aside><main><div class="crumbs"><a href="index.zh-hant.html">首頁</a><span>/</span><a href="articles.zh-hant.html">文章</a><span>/</span><span>設計手記</span></div><h1 class="article-title"><span>Team Leader：AI 團隊如何協作、糾偏與積累經驗</span></h1><p class="article-meta">AI Design 996 · 設計與實踐 · 2026-09-11 修訂 · 首次公開發布 2026-09-07</p><article class="article-body"><p><strong>Team Leader 是一套以 Skill 為載體的 AI 團隊工作方法：圍繞用戶目標組織專業工作，通過反饋修正成果，並把實踐經驗帶入下一次判斷。</strong></p>
+<p>本文從產品目標和系統思考出發，說明職責分工、跨項目協作與經驗學習如何連接、如何實現，再用一次真實的分享實踐展示運行過程，最後討論成本、侷限和改進方向。</p>
+<h2 id="section-1">產品目標：讓負責人接住完整的工作</h2>
+<p>使用 AI 做項目，用戶常常同時承擔三種工作：盯著進度與方向，在不同項目之間轉述問題，以及反覆解釋已經說過的要求。每一步都能完成，整件事卻仍依賴用戶不斷接手。</p>
+<p>Team Leader 希望把這些持續的責任交給 AI 負責人。用戶提出目標、決定重要取捨；負責人理解目標，組織實施與檢查，主動聯繫需要配合的專業負責人，再根據實際結果改進工作。</p>
+<p>這套設計包含三個相互連接的部分：</p>
+<table>
+<thead>
+<tr>
+<th>組成</th>
+<th>要解決的問題</th>
+<th>主要機制</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>目標、職責與交付</td>
+<td>怎樣持續把事情做對？</td>
+<td>明確崗位貢獻，對照成果找差距，組織修正</td>
+</tr>
+<tr>
+<td>專業分工與跨項目協作</td>
+<td>誰來做，缺少的專業能力怎樣接上？</td>
+<td>項目內分工，負責人之間直接交流與銜接</td>
+</tr>
+<tr>
+<td>經驗沉澱與再次應用</td>
+<td>這次學到的，下次怎樣真正用上？</td>
+<td>保存條件和理由，按情境檢索，比較後使用，以結果修訂</td>
+</tr>
+</tbody></table>
+<p>三者共同服務於一個產品目標：<strong>讓用戶更少反覆提醒、來回傳話和從頭教，讓負責人更能承擔工作，也更懂得怎樣與你配合。</strong></p>
+<p>目前主要圍繞 Codex 中的 Astra 設計與實踐。<code>SKILL.md</code> 提供入口，<code>references/protocol.md</code> 規定協作、交付與知識使用方式，隨包模板承接項目中的職責、要求和記錄。實際執行、文件訪問和任務間通信，由所在應用提供。模型發揮理解、判斷與創造能力，機制是否有效則由成果檢驗。</p>
+<h2 id="section-2">理論依據：用調節把握方向，讓積累改善判斷</h2>
+<p>《系統之美》中的反饋思想，是這套設計的重要來源。調節迴路與增強迴路描述兩種不同的作用：前者通過反饋縮小與目標的差距，後者使已有變化繼續加強。它們的含義可參見 Meadows 對<a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">反饋迴路的原始論述</a>。</p>
+<h3>調節迴路：目標、反饋與行動相互連接</h3>
+<p>放到 AI 工作中，用戶目標是判斷尺度，項目成果是當前狀態，專業崗位負責執行與修正。負責人查看實際成果，識別差距，再協調下一輪行動；行動後的結果繼續反饋回來。</p>
+<p><a id="figure-1" class="figure-image" href="team-leader/technical-zh-hant-01.png" title="點擊查看大圖" style="--figure-width:480px;--figure-height:340px"><img src="team-leader/technical-zh-hant-01.png" alt="圖1：用戶目標和項目實際成果輸入負責人判斷，負責人協調專業崗位執行與修正，結果繼續反饋。" width="1536" height="1024" loading="lazy" decoding="async" style="--figure-width:480px;--figure-height:340px"></a></p>
+<p class="figure-caption"><em>圖1　B 表示調節迴路。目標持續參與判斷，執行後的成果再成為反饋。</em></p>
+<p>負責人需要看到真實成果。例如網頁是否好用，要查看頁面和操作；文章是否清楚，要讀整篇、看配圖。完成報告、文件數量和檢查次數，都只是支持判斷的材料。</p>
+<p><strong>調節能否起作用，取決於差距是否找準、修改是否落實，以及修改後的結果是否被再次檢查。</strong></p>
+<h3>增強迴路：讓有效經驗支持後續工作</h3>
+<p>我們希望形成這樣的積累：實際工作產生可借鑑的經驗，經驗改善下一次判斷，新的實踐又帶來更豐富的經驗。前期探索也可以藉助已有理解，提出和比較更多有價值的可能。</p>
+<p>但積累需要篩選與修正。錯誤解釋、過時要求和重複材料也可能被不斷強化。因此，探索與經驗積累始終要接受目標和真實結果的檢驗。這裡是將反饋思想用於工作方法的設計，還沒有建立可計算的系統動力學模型，也不能據此推斷能力會持續自動增長。</p>
+<p><a id="figure-2" class="figure-image" href="team-leader/technical-zh-hant-02.png" title="點擊查看大圖" style="--figure-width:500px;--figure-height:350px"><img src="team-leader/technical-zh-hant-02.png" alt="圖2：經驗積累直接反饋到提煉與驗證，幫助形成更多可複用經驗，再充實經驗積累。" width="1536" height="1024" loading="lazy" decoding="async" style="--figure-width:500px;--figure-height:350px"></a></p>
+<p class="figure-caption"><em>圖2　R 表示增強迴路：已有經驗幫助提煉與驗證，新形成的有效經驗再充實積累。</em></p>
+<h2 id="section-3">機制一：明確職責，連接探索、實現與檢查</h2>
+<p><strong>用戶決定目標與核心取捨，負責人承擔組織和交付責任，專業崗位為共同目標貢獻成果。</strong></p>
+<p>負責人先理解“為什麼做、怎樣算做好”，再判斷需要哪些專業工作。各崗位獲得明確的任務、必要資料和成果要求，同時保留提出問題、比較方案和選擇實現方法的空間。</p>
+<h3>先探索，再把已選方向準確實現</h3>
+<p>產品尚未想清楚時，需要比較不同方案；技術存在分歧時，需要說明適用條件、代價和風險。重要方向由用戶決定，已授權的普通實現選擇由負責人和相關崗位推進。</p>
+<p><a id="figure-3" class="figure-image" href="team-leader/technical-zh-hant-03.png" title="點擊查看大圖" style="--figure-width:500px;--figure-height:350px"><img src="team-leader/technical-zh-hant-03.png" alt="圖3：從同一目標探索多個候選，再按目標、約束與實際比較選擇採用方向。" width="1536" height="1024" loading="lazy" decoding="async" style="--figure-width:500px;--figure-height:350px"></a></p>
+<p class="figure-caption"><em>圖3　這一圖只解釋探索與選擇：先打開可能性，再把選擇接到實現上。</em></p>
+<p>方向確定後，開發要兌現已經確認的設計；成果不符合要求，就返回相關崗位修正。負責人也可以提出異議和更好的建議，但不能自行更換用戶目標，或用一箇舊案例覆蓋有效要求。</p>
+<h3>按專業貢獻組織工作</h3>
+<p>完整團隊安排六類職責：負責人統籌目標、協調和交付；環境、產品、技術、開發與獨立 AI 驗收分別承擔專業工作。</p>
+<p><a id="figure-4" class="figure-image" href="team-leader/technical-zh-hant-04.png" title="點擊查看大圖" style="--figure-width:400px;--figure-height:500px"><img src="team-leader/technical-zh-hant-04.png" alt="圖4：負責人協調五類專業職責，環境準備、產品方案、技術方案、開發和獨立AI驗收各有貢獻。" width="1122" height="1402" loading="lazy" decoding="async" style="--figure-width:400px;--figure-height:500px"></a></p>
+<p class="figure-caption"><em>圖4　編號表示職責，不要求每一輪都讓所有崗位工作。</em></p>
+<p>簡單工作可以由一人完成。需要專業協作時，優先複用已有的合適負責人；確需新團隊並獲得授權，再建立完整安排，每輪調動與任務有關的崗位。</p>
+<p>團隊模式下，獨立 AI 驗收由未主要實現該項成果的角色檢查；開發仍承擔自己的自檢。負責人接回檢查結果，判斷對整體目標的影響，並組織必要修改。這些職責和銜接方式由 Skill 的協作、交付與驗收協議規定。</p>
+<h2 id="section-4">機制二：讓項目負責人直接協作</h2>
+<p>項目內分工解決一項成果怎樣由不同專業完成。跨項目協作則把已經存在的專業負責人連接起來，例如分享負責人向 Skill 開發負責人瞭解設計與使用條件。</p>
+<p><strong>當前負責人繼續對最終交付負責，相關負責人承擔各自的專業結果。</strong></p>
+<p>實際協作可以分成四步：明確缺少什麼資料或成果；找到已有的專業負責人，交代用途和問題；收到回應後核對、追問；把答案用進當前工作並繼續交付。</p>
+<p><a id="figure-5" class="figure-image" href="team-leader/technical-zh-hant-05.png" title="點擊查看大圖" style="--figure-width:540px;--figure-height:380px"><img src="team-leader/technical-zh-hant-05.png" alt="圖5：多個項目負責人按需直接交換問題和資料，每個項目保留自己的團隊、成果和知識。" width="1536" height="1024" loading="lazy" decoding="async" style="--figure-width:540px;--figure-height:380px"></a></p>
+<p class="figure-caption"><em>圖5　虛線表示按需溝通。各負責人帶著自己的專業判斷配合，資料仍有明確歸屬。</em></p>
+<p>溝通不只是轉發文字。兩位負責人可以從不同角度提出意見：一方考慮表達是否容易理解，另一方核對描述是否準確、操作是否可行。分歧需要通過具體問題和證據討論，再接回共同任務。</p>
+<p>實現這套協作，需要應用支持負責人之間通信，並允許訪問任務所需的資料。Skill 規定如何組織協作，通信工具完成消息傳遞；單獨放入 Skill 文本不會自動連接其他項目。</p>
+<h2 id="section-5">機制三：經驗怎樣留下，又怎樣參與判斷</h2>
+<p>經驗學習包含保存與使用兩個環節。崗位原則說明做判斷的出發點；具體案例記錄當時如何實踐這個原則，以及結果怎樣。</p>
+<h3>從目標出發檢索，從實際結果中修訂</h3>
+<p>接到任務後，負責人先恢復用戶目標、崗位職責和有效要求，再查找與當前問題有關的案例。比較舊案例的條件、選擇理由與實際結果，決定照用、調整，或不用舊方法。</p>
+<p><a id="figure-6" class="figure-image" href="team-leader/technical-zh-hant-06.png" title="點擊查看大圖" style="--figure-width:360px;--figure-height:520px"><img src="team-leader/technical-zh-hant-06.png" alt="圖6：目標與崗位作為尺度，舊案例作為參考，比較後採取行動；實際結果分別推動當前工作修正與原經驗更新。" width="1080" height="1548" loading="lazy" decoding="async" style="--figure-width:360px;--figure-height:520px"></a></p>
+<p class="figure-caption"><em>圖6　兩條回程各有用途：修正當前工作，以及修訂留給以後使用的經驗。</em></p>
+<p><strong>借用經驗，是借當時的判斷依據，再決定這次怎樣做。</strong></p>
+<p>例如“讓讀者容易抓住重點”是目標，加粗和分段是方法。重點被埋住時可以增加少量強調；滿頁都在強調時，可能需要減少加粗。同一目標，在不同條件下可以導向不同做法。</p>
+<p>做完後再看結果：問題仍在，就繼續改當前成果；發現了新的適用條件或教訓，就補回原案例。用戶反饋與 AI 實際嘗試都可以成為來源，尚未驗證的解釋仍應保留為假設。</p>
+<h3>用固定入口保存不同性質的信息</h3>
+<p>Skill 的項目知識協議約定讀取和更新方式，項目文件保存具體內容。入口之間有引用關係，負責人需要按當前問題查找，而不是每次把所有資料都塞進上下文。</p>
+<p><a id="figure-7" class="figure-image" href="team-leader/technical-zh-hant-07.png" title="點擊查看大圖" style="--figure-width:380px;--figure-height:490px"><img src="team-leader/technical-zh-hant-07.png" alt="圖7：共同規則、崗位職責、有效約定、情境經驗與當前狀態分別保存，通過固定入口恢復工作。" width="1080" height="1377" loading="lazy" decoding="async" style="--figure-width:380px;--figure-height:490px"></a></p>
+<p class="figure-caption"><em>圖7　圖中是隨包模板的知識分工，已有項目可以複用自己的有效入口。</em></p>
+<p><code>AGENTS.md</code>：共同規則，以及何時讀取相關資料。<br>
+<code>roles/</code>：各崗位的責任和對整體目標的貢獻。<br>
+產品、技術與驗收文檔：已經確認的要求和決定。<br>
+<code>docs/METHODOLOGY.md</code>：經驗入口，鏈接具體方法、案例與結果。<br>
+<code>README.md</code>、<code>PROGRESS.md</code> 等：當前狀態、未完成工作和下一步。</p>
+<p><strong>有效要求按其適用範圍執行；可選方法與案例，再判斷對當前任務是否有用。</strong></p>
+<p>一次性要求本次照辦，無關或重複的內容不必沉澱成經驗。經驗有新證據時，應修訂原記錄的條件和解釋。這樣既保留需要的知識，也避免資料越積越雜。</p>
+<h2 id="section-6">實踐：一次 Skill 分享，怎樣把機制用起來</h2>
+<p>這次準備分享文章時，用戶交代的目標是：讓讀者理解這個 Skill，並能開始使用；資料由分享負責人直接找開發負責人溝通。</p>
+<table>
+<thead>
+<tr>
+<th>環節</th>
+<th>實際處理</th>
+<th>對成果的影響</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>專業協作</td>
+<td>分享負責人追問“讀者能否照著一句話開始”，開發負責人核對設計和使用條件</td>
+<td>上手說明補清安裝、啟用及任務間通信的前提，再給出簡單交代方式</td>
+</tr>
+<tr>
+<td>目標反饋</td>
+<td>用戶指出文字密、重點不突出、圖文不對應，分享負責人據此調整</td>
+<td>通過分段、有限加粗和修改圖示，逐項回應閱讀問題</td>
+</tr>
+<tr>
+<td>經驗整理</td>
+<td>崗位要求與具體改稿案例分別保存，由經驗入口關聯</td>
+<td>為後續查找保留目標、處理理由和結果，供下次比較使用</td>
+</tr>
+</tbody></table>
+<p>這一實踐已有直接溝通和改稿記錄。它也暴露出侷限：部分閱讀要求仍曾遺漏，需要用戶再次指出才修正。</p>
+<p>跨項目取材已經實際發生，經驗也已有保存入口；後續是否能穩定主動檢索、少提醒，仍需繼續觀察。上節加粗與分段的比較用於解釋判斷方法，不是不同排版方案的效果實驗。</p>
+<h2 id="section-7">安裝後，怎樣開始使用</h2>
+<p>將 <a href="https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md#start">Team Leader 中文項目頁</a>交給支持聯網和項目文件操作的 AI，並說：</p>
 <blockquote>
-<p>這個分享由你負責，資料去找技能開發負責人溝通。</p>
+<p>請按項目說明，從最新正式發行安裝完整的 Team Leader Skill，完成後告訴我實際安裝的版本。如果已經安裝，請先保留項目資料和自定義修改，再幫我更新。</p>
 </blockquote>
-<p>在實際取材中，分享負責人直接追問：讀者能不能照著一句話開始？開發負責人補清前提：先安裝並啟用 Skill、能找到相應負責人，應用還要支持任務間通信。分享負責人再把這些材料組織成容易上手的說明。</p>
-<p><a class="figure-image" href="team-leader/figure-zh-hant-05.png" title="點擊查看大圖"><img src="team-leader/figure-zh-hant-05.png" alt="圖5：各項目負責人按需直接交換問題和資料，繼續維護各自的成果與知識。" style="--figure-width:520px;--figure-height:360px"></a></p>
-<p class="figure-caption"><em>圖5　虛線表示按需溝通。各自的職責與資料邊界保持。</em></p>
-<p>一個關心“怎樣講得簡單”，一個核對“照著做能否用起來”。把問題問透，再繼續交付，才真正接住了協調工作。</p>
-<p><strong>這種協作需要宿主支持通信，也需要訪問相關資料的權限。</strong> 把 Skill 放進普通聊天框，並不會自動連通其他項目。這裡已有具體取材記錄，仍不是常駐自動調度服務的證明。</p>
-<h2 id="section-4">經驗留下來，是為了下一次更會判斷</h2>
-<p>還有一種重複勞動：這次改好了，下次又要教。</p>
-<p>寫公眾號時，我反覆提過重點要突出、結論要獨立成段。後續稿件仍出現重點混在長段裡的情況，我再次指出後才修好。這個經歷讓我想：怎樣才能讓磨合過的東西真正用起來？</p>
-<p>換成自己，我會先知道正在替誰做什麼、要達到什麼目標，再回想以前類似的問題，比較這次還能不能沿用。</p>
-<p>所以，我給 AI 的安排也分兩層：<strong>崗位說明判斷的出發點；案例留下當時為什麼這樣做、結果如何。</strong></p>
-<p>就拿“讓讀者容易讀懂”這個目標來說。下面用兩個情境說明，經驗為什麼不能只是記住動作：</p>
-<p><strong>A：重點埋在長段裡。</strong> 我說“這句加粗”。負責人要理解，我在意的是讓人抓住重點。因此，合適的處理可能是先單獨分段，再少量加粗。</p>
-<p>值得留下的是這個判斷：在什麼情況下，怎樣讓重點更容易被看見、被理解，以及改完效果如何。</p>
-<p><strong>B：換一篇文章，滿頁都在加粗。</strong> 同樣抓不到重點，還繼續加粗嗎？這次可以減少強調、合併重複解釋。目標相同，具體做法卻可能相反。</p>
-<p>這是根據改稿問題作的教學比較，不是三種方法的效果實驗。真實記錄證明出現過遺漏和修正，尚不能據此說以後每次都會主動複用。</p>
-<p><a class="figure-image" href="team-leader/figure-zh-hant-06.png" title="點擊查看大圖"><img src="team-leader/figure-zh-hant-06.png" alt="圖6：新任務先恢復目標與崗位，再查舊案例比較條件；結果既用於糾正當前工作，也用於修訂經驗。" style="--figure-width:430px;--figure-height:640px"></a></p>
-<p class="figure-caption"><em>圖6　兩條回程：對照目標，改好當前工作；根據新結果，修訂原經驗。</em></p>
-<p><strong>借用舊經驗，是借當時的判斷依據，再決定這次怎樣做。</strong></p>
-<p>改完還要看實際成果。如果問題依舊，就繼續修正；新結果說明舊辦法只適用於某些情況，就把條件補回原案例。失敗也能留下教訓；沒有新收穫的重複記錄，不必再添一份。</p>
-<p>我說的“越用越聰明”，就體現在這裡：逐漸理解我的用意，遇到變化會比較、會調整，配合起來更順手。這是一套希望落實到實際行為的工作設計，不是重新訓練模型，也不保證永久記住、再不漏項。</p>
-<h2 id="section-5">裝好後，先交代你正在做的事</h2>
-<p>不需要先準備一套複雜的任務書。把這句話交給能聯網、能操作項目文件的 AI 工具：</p>
-<blockquote>
-<p>請閱讀 <a href="https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md">https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md</a> ，從最新正式發行安裝完整的 Team Leader Skill，完成後告訴我實際安裝的版本。</p>
-</blockquote>
-<p>在項目裡選中 Team Leader，或點名 <code>$team-leader</code>，再說：</p>
+<p>在項目裡選用 Team Leader，再交代正在做的事：</p>
 <blockquote>
 <p>這件事交給你負責，幫我持續跟進。過程中有用的經驗留下來，以後遇到類似事情，先找來看看怎麼用。</p>
 </blockquote>
-<p>已有項目，負責人先找回目標、成果和未完成工作；只有一個想法，也可以先把想做什麼講出來。缺少會影響結果的關鍵條件時再補充，不必替它逐步安排工作。</p>
-<p><a class="figure-image" href="team-leader/figure-zh-hant-07.png" title="點擊查看大圖"><img src="team-leader/figure-zh-hant-07.png" alt="圖7：接回現狀與知識，安排相關工作，查看結果，再留下繼續點。" style="--figure-width:390px;--figure-height:520px"></a></p>
-<p class="figure-caption"><em>圖7　已有項目優先接續原成果、記錄和角色。</em></p>
-<p><strong>發佈新版，不會自動更新你已經裝好的 Skill。</strong></p>
-<p>已經安裝過，可以這樣說：</p>
-<blockquote>
-<p>請核對最新正式版，先保留舊包和自定義修改，再更新完整 Skill。保留項目資料、已確認要求和未完成任務，讓原負責人讀取適用變化，接著原來的目標做。</p>
-</blockquote>
-<p>完整包、安裝位置和升級說明以<a href="https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md#start">當前技能主頁</a>為準。Codex 的個人技能目錄為 <code>~/.agents/skills/</code>，項目內目錄為 <code>.agents/skills/</code>；應保留整個技能文件夾及相對引用。[3]</p>
-<h2 id="section-6">固定入口，讓目標與經驗下次找得到</h2>
-<p>只把信息留在長聊天裡，下次仍可能找不到。我為不同內容安排了固定入口，也約定什麼時候讀取和更新。</p>
-<p><a class="figure-image" href="team-leader/figure-zh-hant-08.png" title="點擊查看大圖"><img src="team-leader/figure-zh-hant-08.png" alt="圖8：共同規則、崗位職責、有效約定、經驗和當前狀態分別保存，並通過入口關聯。" style="--figure-width:500px;--figure-height:620px"></a></p>
-<p class="figure-caption"><em>圖8　這是隨包模板的知識分工。已有項目可以複用自己的有效入口。</em></p>
-<p><code>AGENTS.md</code> 說明共同規則和讀取路線。<br>
-<code>roles/</code> 說明崗位怎樣貢獻項目目標。<br>
-產品、技術與驗收約定保存已經確認的要求。<br>
-<code>docs/METHODOLOGY.md</code> 是情境經驗入口，鏈接到具體方法、案例和結果。<br>
-<code>README.md</code>、<code>PROGRESS.md</code> 等現有入口接住當前狀態和下一步。</p>
-<p><strong>明確要求要按範圍執行；可選方法與案例，才判斷是否值得複用。</strong></p>
-<p>“這次用藍色”和“以後都要讓小白看懂”，範圍不同，保存位置也可能不同。AI 可以幫助整理，但不能以“我覺得以後沒用”為由丟掉有效要求。</p>
-<p>文件存在只是第一步。下一次實際查找、比較條件並用於成果，才能說明經驗發揮了作用。</p>
+<p>已有項目先找回目標、成果、現有角色和未完成工作；只有想法時，可以先討論需求與方向。需要跨項目配合，再告訴它相關項目或負責人。</p>
+<p>發佈新版不會自動更新本地安裝。更新後，讓原負責人讀取適用變化，保留已確認要求和原工作繼續點。具體安裝、啟用與更新方式以項目頁為準。</p>
+<h2 id="section-8">侷限與願景：用真實效果改進這套方法</h2>
 <p><a id="model-fit"></a></p>
-<h2 id="section-7">模型與投入，都要回到實際成果</h2>
-<p>Team Leader 主要圍繞 Windows 上 Codex 中的 GPT-6 Astra 設計與實踐。OpenAI 的現行指導提到，Astra 對指令比較敏感，可能比預期少委派，也可能對小任務檢查過多。這提醒我把職責和結果說清，同時保持流程與任務相稱。[4]</p>
-<p>Sol 也有部分專業崗位的實踐記錄：0.5.11 的原型工作和 0.5.14 的圖稿修訂曾由 Sol/high 承擔產品工作，配合 Astra 崗位完成後續處理。它們保留當時的版本和範圍；沒有全 Astra 與全 Sol 團隊的同條件對照，不能據此斷言誰一定更好。官方模型能力說明也不能替代本 Skill 的使用驗證。[5]</p>
-<p><strong>先尊重使用者選擇的模型與檔位，再在已授權範圍內安排投入。</strong></p>
+<h3>能力與環境的邊界</h3>
+<p>當前實踐主要在 Windows 的 Codex 中，圍繞 Astra 展開；Sol 有部分專業崗位實踐，還沒有全 Astra 與全 Sol 團隊的同條件對照。</p>
+<p>強模型也需要清楚、一致的目標和約束。<a href="https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6-astra">OpenAI 的 Astra 指導</a>也討論了指令敏感性、委派和相稱驗證。增加規定並不自動改善執行，仍要檢查實際行為和結果。</p>
+<p>這套方法依賴模型按流程工作，以及應用的文件、通信和任務管理能力。經驗文件不會重新訓練模型，也不能保證所有要求永遠被正確檢索和執行。</p>
 <p><a id="usage-cost"></a></p>
-<p>0.5.23 的現行方法中，已授權自動分配時，負責人通常以 <code>high</code> 為起點；清楚的小改動可用 <code>medium</code>，實質設計與驗收按複雜度用 <code>high</code>，明顯困難的問題可直接考慮 <code>xhigh</code>。更高投入需要具體理由，實際可用設置以宿主為準。</p>
-<p>這項起點從 0.5.19 起已調整，不能繼續把舊版默認 <code>xhigh</code> 當作現行建議。歷史上實際用了什麼檔位，仍按原記錄保留。</p>
-<p>負責人應親看完整成果和關鍵問題；對有依據的同類低風險項目，可以抽查並複用未變化的證據。獨立 AI 驗收由未主要實現該項成果的角色承擔，與開發自檢分開。高檔位、檢查次數或篇幅，都不能代替結果是否合用。</p>
-<p>協調、驗證和返修也有成本。目前沒有可靠的整體額度節省比例。更值得觀察的是：最終質量怎樣，返工多少，哪些重複溝通確實減少了。</p>
-<h2 id="section-8">把真實問題帶回來，一起改進</h2>
-<p>這幾天的實踐裡，負責人直接取材已有具體記錄；排版要求仍曾遺漏，也有用戶提醒後才修好的情況。0.5.23 已把目標邊界、有效要求、經驗檢索與結果修訂寫進協議和模板，並通過包一致性及四組文件情境檢查。五個項目的負責人採用已核對，其中兩例經提醒才完成接續。</p>
-<p>這些結果說明我們做到了哪些事，也留下了需要繼續觀察的問題。合成情境通過、提醒後完成、長期自主有效，是不同層次；目前不能承諾自動無遺漏或固定省時、省額度。</p>
-<p><strong>我希望少一點反覆催、來回傳、從頭教，多一點圍繞目標討論成果。</strong></p>
-<p>如果你用起來哪裡不順，歡迎直接說：你在做什麼，它怎樣處理，哪裡還要你補一手。不用先寫技術報告，有用的體驗也歡迎分享。</p>
-<p><a href="#comments">在文章下方留言</a> · <a href="https://github.com/aidesign996/ai-practice/discussions/1">到 GitHub 公開討論</a></p>
-<p>我會結合這些真實場景繼續改進。安裝從<a href="https://github.com/aidesign996/team-leader/releases/latest">最新正式發行</a>開始；新版改了什麼、影響什麼，查看<a href="https://github.com/aidesign996/team-leader/blob/main/CHANGELOG.md">更新記錄</a>。</p>
-<h2 id="section-9">參考</h2>
-<ol>
-<li>Donella H. Meadows，<em>Thinking in Systems: A Primer</em>，Diana Wright 編輯，2008。<a href="https://chelseagreen.co.uk/book/thinking-in-systems/">出版社介紹</a>。</li>
-<li>Donella Meadows，<a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">Leverage Points: Places to Intervene in a System</a>。反饋迴路用於啟發這裡的工作設計；圖示沒有建立可計算的系統模型。</li>
-<li>OpenAI，<a href="https://learn.chatgpt.com/zh-Hans/docs/customization/overview#%E6%8A%80%E8%83%BD">Codex 自定義：技能</a>，個人與項目技能目錄及調用方式。核對日期：2026-09-10。</li>
-<li>OpenAI，<a href="https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6-astra">GPT-6 Astra 使用指導</a>，指令遵循、委派與相稱驗證。核對日期：2026-09-10。</li>
-<li>OpenAI，<a href="https://developers.openai.com/api/docs/models/gpt-5.6-sol">GPT-5.6 Sol 模型說明</a>。官方能力與本項目實踐分別作為依據。核對日期：2026-09-10。</li>
-</ol>
+<h3>更多協作，也意味著更多投入</h3>
+<p>多崗位溝通、上下文讀取、獨立檢查和返修，可能增加時間與額度消耗。對簡單任務，應採用足以完成目標的最小安排。</p>
+<p>0.5.23 在用戶授權自動分配時，負責人通常以 <code>high</code> 為起點，專業工作按複雜度安排投入；用戶明確選擇的模型與檔位優先。必要時提高投入，同時複用仍有效的資料和檢查，避免重複驗證沒有變化的內容。</p>
+<p>目前沒有可靠的整體省時或額度節省比例。更需要衡量的是：成果是否符合需求，偏差是否減少，用戶是否少重複提醒，以及這些改善是否值得相應投入。</p>
+<h3>希望越用越懂你，也越用越會做事</h3>
+<p><strong>未來希望積累的是更成熟的判斷、更順暢的協作，以及用戶可以信任的交付能力。</strong></p>
+<p>各領域負責人在實際工作中完善經驗，需要其他專業時直接配合；用戶更少解釋基礎要求，更多討論當前目標與成果。“越來越聰明”應體現在理解用意、比較條件和調整方法的實際表現上。</p>
+<p>Skill 本身也需要持續改進：維護負責人觀察使用問題，找到背後的機制，組織修訂、驗證與安裝，再讓使用項目採用並檢查效果。修復應落在真正出問題的地方，避免每次偏差都變成一條新規定。</p>
+<p>歡迎在<a href="#comments">文章下方留言</a>，或到 <a href="https://github.com/aidesign996/ai-practice/discussions/1">GitHub 公開討論</a>分享體驗：你在做什麼、它怎樣處理、哪裡仍要你補一手、你希望怎樣會更好。有用的做法和失敗的場景，都能幫助我們繼續優化這個 Skill。</p>
+<h2 id="section-9">參考與實現入口</h2>
+<ul>
+<li>Donella H. Meadows，<em>Thinking in Systems: A Primer</em>（《系統之美》）。本文將反饋思想用於 AI 工作方法的設計。</li>
+<li>Donella Meadows，<a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">Leverage Points: Places to Intervene in a System</a>，反饋、目標與系統干預的原始論述。</li>
+<li><a href="https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md">Team Leader 項目與安裝說明</a>、<a href="https://github.com/aidesign996/team-leader/releases/latest">正式發行</a>與<a href="https://github.com/aidesign996/team-leader/blob/main/CHANGELOG.md">更新記錄</a>。本文機制說明基於 0.5.23，後續使用請核對當時正式版。</li>
+<li>OpenAI，<a href="https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6-astra">GPT-6 Astra 使用指導</a>。模型指導與本 Skill 的實踐效果分別判斷。</li>
+</ul>
 </article><section class="comments" id="comments" aria-label="留言與反饋"><h2>留言與反饋</h2><p>工作中遇到了什麼？怎樣會更好？直接說就好，我會和技能維護負責人整理與跟進。</p><p class="comments-notice">留言公開可見，三種語言共用這裡的討論。留言和回覆需要 GitHub 登入，首次使用需授權 giscus。</p><div class="giscus"></div><script src="https://giscus.app/client.js" data-repo="aidesign996/ai-practice" data-repo-id="R_kgDOUQQ8DA" data-category="Announcements" data-category-id="DIC_kwDOUQQ8DM4DFDos" data-mapping="number" data-term="1" data-strict="1" data-reactions-enabled="0" data-emit-metadata="0" data-input-position="top" data-theme="transparent_dark" data-lang="zh-TW" data-loading="lazy" crossorigin="anonymous" async></script><noscript><p>啟用 JavaScript 後，可以直接在這裡查看和發表留言。</p></noscript><details><summary>留言沒有顯示？</summary><p><a href="https://github.com/aidesign996/ai-practice/discussions/1" target="_blank" rel="noopener noreferrer">到 GitHub 查看討論 ↗</a></p></details></section></main></div><footer class="footer"><span>AI Design 996 · 從實踐中形成，隨反饋持續改進。</span><a href="https://github.com/aidesign996/ai-practice" target="_blank" rel="noopener">源碼與版本 ↗</a></footer></div></body></html>
