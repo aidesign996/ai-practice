@@ -1,13 +1,13 @@
 # Product Acceptance
 
-This file defines acceptance for the user's product. It is not a checklist for testing the Team Leader skill itself.
+This file defines acceptance for the user's actual deliverables, including software, knowledge artifacts, or service results. It is not a checklist for testing the Team Leader skill itself.
 
 Product owns requirement meaning; AI acceptance and technical design contribute testability, scenarios, and verification methods. Criteria changes must not erase an unmet requirement.
 
-| Requirement / flow | Scenario and observable result | Evidence needed / relevant risk |
+| Requirement / intended use | Scenario and observable result | Evidence needed / relevant risk |
 |---|---|---|
 
-Use coverage proportionate to the actual change and risk. For visual work, compare the adopted original and actual implementation in comparable scenes and states: faithful realization, overall aesthetics, business correctness, and usability need relevant evidence. Functional success does not prove visual success, and a concept image does not prove operation. Record results and unverified areas with the adopted design and implementation versions in dated evidence; link the current conclusion from [PROGRESS.md](../PROGRESS.md).
+Use coverage proportionate to the actual change and risk. For knowledge artifacts, choose a reading or decision task suited to the intended audience and check the actual content and necessary visuals for the required understanding, judgment, or action, including decisive reasons and limits. Sources, chapters, and formatting cannot establish this alone; no fixed summary, page count, or quiz is required. For visual work, compare the adopted original and actual result in comparable scenes and states: faithful realization, overall aesthetics, business correctness, and usability need relevant evidence. Functional success does not prove visual success, and a concept image does not prove operation. Record results and unverified areas with the adopted design and delivered versions in dated evidence; link the current conclusion from [PROGRESS.md](../PROGRESS.md).
 
 Development self-tests. 角色5-AI验收 independently examines the delivered product and consistency with the effective [product](PRODUCT.md) and [technical](TECHNICAL.md) agreements. Reuse unaffected evidence when it remains valid; recheck changed behavior and unresolved concerns.
 

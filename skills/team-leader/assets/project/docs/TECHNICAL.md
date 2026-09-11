@@ -1,12 +1,12 @@
 # Technical Design
 
-Maintain the effective implementation contracts and important rationale here. Read the adopted [product agreement](PRODUCT.md), its scope/version and visual originals; translate them into feasible contracts for faithful realization. Keep unresolved experience conflicts and feasible alternatives visible for the lead and product role to resolve before affected implementation changes the design. Ordinary engineering methods remain autonomous within the agreement.
+Maintain the effective methods, technical contracts, and important rationale needed for this project's deliverables. Read the adopted [product agreement](PRODUCT.md), its scope/version and relevant originals; translate them into reliable analysis or feasible production contracts. Keep unresolved experience conflicts and feasible alternatives visible for the lead and product role to resolve before affected work changes the design. Ordinary professional methods remain autonomous within the agreement.
 
 ## Constraints and design
 
-- Target platforms, environment, and observed capability facts:
-- Minimal architecture and meaningful tradeoffs:
-- Data, interfaces, state ownership, and important recovery guarantees:
+- Inputs, tools, environment, and observed capability facts:
+- Adopted analysis or implementation method, evidence requirements, and meaningful tradeoffs:
+- Relevant data, interfaces, architecture, ownership, and recovery guarantees:
 - Material permission, security, or compatibility constraints:
 
 ## Feasibility and verification
