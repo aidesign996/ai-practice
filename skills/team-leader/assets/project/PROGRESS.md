@@ -1,6 +1,6 @@
 # Project Overview
 
-Populate from actual evidence and lead with the current goal, effective decisions, next action, and dependencies. Keep old snapshots retrievable and clearly marked as historical; their "current" or "this round" statements do not describe today. Unknown entries do not prove readiness, approval, or failure. Adapt this outline while keeping the required knowledge areas discoverable.
+Lead with the current request and source, unfinished authorized delivery, effective decisions, next dependency, and action. Distinguish already-delivered, answered, and stopped matters from active work; retrieved history is not a new request. Correct stale current state here and keep dated snapshots retrievable. Unknowns do not prove readiness, approval, or failure; retain the required knowledge map.
 
 ## Current goal and next action
 
@@ -8,9 +8,9 @@ Populate from actual evidence and lead with the current goal, effective decision
 - Current operation and authorized work, with source:
 - Only if automatic effort allocation is adopted: delegated model / effort / budget scope and source, with explicit user overrides:
 - Adopted team-leader version / installed entrypoint / role adoption evidence and remaining gaps:
-- Effective product / technical / acceptance version or links:
+- Actual adopted implementation plan / product, technical, and acceptance versions or decision links:
 - Usable delivery entry and implementation version:
-- Current progress and next action / responsible role:
+- Delivered and still-undelivered scope / next action, dependency, and responsible role:
 - Important owner decision needed, if any:
 - Unresolved or explicitly stopped topics: [BLOCKED.md](BLOCKED.md)
 
@@ -20,8 +20,8 @@ Map each area to an existing file or section; adapt these default paths to the a
 
 | Area | Actual home | Maintainer |
 |---|---|---|
-| Stable rules and navigation | [Rules](AGENTS.md), [use entry](README.md) | Lead |
-| Six responsibilities | [Team](docs/TEAM.md), relevant role cards; active tasks below | Lead |
+| Common rules and navigation | [Rules and reading triggers](AGENTS.md), [use entry](README.md) | Lead |
+| Six responsibilities | Role-card texts via [team index](docs/TEAM.md); actual tasks below | Lead coordinates role owners |
 | Product | [Product agreement](docs/PRODUCT.md) | Product |
 | Technical | [Technical agreement](docs/TECHNICAL.md) | Technical |
 | Acceptance | [Acceptance agreement](docs/ACCEPTANCE.md) | Product, with technical/reviewer contributions |
@@ -35,7 +35,7 @@ Map each area to an existing file or section; adapt these default paths to the a
 | Outcome / task | Responsible role | State and relevant dependencies | Effective input / acceptance | Result / next action |
 |---|---|---|---|---|
 
-Keep planned, in progress, blocked, delivered, and verified states evidence-based. Use links to an existing task tracker if it already holds these facts.
+Use evidence-based states and existing tracker links where useful. After inserted work, resume what remains authorized and unfinished; a historical answer or completed item does not become the current task. Keep actual user changes, pauses, and pending decisions distinguishable.
 
 ## Role tasks
 
@@ -48,7 +48,7 @@ Keep planned, in progress, blocked, delivered, and verified states evidence-base
 | 角色4-产品开发 | Unknown | Not established by this template | |
 | 角色5-AI验收 | Unknown | Not established by this template | |
 
-Keep existing accepted task links and verify the actual visible title under the protocol's identity rules. Restore this mapping before starting or resuming execution, and verify dispatch/receipt and project access for the roles needed now. A role may be idle for the current change. Planned or queued tasks are not verified working tasks; record any authorized temporary replacement and its scope here.
+Keep accepted task links and verify actual visible titles under the protocol's identity rules. Before starting or resuming execution, recover continuing responsibilities from the role cards through the [team index](docs/TEAM.md), then the current arrangement and assignments above under Coordination; reuse valid context. Keep temporary work items here rather than in the responsibility cards. In team work, verify dispatch/receipt and project access for the roles needed now; suitable solo work retains applicable quality and agreed verification. A role may be idle for this change. Planned or queued tasks are not verified working tasks; record any authorized temporary replacement and its scope here.
 
 Only when using delegated automatic effort allocation, include actual model/effort and runtime evidence in these role records or their linked assignments, with requested settings still awaiting verification and meaningful adjustment reasons where relevant. A delivered setting request does not prove the next turn used it; project adoption does not prove every in-flight role has read the new version. Use existing records, without another report or table.
 
