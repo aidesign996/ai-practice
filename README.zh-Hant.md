@@ -2,9 +2,18 @@
 
 [English](https://aidesign996.github.io/ai-practice/index.html) · [繁體中文](https://aidesign996.github.io/ai-practice/index.zh-hant.html) · [简体中文](https://aidesign996.github.io/ai-practice/index.zh.html)
 
-這裡分享我做的 AI 技能，以及工作中的思考與實踐。你可以直接使用技能，也可以閱讀背後的設計與過程。
+分享可複用的 AI 技能與真實實踐。以 Team Leader 為起點，講清圍繞目標的交付、專業分工與跨專案協作，以及經驗怎樣檢索、比較和修訂。
 
 [分享首頁](https://aidesign996.github.io/ai-practice/index.zh-hant.html)
+
+
+## 第一次來？從你的問題開始
+
+- [怎樣讓 AI 持續把事情做對？](https://aidesign996.github.io/ai-practice/start-here.zh-hant.html#goals)
+- [不同專案的負責人怎樣直接配合？](https://aidesign996.github.io/ai-practice/start-here.zh-hant.html#collaboration)
+- [這次的經驗，下次怎樣真正用上？](https://aidesign996.github.io/ai-practice/start-here.zh-hant.html#experience)
+
+[閱讀完整技術稿](https://aidesign996.github.io/ai-practice/article-team-leader.zh-hant.html) · [安裝與使用](https://aidesign996.github.io/ai-practice/skill-team-leader.zh-hant.html)
 
 ## Skills · 可用技能
 

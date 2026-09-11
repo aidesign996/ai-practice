@@ -2,9 +2,18 @@
 
 [English](https://aidesign996.github.io/ai-practice/index.html) · [繁體中文](https://aidesign996.github.io/ai-practice/index.zh-hant.html) · [简体中文](https://aidesign996.github.io/ai-practice/index.zh.html)
 
-I share reusable AI skills and the thinking behind my work. Pick a skill to use, or explore the notes behind it.
+Reusable AI skills and practical design notes by AI Design 996. Team Leader connects goal-driven delivery, specialist and cross-project collaboration, and experience retrieval and revision.
 
 [Sharing home](https://aidesign996.github.io/ai-practice/index.html)
+
+
+## New here? Start with your question
+
+- [How can AI keep a project on course?](https://aidesign996.github.io/ai-practice/start-here.html#goals)
+- [Can project leads coordinate directly?](https://aidesign996.github.io/ai-practice/start-here.html#collaboration)
+- [How does experience help with the next task?](https://aidesign996.github.io/ai-practice/start-here.html#experience)
+
+[Read the complete technical article](https://aidesign996.github.io/ai-practice/article-team-leader.html) · [Install & use](https://aidesign996.github.io/ai-practice/skill-team-leader.html)
 
 ## Skills
 
@@ -40,7 +49,7 @@ Use the [latest formal release](https://github.com/aidesign996/team-leader/relea
 
 ## Your experience helps shape the next version.
 
-[Share feedback](https://aidesign996.github.io/ai-practice/team-leader/#comments). Tell me the situation, what happened, and what would work better—all in one comment. English, Traditional Chinese and Simplified Chinese share one public discussion; everyone can read the original comments.
+[Share feedback](https://aidesign996.github.io/ai-practice/article-team-leader.html#comments). Tell me the situation, what happened, and what would work better—all in one comment. English, Traditional Chinese and Simplified Chinese share one public discussion; everyone can read the original comments.
 
 A GitHub sign-in is required to post; reading does not require one. I will use the feedback to improve the skill.
 
