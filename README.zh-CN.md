@@ -19,7 +19,7 @@
 
 可以下载安装，在自己的项目中直接调用。
 
-### [Team Leader · 0.5.23](https://github.com/aidesign996/team-leader/blob/main/README.zh-CN.md)
+### [Team Leader · 0.5.24](https://github.com/aidesign996/team-leader/blob/main/README.zh-CN.md)
 
 给 AI 项目配一位负责人：持续看目标，联系合适的专业负责人，再按当前条件借用经验、修正做法。
 

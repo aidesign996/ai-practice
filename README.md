@@ -19,7 +19,7 @@ Reusable AI skills and practical design notes by AI Design 996. Team Leader conn
 
 Installable skills you can use in your own projects.
 
-### [Team Leader · 0.5.23](https://github.com/aidesign996/team-leader)
+### [Team Leader · 0.5.24](https://github.com/aidesign996/team-leader)
 
 Give your AI project a lead who checks the goal, works with appropriate specialists, and uses experience in light of current conditions.
 

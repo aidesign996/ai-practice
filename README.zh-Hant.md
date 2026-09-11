@@ -19,7 +19,7 @@
 
 可以下載安裝，在自己的項目中直接調用。
 
-### [Team Leader · 0.5.23](https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md)
+### [Team Leader · 0.5.24](https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md)
 
 給 AI 項目配一位負責人：持續看目標，聯繫合適的專業負責人，再按當前條件借用經驗、修正做法。
 
