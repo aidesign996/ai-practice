@@ -10,7 +10,7 @@
 
 [Team Leader：AI 團隊如何協作、糾偏與積累經驗](https://aidesign996.github.io/ai-practice/article-team-leader.zh-hant.html)
 
-從產品目標與回饋出發，結合實踐講清跨專案協作和經驗應用。
+從產品目標與反饋出發，結合實踐講清跨項目協作、經驗應用和方法迭代。
 
 ## 可用技能
 

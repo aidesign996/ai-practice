@@ -1,9 +1,9 @@
-<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Team Leader：AI 团队如何协作、纠偏与积累经验 · AI Design 996</title><meta name="description" content="Team Leader 如何连接用户目标、专业职责、跨项目协作与经验积累？从调节与增强回路到实现机制，配合真实分享案例，说明使用方法、成本和局限。"><link rel="canonical" href="https://aidesign996.github.io/ai-practice/article-team-leader.zh.html"><link rel="alternate" hreflang="en" href="https://aidesign996.github.io/ai-practice/article-team-leader.html"><link rel="alternate" hreflang="zh-Hans" href="https://aidesign996.github.io/ai-practice/article-team-leader.zh.html"><link rel="alternate" hreflang="zh-Hant" href="https://aidesign996.github.io/ai-practice/article-team-leader.zh-hant.html"><link rel="alternate" hreflang="x-default" href="https://aidesign996.github.io/ai-practice/article-team-leader.html"><meta property="og:type" content="article"><meta property="og:site_name" content="AI Design 996"><meta property="og:title" content="Team Leader：AI 团队如何协作、纠偏与积累经验 · AI Design 996"><meta property="og:description" content="Team Leader 如何连接用户目标、专业职责、跨项目协作与经验积累？从调节与增强回路到实现机制，配合真实分享案例，说明使用方法、成本和局限。"><meta property="og:url" content="https://aidesign996.github.io/ai-practice/article-team-leader.zh.html"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://aidesign996.github.io/ai-practice/share-zh.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AI 团队如何协作、 纠偏与积累经验"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="studio.css"><link rel="stylesheet" href="discovery.css"><script src="studio.js" defer></script><link rel="stylesheet" href="article-technical.css"><script src="article-technical.js" defer></script><link rel="icon" href="avatar.jpg"></head><body><div class="wrap"><header class="topbar"><a class="brand" href="index.zh.html"><img src="avatar.jpg" alt="">AI DESIGN 996</a><nav aria-label="首页"><a href="index.zh.html" >Home</a><a href="articles.zh.html" aria-current="page">Articles</a><a href="skills.zh.html" >Skills</a></nav><div class="languages" aria-label="Language"><a data-language href="article-team-leader.html" lang="en" >EN</a><a data-language href="article-team-leader.zh-hant.html" lang="zh-Hant" >繁中</a><a data-language href="article-team-leader.zh.html" lang="zh-Hans" aria-current="page">简中</a></div></header><div class="shell"><aside class="identity"><span class="overline">AI DESIGN 996</span><h2>把 AI 实践变成可用的作品。</h2><p>分享 AI 技能，也记录设计与实践。欢迎试用，把真实场景和问题带回来，一起改进。</p><div class="identity-links"><a href="index.zh.html">首页</a><a href="start-here.zh.html">从这里开始</a><a href="https://github.com/aidesign996" target="_blank" rel="noopener">GitHub ↗</a></div><nav class="toc" aria-label="文章目录"><strong>文章目录</strong><a href="#section-1">01 · 产品目标</a><a href="#section-2">02 · 理论依据</a><a href="#section-3">03 · 职责与交付</a><a href="#section-4">04 · 跨项目协作</a><a href="#section-5">05 · 经验与知识</a><a href="#section-6">06 · 实践案例</a><a href="#section-7">07 · 安装与使用</a><a href="#section-8">08 · 局限与愿景</a><a href="#section-9">09 · 参考与实现</a><a href="#comments">留言反馈</a></nav></aside><main><div class="crumbs"><a href="index.zh.html">首页</a><span>/</span><a href="articles.zh.html">文章</a><span>/</span><span>设计手记</span></div><h1 class="article-title"><span>Team Leader：AI 团队如何协作、纠偏与积累经验</span></h1><p class="article-meta">AI Design 996 · 设计与实践 · 2026-09-11 修订 · 首次公开发布 2026-09-07</p><article class="article-body"><p><strong>Team Leader 是一套以 Skill 为载体的 AI 团队工作方法：围绕用户目标组织专业工作，通过反馈修正成果，并把实践经验带入下一次判断。</strong></p>
-<p>本文从产品目标和系统思考出发，说明职责分工、跨项目协作与经验学习如何连接、如何实现，再用一次真实的分享实践展示运行过程，最后讨论成本、局限和改进方向。</p>
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Team Leader：AI 团队如何协作、纠偏与积累经验 · AI Design 996</title><meta name="description" content="Team Leader 如何连接用户目标、专业职责、跨项目协作与经验积累？从调节与增强回路到实现机制，配合真实分享案例，说明使用方法、成本和局限。"><link rel="canonical" href="https://aidesign996.github.io/ai-practice/article-team-leader.zh.html"><link rel="alternate" hreflang="en" href="https://aidesign996.github.io/ai-practice/article-team-leader.html"><link rel="alternate" hreflang="zh-Hans" href="https://aidesign996.github.io/ai-practice/article-team-leader.zh.html"><link rel="alternate" hreflang="zh-Hant" href="https://aidesign996.github.io/ai-practice/article-team-leader.zh-hant.html"><link rel="alternate" hreflang="x-default" href="https://aidesign996.github.io/ai-practice/article-team-leader.html"><meta property="og:type" content="article"><meta property="og:site_name" content="AI Design 996"><meta property="og:title" content="Team Leader：AI 团队如何协作、纠偏与积累经验 · AI Design 996"><meta property="og:description" content="Team Leader 如何连接用户目标、专业职责、跨项目协作与经验积累？从调节与增强回路到实现机制，配合真实分享案例，说明使用方法、成本和局限。"><meta property="og:url" content="https://aidesign996.github.io/ai-practice/article-team-leader.zh.html"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://aidesign996.github.io/ai-practice/share-zh.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AI 团队如何协作、 纠偏与积累经验"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="studio.css"><link rel="stylesheet" href="discovery.css"><script src="studio.js" defer></script><link rel="stylesheet" href="article-technical.css"><script src="article-technical.js" defer></script></head><body><div class="wrap"><header class="topbar"><a class="brand" href="index.zh.html"><img src="avatar.jpg" alt="">AI DESIGN 996</a><nav aria-label="首页"><a href="index.zh.html" >Home</a><a href="articles.zh.html" aria-current="page">Articles</a><a href="skills.zh.html" >Skills</a></nav><div class="languages" aria-label="Language"><a data-language href="article-team-leader.html" lang="en" >EN</a><a data-language href="article-team-leader.zh-hant.html" lang="zh-Hant" >繁中</a><a data-language href="article-team-leader.zh.html" lang="zh-Hans" aria-current="page">简中</a></div></header><div class="shell"><aside class="identity"><span class="overline">AI DESIGN 996</span><h2>把 AI 实践变成可用的作品。</h2><p>分享 AI 技能，也记录设计与实践。欢迎试用，把真实场景和问题带回来，一起改进。</p><div class="identity-links"><a href="index.zh.html">首页</a><a href="start-here.zh.html">从这里开始</a><a href="https://github.com/aidesign996" target="_blank" rel="noopener">GitHub ↗</a></div><nav class="toc" aria-label="文章目录"><strong>文章目录</strong><a href="#section-1">01 · 产品目标</a><a href="#section-2">02 · 理论依据</a><a href="#section-3">03 · 职责与交付</a><a href="#section-4">04 · 跨项目协作</a><a href="#section-5">05 · 经验与知识</a><a href="#section-6">06 · 监督与迭代</a><a href="#section-7">07 · 实践案例</a><a href="#section-8">08 · 安装与使用</a><a href="#section-9">09 · 局限与愿景</a><a href="#section-10">10 · 参考与实现</a><a href="#comments">留言反馈</a></nav></aside><main><div class="crumbs"><a href="index.zh.html">首页</a><span>/</span><a href="articles.zh.html">文章</a><span>/</span><span>设计手记</span></div><h1 class="article-title"><span>Team Leader：AI 团队如何协作、纠偏与积累经验</span></h1><p class="article-meta">AI Design 996 · 设计与实践 · 2026-09-13 修订 · 首次公开发布 2026-09-07</p><article class="article-body"><p><strong>Team Leader 是一套以 Skill 为载体的 AI 团队工作方法：围绕用户目标组织专业工作，通过反馈修正成果，把经验带入下一次判断，并由开发负责人跟进实际使用、持续改进这套方法。</strong></p>
+<p>本文从产品目标和系统思考出发，说明职责分工、跨项目协作、经验学习与方法迭代如何连接、如何实现，再结合分享实践和使用核查，讨论使用方法、成本与局限。</p>
 <h2 id="section-1">产品目标：让负责人接住完整的工作</h2>
 <p>使用 AI 做项目，用户常常同时承担三种工作：盯着进度与方向，在不同项目之间转述问题，以及反复解释已经说过的要求。每一步都能完成，整件事却仍依赖用户不断接手。</p>
 <p>Team Leader 希望把这些持续的责任交给 AI 负责人。用户提出目标、决定重要取舍；负责人理解目标，组织实施与检查，主动联系需要配合的专业负责人，再根据实际结果改进工作。</p>
-<p>这套设计包含三个相互连接的部分：</p>
+<p>这套设计包含四个相互连接的部分：</p>
 <table>
 <thead>
 <tr>
@@ -27,8 +27,13 @@
 <td>这次学到的，下次怎样真正用上？</td>
 <td>保存条件和理由，按情境检索，比较后使用，以结果修订</td>
 </tr>
+<tr>
+<td>使用监督与方法迭代</td>
+<td>设计写进了 Skill，实际有没有做到？</td>
+<td>沟通与观察实际使用，定位差距，组织修订并验证采用效果</td>
+</tr>
 </tbody></table>
-<p>三者共同服务于一个产品目标：<strong>让用户更少反复提醒、来回传话和从头教，让负责人更能承担工作，也更懂得怎样与你配合。</strong></p>
+<p>四者共同服务于一个产品目标：<strong>让用户更少反复提醒、来回传话和逐项检查，让负责人更能承担工作，也能推动做事方法持续改进。</strong></p>
 <p>目前主要围绕 Codex 中的 Astra 设计与实践。<code>SKILL.md</code> 提供入口，<code>references/protocol.md</code> 规定协作、交付与知识使用方式，随包模板承接项目中的职责、要求和记录。实际执行、文件访问和任务间通信，由所在应用提供。模型发挥理解、判断与创造能力，机制是否有效则由成果检验。</p>
 <h2 id="section-2">理论依据：用调节把握方向，让积累改善判断</h2>
 <p>《系统之美》中的反馈思想，是这套设计的重要来源。调节回路与增强回路描述两种不同的作用：前者通过反馈缩小与目标的差距，后者使已有变化继续加强。它们的含义可参见 Meadows 对<a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">反馈回路的原始论述</a>。</p>
@@ -85,7 +90,24 @@
 <code>README.md</code>、<code>PROGRESS.md</code> 等：当前状态、未完成工作和下一步。</p>
 <p><strong>有效要求按其适用范围执行；可选方法与案例，再判断对当前任务是否有用。</strong></p>
 <p>一次性要求本次照办，无关或重复的内容不必沉淀成经验。经验有新证据时，应修订原记录的条件和解释。这样既保留需要的知识，也避免资料越积越杂。</p>
-<h2 id="section-6">实践：一次 Skill 分享，怎样把机制用起来</h2>
+<h2 id="section-6">机制四：监督实际使用，让 Skill 持续迭代</h2>
+<p>前面的机制规定怎样组织工作、积累经验。这些设计是否落实，也需要有人持续跟进。负责 Team Leader Skill 开发的负责人，自己使用这套方法，同时承担收集使用问题、核查差距、组织修订与效果跟进的工作。</p>
+<p><strong>用 Team Leader 组织工作，也用它来监督和改进 Team Leader 本身。</strong></p>
+<h3>结合使用方反馈与实际工作</h3>
+<p>开发负责人可以直接与使用方沟通，了解哪里不顺手；也可以在已有访问权限内，不提前提示具体检查点，查看原有对话、工作记录和成果。前者提供使用方的解释，后者帮助判断平时实际怎样做。</p>
+<p><a id="figure-8" class="figure-image" href="team-leader/technical-zh-08.png" title="点击查看大图" style="--figure-width:400px;--figure-height:420px"><img src="team-leader/technical-zh-08.png" alt="图8：Team Leader Skill 开发负责人通过沟通和观察，了解使用方反馈与实际工作；两类资料来自使用这套Skill的项目负责人。" width="1080" height="1122" loading="lazy" decoding="async" style="--figure-width:400px;--figure-height:420px"></a></p>
+<p class="figure-caption"><em>图8　沟通和观察是两种取材方式。负责人自述需要与实际行为相互核对。</em></p>
+<p>例如，经验积累可以检查两件事：有用的经验是否留下来，后续相似工作是否真正借用了这些经验。文件存在、回复“已经读取”，都不足以单独说明经验参与了判断；还要看当时的条件、采取的做法与结果是否对应。</p>
+<p>实现这项监督，需要应用提供相关记录的访问与负责人之间的通信能力，并给开发负责人明确的跟进任务和检查时机。Skill 提供工作约定，实际执行还依赖应用与任务安排；单独安装文件不会自动建立持续监控。</p>
+<h3>找到差距，把修订接回实际使用</h3>
+<p>发现偏差后，先判断问题落在哪里：有效要求漏执行，就纠正执行；资料入口不清楚，就修正保存与查找方式；规则容易引起误解，就改写说明或判断条件。项目特有的问题留在项目中，共同方法的问题再交回 Skill 修订。</p>
+<p>开发负责人组织修改与检查，再按授权让使用方安装或更新完整 Skill，读取适用变化，接着原来的工作。观察验证由此接回下一轮修订：</p>
+<p><a id="figure-9" class="figure-image" href="team-leader/technical-zh-09.png" title="点击查看大图" style="--figure-width:460px;--figure-height:450px"><img src="team-leader/technical-zh-09.png" alt="图9：用户定目标把方向，开发负责人组织开发修订、安装更新、读取使用；从使用中观察验证、收集反馈，再返回开发修订。" width="1080" height="1050" loading="lazy" decoding="async" style="--figure-width:460px;--figure-height:450px"></a></p>
+<p class="figure-caption"><em>图9　三个工作阶段形成回路；观察、验证与反馈连接实际使用和下一轮修订。</em></p>
+<p>更新后的验证包括两个层次。首先，不逐项告诉负责人该改哪些文件，观察它能否依据新规则，主动调整项目里的相关安排。随后，在真实任务中检查这些调整是否落实，例如是否开始保存经验、在类似任务中主动借用。</p>
+<p><strong>主动调整能说明这次规则开始起作用；后续是否稳定用好，仍要看实际工作。</strong></p>
+<p>一次更新回执或一次成功不能代表长期效果。对没有后续使用机会的部分，保留待观察状态；把实际问题和采用效果带回改进过程，避免每次偏差都只是多加一条规定。</p>
+<h2 id="section-7">实践：一次 Skill 分享，怎样把机制用起来</h2>
 <p>这次准备分享文章时，用户交代的目标是：让读者理解这个 Skill，并能开始使用；资料由分享负责人直接找开发负责人沟通。</p>
 <table>
 <thead>
@@ -113,7 +135,11 @@
 </tbody></table>
 <p>这一实践已有直接沟通和改稿记录。它也暴露出局限：部分阅读要求仍曾遗漏，需要用户再次指出才修正。</p>
 <p>跨项目取材已经实际发生，经验也已有保存入口；后续是否能稳定主动检索、少提醒，仍需继续观察。上节加粗与分段的比较用于解释判断方法，不是不同排版方案的效果实验。</p>
-<h2 id="section-7">安装后，怎样开始使用</h2>
+<h3>从经验使用问题，反过来改进 Skill</h3>
+<p>设计希望负责人自动积累并借用经验，但已有使用核查发现：部分工作有真实的保存和读取动作，仍没有按当前目标把经验用好。只补一句“要积累经验”或“必须读取”，并不能解释这些差距。</p>
+<p>在一次既有核查中，开发侧查看原有记录，没有事先要求被观察负责人补写或整改。核查结果促使后续修订更强调：把经验用进当前决定，局部修改后回看整体，并接着真正未完成的工作继续。</p>
+<p>这说明使用中的问题可以进入 Skill 的修订过程。至于更新后是否能持续主动调整、减少提醒，需要继续检查后续任务；这些局部证据尚不能证明长期效果。</p>
+<h2 id="section-8">安装后，怎样开始使用</h2>
 <p>将 <a href="https://github.com/aidesign996/team-leader/blob/main/README.zh-CN.md#start">Team Leader 中文项目页</a>交给支持联网和项目文件操作的 AI，并说：</p>
 <blockquote>
 <p>请按项目说明，从最新正式发行安装完整的 Team Leader Skill，完成后告诉我实际安装的版本。如果已经安装，请先保留项目资料和自定义修改，再帮我更新。</p>
@@ -124,7 +150,12 @@
 </blockquote>
 <p>已有项目先找回目标、成果、现有角色和未完成工作；只有想法时，可以先讨论需求与方向。需要跨项目配合，再告诉它相关项目或负责人。</p>
 <p>发布新版不会自动更新本地安装。更新后，让原负责人读取适用变化，保留已确认要求和原工作继续点。具体安装、启用与更新方式以项目页为准。</p>
-<h2 id="section-8">局限与愿景：用真实效果改进这套方法</h2>
+<p>如果你也在维护一套 Skill，可以向它的开发负责人交代：</p>
+<blockquote>
+<p>帮我跟进这套 Skill 的实际使用。结合使用方反馈和实际工作，看看哪些设计没有做到，提出改进，并跟进更新后的效果。</p>
+</blockquote>
+<p>同时说明可以联系哪些负责人、访问哪些项目记录，以及本次允许的修改范围。先从已有项目和具体问题开始，再按实际需要安排后续观察。</p>
+<h2 id="section-9">局限与愿景：用真实效果改进这套方法</h2>
 <p><a id="model-fit"></a></p>
 <h3>能力与环境的边界</h3>
 <p>当前实践主要在 Windows 的 Codex 中，围绕 Astra 展开；Sol 有部分专业岗位实践，还没有全 Astra 与全 Sol 团队的同条件对照。</p>
@@ -133,14 +164,16 @@
 <p><a id="usage-cost"></a></p>
 <h3>更多协作，也意味着更多投入</h3>
 <p>多岗位沟通、上下文读取、独立检查和返修，可能增加时间与额度消耗。对简单任务，应采用足以完成目标的最小安排。</p>
+<p>使用监督也有成本：查阅记录、定位原因、修订规则和验证采用都会增加投入。可以围绕重复问题、重要成果或版本更新检查相关工作，复用没有变化的证据；既要看问题是否改善，也要看新增检查是否造成更多负担。</p>
 <p>0.5.23 在用户授权自动分配时，负责人通常以 <code>high</code> 为起点，专业工作按复杂度安排投入；用户明确选择的模型与档位优先。必要时提高投入，同时复用仍有效的资料和检查，避免重复验证没有变化的内容。</p>
 <p>目前没有可靠的整体省时或额度节省比例。更需要衡量的是：成果是否符合需求，偏差是否减少，用户是否少重复提醒，以及这些改善是否值得相应投入。</p>
 <h3>希望越用越懂你，也越用越会做事</h3>
 <p><strong>未来希望积累的是更成熟的判断、更顺畅的协作，以及用户可以信任的交付能力。</strong></p>
 <p>各领域负责人在实际工作中完善经验，需要其他专业时直接配合；用户更少解释基础要求，更多讨论当前目标与成果。“越来越聪明”应体现在理解用意、比较条件和调整方法的实际表现上。</p>
-<p>Skill 本身也需要持续改进：维护负责人观察使用问题，找到背后的机制，组织修订、验证与安装，再让使用项目采用并检查效果。修复应落在真正出问题的地方，避免每次偏差都变成一条新规定。</p>
+<p><strong>用户定目标、把方向；开发负责人持续观察、验证和改进。</strong></p>
+<p>自我迭代希望减少用户逐项检查、反复催改的负担，让实际使用持续影响下一版方法。这里迭代的是 Skill 和协作方式，用户继续决定目标和重要取舍；改进是否成立，仍以真实工作中的变化为依据。</p>
 <p>欢迎在<a href="#comments">文章下方留言</a>，或到 <a href="https://github.com/aidesign996/ai-practice/discussions/1">GitHub 公开讨论</a>分享体验：你在做什么、它怎样处理、哪里仍要你补一手、你希望怎样会更好。有用的做法和失败的场景，都能帮助我们继续优化这个 Skill。</p>
-<h2 id="section-9">参考与实现入口</h2>
+<h2 id="section-10">参考与实现入口</h2>
 <ul>
 <li>Donella H. Meadows，<em>Thinking in Systems: A Primer</em>（《系统之美》）。本文将反馈思想用于 AI 工作方法的设计。</li>
 <li>Donella Meadows，<a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">Leverage Points: Places to Intervene in a System</a>，反馈、目标与系统干预的原始论述。</li>

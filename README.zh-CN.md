@@ -10,7 +10,7 @@
 
 [Team Leader：AI 团队如何协作、纠偏与积累经验](https://aidesign996.github.io/ai-practice/article-team-leader.zh.html)
 
-从产品目标与反馈出发，结合实践讲清跨项目协作和经验应用。
+从产品目标与反馈出发，结合实践讲清跨项目协作、经验应用和方法迭代。
 
 ## 可用技能
 

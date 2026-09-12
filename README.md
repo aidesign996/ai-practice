@@ -10,7 +10,7 @@ Articles on using AI and the tools developed through practice: how they work, ho
 
 [Team Leader: how AI teams collaborate, correct course, and build experience](https://aidesign996.github.io/ai-practice/article-team-leader.html)
 
-Product goals, feedback, cross-project collaboration, and the use of experience, explained through practice.
+Product goals, feedback, cross-project collaboration, experience use, and method iteration, explained through practice.
 
 ## Available skills
 
