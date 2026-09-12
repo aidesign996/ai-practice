@@ -1,56 +1,23 @@
-# AI Design 996 — AI practice
+# AI Design 996 · AI practice
 
-[English](https://aidesign996.github.io/ai-practice/index.html) · [繁體中文](https://aidesign996.github.io/ai-practice/index.zh-hant.html) · [简体中文](https://aidesign996.github.io/ai-practice/index.zh.html)
+這裡匯集 AI 使用方法、實踐記錄和可用工具，既介紹怎麼用，也解釋背後的設計思路。
 
-分享可複用的 AI 技能與真實實踐。以 Team Leader 為起點，講清圍繞目標的交付、專業分工與跨專案協作，以及經驗怎樣檢索、比較和修訂。
+**[進入分享網站](https://aidesign996.github.io/ai-practice/index.zh-hant.html)**
 
-[分享首頁](https://aidesign996.github.io/ai-practice/index.zh-hant.html)
+[English](README.md) · [繁體中文](README.zh-Hant.md) · [简体中文](README.zh-CN.md)
 
+## 閱讀文章
 
-## 第一次來？從你的問題開始
+[Team Leader：AI 團隊如何協作、糾偏與積累經驗](https://aidesign996.github.io/ai-practice/article-team-leader.zh-hant.html)
 
-- [怎樣讓 AI 持續把事情做對？](https://aidesign996.github.io/ai-practice/start-here.zh-hant.html#goals)
-- [不同專案的負責人怎樣直接配合？](https://aidesign996.github.io/ai-practice/start-here.zh-hant.html#collaboration)
-- [這次的經驗，下次怎樣真正用上？](https://aidesign996.github.io/ai-practice/start-here.zh-hant.html#experience)
+從產品目標與回饋出發，結合實踐講清跨專案協作和經驗應用。
 
-[閱讀完整技術稿](https://aidesign996.github.io/ai-practice/article-team-leader.zh-hant.html) · [安裝與使用](https://aidesign996.github.io/ai-practice/skill-team-leader.zh-hant.html)
+## 可用技能
 
-## Skills · 可用技能
+**Team Leader** — 為 AI 專案配一位負責人，組織工作、協調配合，並借鑑已有經驗。
 
-可以下載安裝，在自己的項目中直接調用。
+[完整說明與安裝](https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md)
 
-### [Team Leader · 0.5.24](https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md)
+---
 
-給 AI 項目配一位負責人：持續看目標，聯繫合適的專業負責人，再按當前條件借用經驗、修正做法。
-
-[下載 Skill](https://github.com/aidesign996/team-leader/releases/latest) · [安裝與版本說明](https://github.com/aidesign996/team-leader/releases/latest) · [查看源碼](https://github.com/aidesign996/team-leader/tree/main/team-leader)
-
-## 實踐記錄
-
-分享設計思路、工作過程和項目成果。
-
-**2026-09-11 · 綜合文章更新**
-
-[Team Leader：AI 團隊如何協作、糾偏與積累經驗](https://aidesign996.github.io/ai-practice/article-team-leader.zh-hant.html) — 從產品目標與反饋理論出發，說明職責、跨專案協作和經驗積累的實作機制，配合真實實踐，討論成本、侷限與願景。
-
-## 裝好以後，一句話開始
-
-打開項目，選中 Team Leader，或先點名 `$team-leader`。然後說：
-
-> 這件事交給你負責，幫我持續跟進。過程中有用的經驗留下來，以後遇到類似事情，先找來看看怎麼用。
-
-負責人應先了解現有資料、已確認的目標和未完成工作，再繼續推進；缺少關鍵需求時主動問你。你只需要隨著溝通，補充自己的想法。
-
-希望採用團隊模式時，可以再讓負責人建立完整團隊並負責協調。實際創建取決於工具支持與用戶授權；已有團隊會複用原崗位，簡單的一次性任務可以保持單人。
-
-### 安裝、更新與版本記錄
-
-從[最新正式發行](https://github.com/aidesign996/team-leader/releases/latest)獲取完整包，按[當前安裝與更新說明](https://github.com/aidesign996/team-leader/blob/main/README.zh-Hant.md#start)操作。發佈新版不會自動更新已安裝的 Skill；保留項目資料與自定義修改，核對本地版本，再讓原負責人接續適用變化。[查看更新記錄](https://github.com/aidesign996/team-leader/blob/main/CHANGELOG.md)。
-
-## 你的使用反饋，會幫助我改進下一版。
-
-[分享使用反饋](https://aidesign996.github.io/ai-practice/team-leader/article-preview.zh-hant.html#comments). 一個留言框裡說清場景、遇到的問題，以及你希望怎樣處理會更好。英文、繁體和簡體頁面共用同一個公開討論區，所有人都能看到原文留言。
-
-留言需要 GitHub 登錄，閱讀無需登錄。我會根據反饋繼續優化。
-
-Team Leader 技能採用 MIT 許可證，Copyright (c) 2026 AI Design 996。文章和配圖與技能包分別提供。 [MIT](https://github.com/aidesign996/ai-practice/blob/main/skills/team-leader/LICENSE) · [設計參考](SOURCES.md)
+[設計參考](SOURCES.md)

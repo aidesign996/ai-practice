@@ -12,4 +12,4 @@ Development records identify these conceptual influences:
 
 These are design references, not bundled dependencies or endorsements. This release did not conduct a complete literature review or line-by-line provenance audit. No bundled third-party assets were identified; this does not guarantee the provenance of every phrase.
 
-The skill is released under the [MIT License](skills/team-leader/LICENSE), Copyright (c) 2026 AI Design 996. The license does not replace any applicable third-party rights. Confirmed quotations or adaptations should retain any required attribution and licensing. Article illustrations are separate conceptual diagrams, not original book images or evidence of effectiveness.
+The skill is released under the [MIT License](https://github.com/aidesign996/team-leader/blob/main/team-leader/LICENSE), Copyright (c) 2026 AI Design 996. The license does not replace any applicable third-party rights. Confirmed quotations or adaptations should retain any required attribution and licensing. Article illustrations are separate conceptual diagrams, not original book images or evidence of effectiveness.
