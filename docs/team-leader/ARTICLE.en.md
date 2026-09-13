@@ -4,6 +4,8 @@ AI Design 996 · Design & practice · Updated September 13, 2026 · First publis
 
 English · [繁體中文](ARTICLE.zh-Hant.md) · [简体中文](ARTICLE.md) · [Share a use case or suggestion](FEEDBACK.en.md)
 
+[Read the formatted article on the website](https://aidesign996.github.io/ai-practice/article-team-leader.html)
+
 **Team Leader is a way of organizing AI teamwork, delivered as a Skill: organize specialist work around the user's goal, improve results through feedback, bring experience into the next decision, and have the development lead follow actual use to keep improving the method.**
 
 This article starts with the product goal and systems thinking, explains how responsibilities, cross-project collaboration, learning from experience, and method iteration connect and work, then uses a sharing practice and usage review to discuss how to begin, what the method costs, and where its limits remain.
@@ -35,7 +37,7 @@ The feedback concepts in *Thinking in Systems* are an important source for this 
 
 In AI work, the user's goal provides the standard for judgment, the project output is the current state, and specialist roles carry out and correct the work. The lead examines actual results, identifies gaps, and coordinates the next round of action. The results of that action feed back into the process.
 
-![Figure 1: The user's goal and actual project output inform the lead's judgment. The lead coordinates specialist execution and corrections, and results return as feedback.](technical-en-01.png)
+<p align="center"><img src="github-light-en-01.png" width="560" alt="Figure 1: The user's goal and actual project output inform the lead's judgment. The lead coordinates specialist execution and corrections, and results return as feedback."></p>
 
 *Figure 1. B denotes a balancing loop. The goal continues to inform judgment, and the output of execution becomes feedback.*
 
@@ -49,7 +51,7 @@ The intended accumulation works like this: practical work produces useful experi
 
 Accumulation needs selection and revision. Mistaken explanations, outdated requirements, and duplicate material can also be reinforced. Exploration and accumulated experience must therefore remain subject to the goal and actual results. This applies feedback concepts to the design of a working method; it is not yet a quantitative system dynamics model and does not establish that capability will keep growing automatically.
 
-![Figure 2: Accumulated experience feeds directly into refinement and validation, helping form more reusable experience that adds to the accumulated knowledge.](technical-en-02.png)
+<p align="center"><img src="github-light-en-02.png" width="560" alt="Figure 2: Accumulated experience feeds directly into refinement and validation, helping form more reusable experience that adds to the accumulated knowledge."></p>
 
 *Figure 2. R denotes a reinforcing loop: existing experience helps refinement and validation; the resulting useful experience adds to the accumulation.*
 
@@ -63,7 +65,7 @@ The lead first understands why the work matters and what a good result means, th
 
 When the product is still unclear, different approaches need comparing. When technical routes differ, their conditions, costs, and risks need explaining. The user decides important directions; the lead and relevant specialists proceed with routine implementation choices within their authorization.
 
-![Figure 3: Explore candidates around the same goal, then choose an approach using the goal, constraints, and actual comparisons.](technical-en-03.png)
+<p align="center"><img src="github-light-en-03.png" width="560" alt="Figure 3: Explore candidates around the same goal, then choose an approach using the goal, constraints, and actual comparisons."></p>
 
 *Figure 3. This diagram explains exploration and selection: open up possibilities, then connect the chosen approach to implementation.*
 
@@ -73,7 +75,7 @@ Once a direction is chosen, development must deliver the agreed design. Work tha
 
 The complete team defines six responsibilities: the lead coordinates goals, collaboration, and delivery; environment setup, product design, technical design, development, and independent AI acceptance cover the specialist work.
 
-![Figure 4: The lead coordinates five specialist responsibilities: environment setup, product design, technical design, development, and independent AI acceptance.](technical-en-04.png)
+<p align="center"><img src="github-light-en-04.png" width="420" alt="Figure 4: The lead coordinates five specialist responsibilities: environment setup, product design, technical design, development, and independent AI acceptance."></p>
 
 *Figure 4. The numbers identify responsibilities; not every role needs to work in every round.*
 
@@ -89,7 +91,7 @@ Division of work within a project explains how different specialists contribute 
 
 The process has four steps: identify the missing information or result; find the existing specialist lead and explain the purpose and questions; check and follow up on the response; use the answer in the current work and continue toward delivery.
 
-![Figure 5: Project leads exchange questions and information directly as needed. Each project retains its own team, results, and knowledge.](technical-en-05.png)
+<p align="center"><img src="github-light-en-05.png" width="560" alt="Figure 5: Project leads exchange questions and information directly as needed. Each project retains its own team, results, and knowledge."></p>
 
 *Figure 5. Dashed lines indicate communication as needed. Each lead brings specialist judgment, while information retains a clear owner.*
 
@@ -105,7 +107,7 @@ Learning from experience has two parts: saving it and using it. Role principles 
 
 On receiving a task, the lead first recovers the user's goal, role responsibilities, and applicable requirements, then looks for cases relevant to the current problem. It compares the old case's conditions, reasons, and actual results before deciding to reuse, adapt, or set aside the old method.
 
-![Figure 6: Goals and role responsibilities provide the standard; past cases provide reference material. Compare before acting, then use actual results to correct the current work and update the original experience.](technical-en-06.png)
+<p align="center"><img src="github-light-en-06.png" width="470" alt="Figure 6: Goals and role responsibilities provide the standard; past cases provide reference material. Compare before acting, then use actual results to correct the current work and update the original experience."></p>
 
 *Figure 6. The two return paths serve different purposes: correcting current work and revising experience for future use.*
 
@@ -119,15 +121,13 @@ After the work, examine the result. If the problem remains, keep correcting the 
 
 The Skill's project knowledge protocol defines how information is read and updated; project files hold the specific content. These entry points link to one another. The lead needs to retrieve material relevant to the current problem, rather than loading everything into context every time.
 
-![Figure 7: Shared rules, role responsibilities, applicable agreements, contextual experience, and current status have separate homes, with stable entry points for resuming work.](technical-en-07.png)
-
-*Figure 7. These are the knowledge responsibilities of the bundled templates; existing projects can keep their own effective entry points.*
-
-`AGENTS.md`: shared rules and when to read relevant information.<br>
-`roles/`: each role's responsibilities and contribution to the overall goal.<br>
-Product, technical, and acceptance documents: confirmed requirements and decisions.<br>
-`docs/METHODOLOGY.md`: an experience index linking to methods, cases, and results.<br>
-`README.md`, `PROGRESS.md`, and similar files: current status, unfinished work, and next steps.
+| Content | Home | What it keeps |
+| --- | --- | --- |
+| Shared rules | `AGENTS.md` | Agreements about reading project information and collaborating. |
+| Role responsibilities | `roles/` | Each role's responsibility and goal. |
+| Applicable agreements | Product, technical, and acceptance documents | Confirmed requirements and decisions. |
+| Case experience | `docs/METHODOLOGY.md` | An experience index linking methods, cases, and results. |
+| Current status | `README.md`, `PROGRESS.md` | Unfinished work and the next step. |
 
 **Applicable requirements must be followed within their scope. Optional methods and cases are assessed for their usefulness to the current task.**
 
@@ -143,7 +143,7 @@ The earlier mechanisms define how work is organized and how experience is retain
 
 The development lead can talk directly with users about where the method feels awkward. Within existing access, it can also inspect earlier conversations, work records, and outputs without first listing the exact checkpoints. The former provides the user's explanation; the latter helps show what normally happens in practice.
 
-![Figure 8: The Team Leader Skill development lead learns from user discussion and observation of actual work. Both kinds of material come from project leads using the Skill.](technical-en-08.png)
+<p align="center"><img src="github-light-en-08.png" width="520" alt="Figure 8: The Team Leader Skill development lead learns from user discussion and observation of actual work. Both kinds of material come from project leads using the Skill."></p>
 
 *Figure 8. Discussion and observation are two ways to gather evidence. A lead's account needs to be checked against actual behavior.*
 
@@ -157,7 +157,7 @@ When a deviation appears, first locate it: correct an omitted effective requirem
 
 The development lead organizes the revision and checks, then—within authorization—has user projects install or update the complete Skill, read the applicable changes, and continue their original work. Observation and verification then return to the next revision:
 
-![Figure 9: The user sets the goal and direction. The development lead organizes Skill revision, installation or update, and use; observation, verification, and feedback connect actual use to the next revision.](technical-en-09.png)
+<p align="center"><img src="github-light-en-09.png" width="560" alt="Figure 9: The user sets the goal and direction. The development lead organizes Skill revision, installation or update, and use; observation, verification, and feedback connect actual use to the next revision."></p>
 
 *Figure 9. Three work stages form a loop; observation, verification, and feedback connect actual use to the next revision.*
 
